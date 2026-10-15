@@ -111,6 +111,38 @@ def _record(element, source, document, api):
     return row, physical
 
 
+def _route_geometry(element, physical, api):
+    """Optional planning metadata; failure never erases diagnostic topology."""
+    try:
+        ports = []
+        for port in sorted(physical, key=lambda p: int(p.Id)):
+            kind = 'end' if port.ConnectorType == api.ConnectorType.End else 'branch'
+            normal = None
+            try:
+                vector = port.CoordinateSystem.BasisZ
+                normal = tuple(_finite(v) for v in (vector.X, vector.Y, vector.Z))
+            except Exception:
+                pass
+            ports.append({'id':int(port.Id), 'type':kind,
+                          'origin_ft':_point(port), 'normal':normal})
+        service = int(element.ServiceId)
+        if service < 0:
+            raise SnapshotError('MISSING_ROUTE_SERVICE')
+        labels = []
+        for name in ('ProductName','ProductLongDescription','ProductShortDescription','Alias','Name'):
+            try:
+                value = getattr(element, name)
+                if value:
+                    labels.append(text_type(value))
+            except Exception:
+                pass
+        return {'ports':ports, 'service':text_type(service), 'product_labels':labels,
+                'category':'duct' if _number(element.Category.Id) ==
+                _number(api.ElementId(api.BuiltInCategory.OST_FabricationDuctwork)) else 'pipe'}
+    except Exception:
+        return {'reason':'ROUTE_GEOMETRY_UNAVAILABLE'}
+
+
 def capture_selection(document, elements, api=None, connection_tolerance_ft=1e-4):
     """Snapshot only the selected host fabrication duct/pipe and their edges.
 
@@ -137,7 +169,7 @@ def capture_selection(document, elements, api=None, connection_tolerance_ft=1e-4
                       api.BuiltInCategory.OST_FabricationPipework))
     records, ports, invalid, reasons = {}, {}, set(), set()
     element_ids, selected_keys, unsupported = {}, set(), set()
-    gaps = {}
+    gaps, port_edges = {}, {}
     selected = list(elements)
 
     def report(element, code):
@@ -190,6 +222,8 @@ def capture_selection(document, elements, api=None, connection_tolerance_ft=1e-4
                     gap_ft = _distance(_point(port), _point(other))
                     edge = tuple(sorted((key, target)))
                     tokens = tuple(sorted(((key, int(port.Id)), (target, int(other.Id)))))
+                    port_edges[tokens] = {'keys':[k for k, cid in tokens],
+                                          'port_ids':[cid for k, cid in tokens], 'gap_ft':gap_ft}
                     if gap_ft > tolerance:
                         gaps[tokens] = {'element_ids': [element_ids[k] for k, cid in tokens],
                                         'connector_ids': [cid for k, cid in tokens],
@@ -215,6 +249,9 @@ def capture_selection(document, elements, api=None, connection_tolerance_ft=1e-4
     return {'source': source, 'selected_count': len(selected),
             'parts': [records[k] for k in sorted(records) if k not in invalid],
             'connections': sorted(edges),
+            'connection_ports':[port_edges[k] for k in sorted(port_edges)],
+            'route_geometry':dict((k,_route_geometry(ports[k][0].Owner,ports[k],api))
+                                  for k in sorted(records) if k not in invalid),
             'element_ids': element_ids,
             'excluded_parts': dict((key, 'UNSUPPORTED_SELECTED_PART' if key in unsupported
                                     else 'SELECTED_PART_REJECTED')

@@ -23,3 +23,5 @@ remaining Revit acceptance steps. Commit the focused change and open a PR.
 Current next gate: field-verify the new Auto Hanger Shift-click connector diagnostic using `REVIT_CONNECTOR_DIAGNOSTIC.md`. The read-only adapter exists; do not duplicate it or migrate the apply path before its model/API assumptions are verified.
 
 Read `research/HANGER_TOOL_COMPARISON_2026-10-15.md` for the latest benchmark and pivot priorities. UI disclosure and identity-preserving station batches are implemented. Retest their WPF/placement equivalence before broader changes; do not repeat completed research or replace per-rod safeguards with guessed geometry.
+
+Read-only route station preview is now implemented; see `HANGER_ROUTE_PREVIEW.md`. Next gate: field-check the 24-part transition selection, candidate source IDs/axis offsets, existing-hanger coordination, scope and unsupported fitting reasons. Normal-click remains the original placement path; do not migrate it before reviewed profiles, structure and clearance gates.

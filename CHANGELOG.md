@@ -50,3 +50,10 @@
 - Replaced repeated full-task identity scans with one stable identity-preserving batching pass. Geometry, rod verification, probe budgets, transactions and clearance checks are unchanged.
 - Added seven focused regressions and a reproducible optional Python batching benchmark. No Revit speedup or WPF runtime result is claimed.
 - Preserved the import manifest and continued checking all 124 original assets with an exact two-file change ledger (122 unchanged). No validation was disabled.
+
+## 2026-10-15 — Read-only fitting-aware route station preview
+
+- Added a Shift-click mode for horizontal straight-through route station previews, reusing the existing size/spacing and support-count planner. No normal-click placement changes or new ribbon commands.
+- Retained connector port identities and optional fitting normals for verified aligned transitions; gaps, turns, offsets, ambiguous ends, unsupported geometry and source/service changes remain boundaries. Fitting bodies never host candidates.
+- Added read-only existing-hanger host/Origin inventory, exact ID deduplication, conservative unknown-data handling and coordination-only coverage checks. No bbox, rod or structural-attachment fallback.
+- Added candidate ID/station/XYZ and unresolved-reason tables plus a clearly scoped geometric baseline. All results remain non-apply-ready; approved profiles and Revit field gates are documented.

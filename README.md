@@ -71,3 +71,5 @@ Phase 1 has started with a tested, isolated connector-graph foundation in `lib/r
 Auto Hanger now has an optional **Shift-click read-only connector diagnostic** for selected host fabrication duct/pipe. Normal-click placement safeguards and station-order semantics are preserved; settings now use an Advanced section and task batching avoids repeated full-list scans. See [usage and Revit field gate](docs/REVIT_CONNECTOR_DIAGNOSTIC.md) and [EVOLVE research findings](docs/research/EVOLVE_WORKFLOW_FINDINGS_2026-10-15.md).
 
 See the [hanger workflow comparison and ranked improvement plan](docs/research/HANGER_TOOL_COMPARISON_2026-10-15.md) for official-source evidence, measured batching results and the Revit UI/performance acceptance gate.
+
+Shift-click Auto Hanger also offers a **read-only route layout preview**. It carries spacing through verified aligned transitions, proposes straight-duct stations, and counts existing hangers for coordination. See [inputs, limitations and field checklist](docs/HANGER_ROUTE_PREVIEW.md). Normal-click placement is unchanged.

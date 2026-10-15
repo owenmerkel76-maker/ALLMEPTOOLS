@@ -113,3 +113,21 @@ Official-source evaluation and scoped microbenchmark results are in
 not verify actual WPF rendering/NameScope behavior, IronPython execution, Revit
 probe timing, real hanger placement/attachment, or model rollback. Those remain
 field-test gates. No geometry, attachment or collision check was removed.
+
+## Read-only route station preview increment
+
+`bash CODEX_SETUP.sh`: **425 tests passed, zero skips**, 66.841 seconds,
+CPython 3.12 / retained PowerShell 7.4.13. Both validators pass: 54 runtime
+Python files, 16 XAML files, 17 commands across 10 panels. Added 24 focused
+regressions for aligned fitting distances, no fitting-host candidates, strict
+size caps, reversed axes, stable ordering, physical-vs-geometric groups, scope,
+branch keep-outs, gap/service/unsupported boundaries, ambiguous ends, existing
+host/Origin inventory, unreadable data and zero additional coordination candidates
+on a simulated rerun. All source-preservation checks pass; original normal-click
+script/planner/settings hashes are unchanged from the previous preview.
+
+Four changed/new runtime modules also parsed with the available legacy grammar;
+this is a syntax screen, not an IronPython execution test. Live pyRevit menu,
+connector normals, candidate offsets/XYZ, actual existing hanger Origins and
+Revit no-edit/Undo behavior remain unverified. No rods, structural attachment or
+hardware clearance is certified. See `HANGER_ROUTE_PREVIEW.md` for the field gate.

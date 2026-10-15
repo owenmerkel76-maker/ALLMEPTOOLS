@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Shift-click: read-only connector diagnostics and route candidates; no placement."""
+"""Shift-click diagnostics, transient station review and explicit rolled-back probes."""
 from pyrevit import forms, revit, script
 from robmep_core.connector_graph import build_runs
 from robmep_core.revit_connector_snapshot import capture_selection
 
 
-def main(preview=False):
+def main(preview=False,visual=False):
     doc = revit.doc
     if doc is None or doc.IsFamilyDocument:
         forms.alert('Open a project and select fabrication duct/pipe parts first.')
@@ -70,11 +70,11 @@ def main(preview=False):
             [row[0], ', '.join(labels.get(k, k) for k in row[1:])]
             for row in analysis['unresolved']], columns=['Unresolved reason', 'Source identities'])
 
-    if preview:
-        show_route_preview(doc, snapshot, output)
+    if preview or visual:
+        show_route_preview(doc, snapshot, output,visual=visual)
 
 
-def show_route_preview(doc, snapshot, output):
+def show_route_preview(doc, snapshot, output, visual=False):
     # Use the unchanged planner as a pure library. Never import script.py, whose
     # entrypoint starts the production command and Revit transactions.
     import os
@@ -171,9 +171,66 @@ def show_route_preview(doc, snapshot, output):
                         result['baseline_geometric_groups'],result['baseline_raw_station_count'],
                         len(result['routes'])))
 
+    if visual:
+        review_and_test(doc,snapshot,result,output,numbers)
+
+
+def review_and_test(doc,snapshot,result,output,numbers):
+    import os
+    import planner
+    from Autodesk.Revit.DB import ElementId
+    from robmep_core.station_review import review_records,validate_snapshot,validate_candidate
+    from robmep_core.revit_station_review import choose_station
+    from robmep_core.revit_station_probe import load_probe_runtime
+    from robmep_core.revit_existing_hangers import capture_existing_hangers
+    from robmep_core.hanger_route_preview import build_route_preview
+    try:
+        records,total=review_records(snapshot,result)
+        if not records:
+            output.print_md('No new candidates to mark or test. No hanger test started.')
+            return
+        output.print_md('## Visual station review')
+        output.print_md('Showing {} of {} candidate markers in the active view; maximum 200. '
+                        'Markers are screen-sized numbers anchored at the candidate XYZ, not hanger geometry. '
+                        'They may be obscured or outside the view/section box. Pan/zoom during the pick step; '
+                        'Esc finishes without a hanger test.'.format(len(records),total))
+        output.print_table(table_data=[[r['number'],r['route_number'],r['element_id'],
+                                       '{:.6f}'.format(r['station_ft'])] for r in records],
+                           columns=['Marker','Route','Host ID','Route station (ft)'])
+        record=choose_station(revit.uidoc,records,forms)
+        output.print_md('Visual review finished; this command removed its temporary markers.')
+        revit.uidoc.RefreshActiveView()
+        if record is None:
+            return
+        def preflight():
+            if revit.doc != doc:
+                raise ValueError('Active document changed; rerun route preview')
+            selected_keys=set(p['key'] for p in snapshot['parts'])
+            selected_keys.update(snapshot['excluded_parts'])
+            elements=[doc.GetElement(ElementId(snapshot['element_ids'][key])) for key in sorted(selected_keys)]
+            fresh=capture_selection(doc,elements)
+            validate_snapshot(snapshot,fresh)
+            inventory=capture_existing_hangers(doc,fresh['parts'])
+            fresh_result=build_route_preview(fresh,inventory,planner,numbers[0],numbers[1])
+            validate_candidate(fresh_result,record)
+        preflight()
+        if not forms.alert('Test marker #{} on duct {} at the exact preview station?\n'
+                'Choose structural targets and the service hanger next.\n'
+                'One temporary hanger will be inspected and always rolled back. No hanger is kept.'
+                .format(record['number'],record['element_id']),yes=True,no=True):
+            return
+        runtime=load_probe_runtime(os.path.join(os.path.dirname(__file__),'script.py'))
+        runtime['run_route_station_probe'](doc.GetElement(ElementId(record['element_id'])),record,preflight)
+    except Exception as ex:
+        output.print_md('Visual review / exact-station test stopped: {}'.format(ex))
+        script.get_logger().exception('Visual station review or rolled-back test failed')
+        forms.alert('Station review/test stopped: {}. Check the output for cleanup status.'.format(ex))
+
 
 if __name__ == '__main__':
-    mode = forms.CommandSwitchWindow.show(['Connector diagnostic', 'Route layout preview (read-only)'],
-                                          message='Auto Hanger - read-only tools')
+    mode = forms.CommandSwitchWindow.show(['Connector diagnostic', 'Route layout preview (read-only)',
+                                          'Visual stations + single test (rolled back)'],
+                                          message='Auto Hanger - diagnostics')
     if mode:
-        main(preview=(mode == 'Route layout preview (read-only)'))
+        main(preview=(mode == 'Route layout preview (read-only)'),
+             visual=(mode == 'Visual stations + single test (rolled back)'))

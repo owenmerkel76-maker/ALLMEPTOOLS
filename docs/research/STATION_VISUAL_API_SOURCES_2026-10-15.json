@@ -1,0 +1,26 @@
+{
+  "retrieved_date": "2026-10-15",
+  "api_version": "25.0.0.0",
+  "sources": [
+    {
+      "title": "InCanvasControlData",
+      "url": "https://www.revitapidocs.com/2025/5fdf010d-7dbb-332d-4704-8e067f2338dc.htm",
+      "sha256": "cc9755dc3233062c3e781432c65ca96e084f49962c6f3c427144a4f597225ced"
+    },
+    {
+      "title": "InCanvasControlData(String, XYZ)",
+      "url": "https://www.revitapidocs.com/2025/f16cf225-d5a1-96e8-d036-bcda9f5dd8d1.htm",
+      "sha256": "9da2a4d23b8b39df1ef4ac2ae0c0e06ef2f736ed2347960c93da8266994100a6"
+    },
+    {
+      "title": "AddControl",
+      "url": "https://www.revitapidocs.com/2025/dbe10b60-8a28-50b9-c7d5-91628e8fe630.htm",
+      "sha256": "ff2e2f2a7d93d1ae7c149e22d355ff688d653f88ca81fb86033e674f5e9d3b84"
+    },
+    {
+      "title": "RemoveControl",
+      "url": "https://www.revitapidocs.com/2025/3803b2b0-c688-faa3-ae1f-fdbd0135dd5a.htm",
+      "sha256": "d4269950983ca1af67d74d58706e74a2415a9f98ba7ae24432916b8cdf1f4006"
+    }
+  ]
+}

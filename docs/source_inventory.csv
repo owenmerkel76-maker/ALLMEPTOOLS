@@ -3,11 +3,11 @@ path,bytes,lines,imports
 .github/workflows/validate.yml,932,27,
 .gitignore,25,3,
 AGENTS.md,5813,45,
-CHANGELOG.md,6835,66,
+CHANGELOG.md,7894,73,
 CODEX_SETUP.sh,420,10,
 CODEX_START_HERE.md,4328,27,
 INSTALL_WINDOWS.ps1,3277,56,
-README.md,7191,75,
+README.md,7521,77,
 ROBMEPTOOLS.extension/AUTODIM_SMART_V232B_AUTOARRANGE_RESTORED_MANIFEST.txt,620,9,
 ROBMEPTOOLS.extension/AUTODIM_SMART_V232C_RIBBON_STABILITY_HOTFIX.txt,727,12,
 ROBMEPTOOLS.extension/AUTODIM_SMART_V232_SELECTED_GRIDS_MANIFEST.txt,893,17,
@@ -100,12 +100,12 @@ ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Reconstruct Steel.pushb
 ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/bundle.yaml,104,6,
 ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/bundle.yaml,491,9,
 ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/collision_guard.py,1291,34,
-ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/config.py,11579,179,os;planner;pyrevit;robmep_core.connector_graph;robmep_core.hanger_route_preview;robmep_core.revit_connector_snapshot;robmep_core.revit_existing_hangers;sys
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/config.py,15111,236,Autodesk.Revit.DB;os;planner;pyrevit;robmep_core.connector_graph;robmep_core.hanger_route_preview;robmep_core.revit_connector_snapshot;robmep_core.revit_existing_hangers;robmep_core.revit_station_probe;robmep_core.revit_station_review;robmep_core.station_review;sys
 ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/icon.png,2636,18,
 ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/linked_obstacles.py,27868,632,Autodesk.Revit.DB;math;re;rod_geometry
 ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/planner.py,24361,569,math
 ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/rod_geometry.py,20117,517,Autodesk.Revit.DB
-ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/script.py,96107,1960,Autodesk.Revit.DB;Autodesk.Revit.Exceptions;Autodesk.Revit.UI.Selection;System.Collections.Generic;System.Windows;System.Windows.Controls;collision_guard;linked_obstacles;math;os;planner;pyrevit;robmep_core.planning_batches;rod_geometry;structure_picker;structure_priority;structure_stations;sys;traceback
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/script.py,99349,2023,Autodesk.Revit.DB;Autodesk.Revit.Exceptions;Autodesk.Revit.UI.Selection;System.Collections.Generic;System.Windows;System.Windows.Controls;collision_guard;linked_obstacles;math;os;planner;pyrevit;robmep_core.planning_batches;robmep_core.revit_station_probe;rod_geometry;structure_picker;structure_priority;structure_stations;sys;traceback
 ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/settings.xaml,12073,149,
 ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_catalog.py,16899,395,__future__;hashlib;json;math;re
 ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_discovery.py,20573,492,Autodesk.Revit.DB;hashlib;json;os;re;structure_catalog;uuid
@@ -162,19 +162,23 @@ ROBMEPTOOLS.extension/lib/robmep_core/hanger_route_preview.py,14303,290,math
 ROBMEPTOOLS.extension/lib/robmep_core/planning_batches.py,879,23,
 ROBMEPTOOLS.extension/lib/robmep_core/revit_connector_snapshot.py,11767,261,Autodesk.Revit;math
 ROBMEPTOOLS.extension/lib/robmep_core/revit_existing_hangers.py,2337,52,Autodesk.Revit;robmep_core.revit_connector_snapshot
+ROBMEPTOOLS.extension/lib/robmep_core/revit_station_probe.py,1606,31,robmep_core.revit_connector_snapshot;robmep_core.station_review;runpy
+ROBMEPTOOLS.extension/lib/robmep_core/revit_station_review.py,5925,127,Autodesk.Revit;Autodesk.Revit.Exceptions;Autodesk.Revit.UI.Selection;System.Drawing;System.Drawing.Imaging;clr;os;robmep_core.station_review;shutil;tempfile
+ROBMEPTOOLS.extension/lib/robmep_core/station_review.py,3003,63,math
 ROBMEPTOOLS.extension/lib/robmep_updater.py,16189,378,Autodesk.Revit.UI.Events;System;System.Diagnostics;System.IO;__future__;distutils.spawn;glob;hashlib;json;os;shutil;subprocess;tempfile;time
 ROBMEPTOOLS.extension/startup.py,306,7,
 ROBMEPTOOLS.extension/updater/Git-Location.psm1,3294,73,
 ROBMEPTOOLS.extension/updater/Update-Background.ps1,7038,129,
 ROBMEPTOOLS.extension/updater/Update-Core.psm1,8248,150,
 docs/HANGER_ROUTE_PREVIEW.md,8615,119,
-docs/NEXT_CODEX_TASK.md,2980,29,
+docs/NEXT_CODEX_TASK.md,3305,31,
 docs/PHASE1_CONNECTOR_GRAPH.md,2395,37,
 docs/REPOSITORY_AUDIT.md,7372,89,
 docs/REVIT_CONNECTOR_DIAGNOSTIC.md,6947,104,
 docs/REVIT_VALIDATION.md,3560,48,
 docs/ROADMAP.md,2918,16,
-docs/VALIDATION_RESULTS.md,10169,158,
+docs/VALIDATION_RESULTS.md,11497,179,
+docs/VISUAL_STATION_TEST.md,7410,113,
 docs/duplicate_sources.json,2663,58,
 docs/import_provenance.json,68136,1337,
 docs/merge_sources.json,1910,51,
@@ -192,8 +196,9 @@ docs/research/EVOLVE_WORKFLOW_FINDINGS_2026-10-15.md,7724,79,
 docs/research/HANGER_COMPARISON_SOURCES_2026-10-15.json,1298,27,
 docs/research/HANGER_TOOL_COMPARISON_2026-10-15.md,10185,112,
 docs/research/ROBMEPTOOLS_EVOLVE_Research_and_Codex_Masterplan.md,26396,182,
+docs/research/STATION_VISUAL_API_SOURCES_2026-10-15.json,983,26,
 docs/ribbon_path_migrations.json,263,5,
-docs/runtime_change_log.json,894,16,
+docs/runtime_change_log.json,1001,16,
 docs/unified_source_hashes.json,12699,90,
 installer/Check-Updater.ps1,11884,173,
 installer/Install-Location.psm1,2340,49,
@@ -243,6 +248,7 @@ tests/test_planning_batches.py,3187,68,ast;copy;pathlib;random;robmep_core.plann
 tests/test_reload_updater.py,19816,374,hashlib;importlib.util;json;os;pathlib;shutil;subprocess;sys;tempfile;types;unittest;unittest.mock
 tests/test_revit_connector_snapshot.py,16797,324,ast;json;pathlib;robmep_core.connector_graph;robmep_core.revit_connector_snapshot;sys;types;unittest;unittest.mock
 tests/test_source_preservation.py,2112,43,hashlib;json;pathlib;unittest
+tests/test_station_review.py,21685,364,ast;copy;pathlib;planner;robmep_core.hanger_route_preview;robmep_core.revit_station_probe;robmep_core.revit_station_review;robmep_core.station_review;sys;tempfile;test_hanger_route_preview;test_revit_connector_snapshot;types;unittest;unittest.mock
 tests/test_unified_ribbon.py,654,13,pathlib;sys;unittest;validate_unified
 tests/test_updater_check.py,2875,45,os;pathlib;shutil;subprocess;tempfile;unittest
 tests/test_updater_powershell.py,3262,63,hashlib;importlib.util;json;os;pathlib;shutil;subprocess;tempfile;unittest

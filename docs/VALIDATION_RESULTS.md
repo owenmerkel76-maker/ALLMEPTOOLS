@@ -156,3 +156,24 @@ checks pass; normal-click script, planner and settings are unchanged.
 Live Revit retest, structural support/clearance/attachment and the remaining
 incomplete existing-aware branch candidate solver are not verified or resolved by
 this focused reporting/planning-order correction. All routes remain non-apply-ready.
+
+## Visual review and exact-station rollback increment
+
+`bash CODEX_SETUP.sh`: **455 tests passed, zero skips**, 44.709 seconds,
+CPython 3.12 / PowerShell 7.4.13. Both validators pass: 57 runtime Python files,
+16 XAML files, 17 commands across 10 panels. Added 26 focused tests for station
+identity/limits, stale geometry, guarded loading, exact connector choice,
+temporary-graphics ownership and cleanup (including partial creation/failure),
+cancel paths, forced diagnostic controls, original manually picked test behavior,
+both-rod measurements, missing targets, creation/sizing failures and inner/outer
+rollback failures. Source preservation passes with the immutable original hashes
+and updated exact script change ledger; all other original assets remain checked.
+
+API reference signatures for TemporaryGraphicsManager/InCanvasControlData were
+retrieved from the Revit API reference mirror, API 25.0.0.0, including BMP-only
+format, transparency color, model position and scoped RemoveControl semantics.
+No model-line fallback or global Clear() is implemented. The runtime entry guard
+and original manual single-test path are exercised offline; an actual IronPython
+script load, native control rendering, WPF settings, ITM creation and per-rod Revit
+geometry still require field verification. See `VISUAL_STATION_TEST.md`.
+

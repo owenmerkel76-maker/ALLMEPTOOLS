@@ -64,3 +64,10 @@
 - Resolve spacing independently and evaluate known existing end/span/branch distances before requesting new candidates. Already distance-covered routes propose zero additions.
 - Keep near-branch existing hangers explicitly clearance-unverified, with source IDs/separations. Unknown inventory, unsupported rules and incomplete coverage retain conservative handling; candidate branch checks are unchanged.
 - Changed report wording to distinguish covered distances from unverified clearance. Normal-click placement, rods, transactions and all 17 commands are unchanged.
+
+## 2026-10-15 — Visual station review and exact rolled-back diagnostic
+
+- Added a third Shift-click mode with bounded, numbered temporary graphics and a candidate-host/station chooser. Removes only owned controls; no model marker elements or global graphics clearing.
+- Revalidates original geometry/ports and refreshed existing-hanger occupancy before a candidate test. Uses actual end connector identities and the exact preview coordinate; rejects stale/off-axis/inboard-range failures instead of relocating.
+- Reuses the original structural selector, service hanger chooser and both-rod inspection inside rollback scopes. New diagnostic settings cannot enable apply mode or disable rod clearance. Original normal-click and manually picked single-test behavior are retained.
+- Guarded the normal script entrypoint for diagnostic loading and updated its exact provenance hash/reason. Added focused API-double cleanup, identity, cancellation, measurement and rollback regressions; native graphics/ITM behavior still requires Revit 2025 field verification.

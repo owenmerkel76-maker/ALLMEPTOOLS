@@ -1208,9 +1208,14 @@ def inspect_single_hanger(job, choice, cfg):
     return result
 
 
-def run_single_hanger_test(part, choice, cfg):
+def run_single_hanger_test(part, choice, cfg, station_request=None):
     """One user-picked station, no run optimizer, no retained model changes."""
-    piece,issue=extract_segment(part)
+    if station_request is None:
+        piece,issue=extract_segment(part)
+    else:
+        from robmep_core.revit_station_probe import exact_probe_piece
+        piece,exact_distance=exact_probe_piece(DOC,part,station_request)
+        issue=None
     if piece is None:
         forms.alert('Single hanger test cannot use this duct: {}. No test hanger was created.'
                     .format(issue or 'No usable straight duct geometry'))
@@ -1219,13 +1224,16 @@ def run_single_hanger_test(part, choice, cfg):
     length=planner.norm(vector)
     if length<=.51:
         raise ValueError('Selected duct is too short for an inboard test station')
-    try:
-        point=UIDOC.Selection.PickPoint('SINGLE HANGER TEST: click desired station along the selected duct')
-    except OperationCanceledException:
-        return
     direction=planner.unit(vector)
-    requested=planner.projections(xyz_tuple(point),piece['a'],direction)
-    distance=max(.255,min(length-.255,requested))
+    if station_request is None:
+        try:
+            point=UIDOC.Selection.PickPoint('SINGLE HANGER TEST: click desired station along the selected duct')
+        except OperationCanceledException:
+            return
+        requested=planner.projections(xyz_tuple(point),piece['a'],direction)
+        distance=max(.255,min(length-.255,requested))
+    else:
+        distance=exact_distance
     intended=planner.add(piece['a'],planner.mul(direction,distance))
     button=cfg['buttons_by_service'].get(piece['service_id'],{}).get(piece['shape'])
     if (piece['shape']=='rectangular' and cfg['large_threshold_ft'] is not None
@@ -1239,7 +1247,8 @@ def run_single_hanger_test(part, choice, cfg):
         result=inspect_single_hanger({'piece':piece,'button':button,'from_a':distance},choice,cfg)
     finally:
         status=transaction.RollBack()
-        if status is not None and str(status)!='RolledBack':
+        if ((station_request is not None and status is None) or
+                (status is not None and str(status)!='RolledBack')):
             raise ValueError('Single-hanger test transaction rollback did not complete')
     offset=(planner.projections(result['origin'],piece['a'],direction)-distance
             if result['origin'] is not None else None)
@@ -1286,6 +1295,59 @@ def run_single_hanger_test(part, choice, cfg):
                 'Send the SINGLE HANGER TEST output.'.format(status,
                     result['created'],result['raw_targets'],result['rod_count'],
                     result['validated_targets'],result['rod_count']))
+
+
+def run_route_station_probe(part, request, preflight):
+    """Explicit one-candidate diagnostic; force rollback/clearance irrespective of UI mode."""
+    global _LINKED_CLEARANCE
+    _LINKED_CLEARANCE=None
+    if not is_duct_straight(part):
+        raise ValueError('Preview candidate is not eligible straight fabrication duct')
+    preflight()
+    selection=structure_picker.choose_structure(DOC,UIDOC,startup_ids=[])
+    if selection is None:
+        return
+    choice=structure_priority.StructureChoice(sources=selection['sources'],
+        priority_mode=selection['priority_mode'],exact_small_selection=True)
+    unlocated=choice.preflight_unlocated()
+    if unlocated:
+        raise ValueError('Selected structural targets cannot be measured: '+u'; '.join(unlocated[:8]))
+    inventory=service_hanger_choices(set([int(part.ServiceId)]))
+    if not inventory or not any(row['buttons'] for row in inventory.values()):
+        raise ValueError('No hanger buttons loaded for this candidate service')
+    Settings=get_settings()
+    wnd=Settings(inventory,selection['max_rod'])
+    wnd.Title='Exact preview station #{} - rolled-back test only'.format(request['number'])
+    wnd.singleTestCheck.IsChecked=True
+    wnd.singleTestCheck.IsEnabled=False
+    wnd.singleTestCheck.Content='Exact preview station - always rolled back'
+    wnd.previewCheck.IsChecked=False
+    wnd.previewCheck.IsEnabled=False
+    wnd.rodClashCheck.IsChecked=True
+    wnd.rodClashCheck.IsEnabled=False
+    wnd.spacingBox.IsEnabled=False
+    wnd.offsetBox.IsEnabled=False
+    wnd.placeButton.Content='Test and roll back'
+    wnd.ShowDialog()
+    if not wnd.confirmed:
+        return
+    cfg=dict(wnd.settings)
+    cfg.update(single_test=True,preview=False,reject_rod_clashes=True,review_references=True)
+    OUTPUT.print_md('## Exact route candidate #{} / route {} / host {}'.format(
+        request['number'],request['route_number'],request['element_id']))
+    OUTPUT.print_md('Requested preview XYZ {} ft. This entry always tests one exact station and rolls back; '
+                    'unchecking diagnostic settings cannot enable placement.'.format(request['point_ft']))
+    _LINKED_CLEARANCE=linked_obstacles.LinkedObstructionChecker(DOC,structural_sources=choice.sources).prepare()
+    if _LINKED_CLEARANCE.failures:
+        raise ValueError('; '.join(_LINKED_CLEARANCE.failures))
+    review_clearance_references(_LINKED_CLEARANCE)
+    def validate_structural_path(base,target):
+        row=dict(target); row['index']=0
+        path={'index':0,'base':base,'tip':XYZ(base.X,base.Y,target['z'])}
+        return _LINKED_CLEARANCE.check([path],approved_targets=[row])
+    choice.path_validator=validate_structural_path
+    preflight()
+    run_single_hanger_test(part,choice,cfg,station_request=request)
 
 
 def get_settings():
@@ -1949,12 +2011,13 @@ def run():
                         stats['placed'],stats['draft_placed']))
 
 
-try:
-    run()
-except Exception as fatal:
+if __name__ == '__main__':
     try:
-        OUTPUT.print_md('## Auto Hanger stopped before completion')
-        OUTPUT.print_md('```\n{}\n```'.format(traceback.format_exc()))
-    except Exception:
-        pass
-    forms.alert('Auto Hanger error: {}'.format(fatal))
+        run()
+    except Exception as fatal:
+        try:
+            OUTPUT.print_md('## Auto Hanger stopped before completion')
+            OUTPUT.print_md('```\n{}\n```'.format(traceback.format_exc()))
+        except Exception:
+            pass
+        forms.alert('Auto Hanger error: {}'.format(fatal))

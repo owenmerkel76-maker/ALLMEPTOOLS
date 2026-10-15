@@ -73,3 +73,5 @@ Auto Hanger now has an optional **Shift-click read-only connector diagnostic** f
 See the [hanger workflow comparison and ranked improvement plan](docs/research/HANGER_TOOL_COMPARISON_2026-10-15.md) for official-source evidence, measured batching results and the Revit UI/performance acceptance gate.
 
 Shift-click Auto Hanger also offers a **read-only route layout preview**. It carries spacing through verified aligned transitions, proposes straight-duct stations, and counts existing hangers for coordination. See [inputs, limitations and field checklist](docs/HANGER_ROUTE_PREVIEW.md). Normal-click placement is unchanged.
+
+For visual review and one measured rod test, use Shift-click **Visual stations + single test (rolled back)**. Numbered temporary graphics lead to an exact candidate test using the existing structural/hanger chooser and rod checks. See [workflow, cleanup and Revit acceptance](docs/VISUAL_STATION_TEST.md). No hanger is retained.

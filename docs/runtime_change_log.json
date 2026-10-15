@@ -1,0 +1,16 @@
+{
+  "changes": [
+    {
+      "path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/script.py",
+      "baseline_sha256": "fac932e125e3ba65105402f63665ef5180c84720b6071a0d37f834551a4f475d",
+      "current_sha256": "c61412efbbe3c0f9e5500b9f043c89f96f80cc34c5befe1fc768287111d40a98",
+      "reason": "Stable station batching plus guarded diagnostic loading and an explicit exact-station rollback entry. Original normal-click placement, settings defaults and measured-rod checks retained; selected preview tests cannot switch to apply mode."
+    },
+    {
+      "path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/settings.xaml",
+      "baseline_sha256": "ac1b6d8aac6c02662c542c51f9841b4554dc323cd28eb23197d87756d288e496",
+      "current_sha256": "c7181c7cf5d729fc20880dbfbf9ad0910cb444476bf951db1d494abe3d0e3826",
+      "reason": "Progressive disclosure with all bound controls, numeric defaults and safety mode behavior retained."
+    }
+  ]
+}

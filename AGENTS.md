@@ -25,7 +25,7 @@ You are editing the **entire ROBMEPTOOLS pyRevit ribbon**, primarily targeting R
 
 ## Master repository integration notes
 
-The current ribbon has 10 panels: AutoDim, AutoTag and Fab Hover have dedicated panels. All 17 original button names and runtime file contents are preserved. AutoSleeve remains absent. See docs/REPOSITORY_AUDIT.md and docs/NEXT_CODEX_TASK.md. Existing tasks are isolated: use the existing checkout and do not create a worktree unless the user asks.
+The current ribbon has 10 panels: AutoDim, AutoTag and Fab Hover have dedicated panels. All 17 original button names are preserved. Intentional runtime edits require exact baseline/current hashes and reasons in docs/runtime_change_log.json; source-preservation checks continue to cover every imported asset. AutoSleeve remains absent. See docs/REPOSITORY_AUDIT.md and docs/NEXT_CODEX_TASK.md. Existing tasks are isolated: use the existing checkout and do not create a worktree unless the user asks.
 
 ## Tests required with each change
 

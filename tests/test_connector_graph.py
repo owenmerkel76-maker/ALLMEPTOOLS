@@ -68,6 +68,24 @@ class ConnectorGraphTests(unittest.TestCase):
         self.assertIn('OUTSIDE_SCOPE',result['boundaries']['b'])
         self.assertEqual([('OUTSIDE_SCOPE','b','outside')],result['unresolved'])
 
+    def test_selected_rejection_is_distinct_from_outside_scope_and_blocks_join(self):
+        result=build_runs([part('a'),part('b')],[('a','b'),('b','bad')],
+                          excluded_parts={'bad':'SELECTED_PART_REJECTED'})
+        self.assertEqual([['a'],['b']],keys(result))
+        self.assertEqual([('SELECTED_PART_REJECTED','b','bad')],result['unresolved'])
+        self.assertFalse(result['connected_components'][0]['scope_complete'])
+
+    def test_transition_connectivity_is_separate_from_uniform_spans(self):
+        result=build_runs([part('a'),part('transition',kind='fitting'),part('b',size=(4.,1.))],
+                          [('a','transition'),('transition','b')])
+        self.assertEqual([['a'],['b']],keys(result))
+        self.assertEqual([{'keys':['a','b','transition'],'scope_complete':True}],result['connected_components'])
+
+    def test_unsupported_selection_and_real_outside_scope_both_remain_explicit(self):
+        result=build_runs([part('a')],[('a','unsupported'),('a','outside')],
+                          excluded_parts={'unsupported':'UNSUPPORTED_SELECTED_PART'})
+        self.assertEqual({'OUTSIDE_SCOPE','UNSUPPORTED_SELECTED_PART'},{r[0] for r in result['unresolved']})
+
     def test_closed_loop_is_unresolved_not_arbitrary_linear_run(self):
         result = build_runs([part(k) for k in 'abc'],[('a','b'),('b','c'),('c','a')])
         self.assertEqual([],result['runs'])

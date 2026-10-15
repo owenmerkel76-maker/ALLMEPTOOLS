@@ -60,3 +60,120 @@ Complete corrected setup in that clean Python 3.12 environment with PowerShell
 7.6.6: **362 tests passed, zero skips**, 49.887 seconds. Both validators pass:
 49 Python files, 16 XAML files, 17 commands across 10 panels. `bash -n
 CODEX_SETUP.sh` also passes. All original runtime source-preservation checks pass.
+
+## EVOLVE research and read-only Revit connector snapshot increment
+
+- Retrieved 17 official EVOLVE help/release articles successfully; public-source
+  metadata and implementation implications are saved under `docs/research/`.
+- Added 24 adapter/launcher tests. An enumeration-order regression first reproduced
+  an axis-direction flip, then passed after sorting end connectors by stable ID.
+- Final `bash CODEX_SETUP.sh` in a clean CPython 3.12 venv with PowerShell 7.6.6:
+  **386 tests passed, zero skips**, 48.521 seconds.
+- Both validators pass: 51 runtime Python files, 16 XAML files, 17 commands and
+  10 panels. Existing 124 non-metadata import hashes remain unchanged.
+- Live Revit 2025/IronPython loading, actual connector semantics, pyRevit Shift-click
+  dispatch and document-modified/Undo checks are NOT RUN. Revit 2027 is unverified.
+  Follow `REVIT_CONNECTOR_DIAGNOSTIC.md` before any placement-path integration.
+
+## First Revit field feedback: transitions and origin gaps
+
+The user ran the initial diagnostic in Revit 2025.4 and reported eight selected
+parts, five readable parts and three CONNECTED_ORIGIN_GAP rejections on a route
+containing transitions. The original 0.0001-foot coincidence requirement was an
+extra geometric assumption, not the reciprocal physical-connection API proof.
+It also caused selected rejected owners to be mislabeled OUTSIDE_SCOPE.
+
+The revised diagnostic preserves reciprocal API topology, reports measured origin
+gaps without moving/repairing geometry, and separates connected selected networks
+from uniform straight spans through fittings and transitions. Actual owner IDs
+are retained for both selected and referenced parts; rejected selections have
+explicit rejection boundaries. Incomplete records still block uniform spans.
+
+Eight added regressions cover reciprocal-proof preservation, warning measurements
+and units, stable deduplication, selected-rejection labeling, and transition
+network connectivity. `bash CODEX_SETUP.sh`: **394 tests passed, zero skips**,
+43.840 seconds; both validators pass (51 Python files, 16 XAML files, 17 commands).
+Original tool source-preservation checks pass. The revised code requires a retest
+on the same selection; synthetic gap fixtures are not a reproduction of the
+actual model's offsets, and no geometry/spacing/rod claim has been verified.
+
+## Hanger UI and batching evaluation increment
+
+`bash CODEX_SETUP.sh`: **401 tests passed, zero skips**, 47.077 seconds,
+with cloud CPython 3.12 and PowerShell 7.4.13. Both validators pass: 52 Python
+files, 16 XAML files, 17 commands across 10 panels. Seven added regressions cover
+legacy-equivalent identity batching, ordering, input preservation, malformed jobs,
+caller integration, all 15 named XAML controls, numeric/controller defaults,
+primary-mode visibility and advanced-state bindings. Original import manifest
+unchanged; all 124 original files checked (122 baseline matches, two exact
+intentional changes documented in `runtime_change_log.json`).
+
+Official-source evaluation and scoped microbenchmark results are in
+`research/HANGER_TOOL_COMPARISON_2026-10-15.md`. XML parsing/control contracts do
+not verify actual WPF rendering/NameScope behavior, IronPython execution, Revit
+probe timing, real hanger placement/attachment, or model rollback. Those remain
+field-test gates. No geometry, attachment or collision check was removed.
+
+## Read-only route station preview increment
+
+`bash CODEX_SETUP.sh`: **425 tests passed, zero skips**, 66.841 seconds,
+CPython 3.12 / retained PowerShell 7.4.13. Both validators pass: 54 runtime
+Python files, 16 XAML files, 17 commands across 10 panels. Added 24 focused
+regressions for aligned fitting distances, no fitting-host candidates, strict
+size caps, reversed axes, stable ordering, physical-vs-geometric groups, scope,
+branch keep-outs, gap/service/unsupported boundaries, ambiguous ends, existing
+host/Origin inventory, unreadable data and zero additional coordination candidates
+on a simulated rerun. All source-preservation checks pass; original normal-click
+script/planner/settings hashes are unchanged from the previous preview.
+
+Four changed/new runtime modules also parsed with the available legacy grammar;
+this is a syntax screen, not an IronPython execution test. Live pyRevit menu,
+connector normals, candidate offsets/XYZ, actual existing hanger Origins and
+Revit no-edit/Undo behavior remain unverified. No rods, structural attachment or
+hardware clearance is certified. See `HANGER_ROUTE_PREVIEW.md` for the field gate.
+
+## Existing-first distance coverage correction
+
+A later field report contained 17 readable parts, 13 existing hangers, six partial
+routes and four candidates. A synthetic 4.7-ft route with a branch and two
+existing stations reproduced a false unresolved result: the from-scratch branch
+candidate pass failed and the preview assigned maximum_ft=None. Two new tests
+failed before correction. Spacing resolution and existing distance coverage are
+now evaluated before requesting new candidates; existing near-branch clearance
+warnings remain independent. Actual private-model branch coordinates were not
+available offline, so the synthetic case establishes the code defect, not a
+complete reproduction of the model.
+
+`bash CODEX_SETUP.sh`: **429 tests passed, zero skips**, 44.165 seconds,
+CPython 3.12 / PowerShell 7.4.13. Both validators pass (54 Python files, 16 XAML,
+17 commands / 10 panels). Four additional regressions cover the reproduced
+withholding defect, retained existing-branch warnings, unsupported rules/unknown
+inventory and genuine end shortfalls retaining candidate branch checks. A manual
+API-double launcher smoke verified branch positions, nearest existing IDs and
+axial-separation warning rows in the actual report function. Source-preservation
+checks pass; normal-click script, planner and settings are unchanged.
+
+Live Revit retest, structural support/clearance/attachment and the remaining
+incomplete existing-aware branch candidate solver are not verified or resolved by
+this focused reporting/planning-order correction. All routes remain non-apply-ready.
+
+## Visual review and exact-station rollback increment
+
+`bash CODEX_SETUP.sh`: **455 tests passed, zero skips**, 44.709 seconds,
+CPython 3.12 / PowerShell 7.4.13. Both validators pass: 57 runtime Python files,
+16 XAML files, 17 commands across 10 panels. Added 26 focused tests for station
+identity/limits, stale geometry, guarded loading, exact connector choice,
+temporary-graphics ownership and cleanup (including partial creation/failure),
+cancel paths, forced diagnostic controls, original manually picked test behavior,
+both-rod measurements, missing targets, creation/sizing failures and inner/outer
+rollback failures. Source preservation passes with the immutable original hashes
+and updated exact script change ledger; all other original assets remain checked.
+
+API reference signatures for TemporaryGraphicsManager/InCanvasControlData were
+retrieved from the Revit API reference mirror, API 25.0.0.0, including BMP-only
+format, transparency color, model position and scoped RemoveControl semantics.
+No model-line fallback or global Clear() is implemented. The runtime entry guard
+and original manual single-test path are exercised offline; an actual IronPython
+script load, native control rendering, WPF settings, ITM creation and per-rod Revit
+geometry still require field verification. See `VISUAL_STATION_TEST.md`.
+

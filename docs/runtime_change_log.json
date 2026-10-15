@@ -1,0 +1,16 @@
+{
+  "changes": [
+    {
+      "path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/script.py",
+      "baseline_sha256": "fac932e125e3ba65105402f63665ef5180c84720b6071a0d37f834551a4f475d",
+      "current_sha256": "e2c64cefd8411ccc1468531d112a73f4d61e3dcc7d2d02465c9fbc372c7367b1",
+      "reason": "Replace repeated identity scans with stable per-run job batches; no geometry, rod, spacing, transaction or collision logic changed."
+    },
+    {
+      "path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/settings.xaml",
+      "baseline_sha256": "ac1b6d8aac6c02662c542c51f9841b4554dc323cd28eb23197d87756d288e496",
+      "current_sha256": "c7181c7cf5d729fc20880dbfbf9ad0910cb444476bf951db1d494abe3d0e3826",
+      "reason": "Progressive disclosure with all bound controls, numeric defaults and safety mode behavior retained."
+    }
+  ]
+}

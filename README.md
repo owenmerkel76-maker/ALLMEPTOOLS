@@ -60,12 +60,14 @@ Old updater's release synchronization test is archived under `legacy/original_up
 
 ## Repository audit and next work
 
-See [repository audit](docs/REPOSITORY_AUDIT.md), [validation results](docs/VALIDATION_RESULTS.md), [Revit checklist](docs/REVIT_VALIDATION.md), [roadmap](docs/ROADMAP.md), and [next task handoff](docs/NEXT_CODEX_TASK.md). All runtime code and settings defaults from the uploads are preserved; three bundles moved into dedicated panels. AutoSleeve source was not supplied.
+See [repository audit](docs/REPOSITORY_AUDIT.md), [validation results](docs/VALIDATION_RESULTS.md), [Revit checklist](docs/REVIT_VALIDATION.md), [roadmap](docs/ROADMAP.md), and [next task handoff](docs/NEXT_CODEX_TASK.md). Imported sources are preserved, with intentional edits tracked in [runtime change provenance](docs/runtime_change_log.json); settings defaults are preserved; three bundles moved into dedicated panels. AutoSleeve source was not supplied.
 
 Cloud development uses Python 3.12 with no pip dependencies. For PowerShell-backed tests on Linux x86_64, run `python3 tools/install_powershell.py` before `bash CODEX_SETUP.sh`; the pinned toolchain stays outside the repository. This does not install Revit. Use only `INSTALL_WINDOWS.ps1` for manual Windows deployment; the legacy installer directory is historical compatibility code.
 
 Optional PDF comparison tools use `requirements-reports.txt` in a CPython virtual environment; NumPy/PyMuPDF are not pyRevit runtime dependencies. All five report CLIs import successfully here, but original comparison PDFs are absent.
 
-Phase 1 has started with a tested, isolated connector-graph foundation in `lib/robmep_core`. See [implementation status](docs/PHASE1_CONNECTOR_GRAPH.md). Live AutoHanger integration awaits a verified Revit connector adapter.
+Phase 1 has started with a tested, isolated connector-graph foundation in `lib/robmep_core`. See [implementation status](docs/PHASE1_CONNECTOR_GRAPH.md). Placement integration awaits field verification of the read-only Revit connector adapter.
 
-Auto Hanger now has an optional **Shift-click read-only connector diagnostic** for selected host fabrication duct/pipe. Normal-click placement behavior is preserved. See [usage and Revit field gate](docs/REVIT_CONNECTOR_DIAGNOSTIC.md) and [EVOLVE research findings](docs/research/EVOLVE_WORKFLOW_FINDINGS_2026-10-15.md).
+Auto Hanger now has an optional **Shift-click read-only connector diagnostic** for selected host fabrication duct/pipe. Normal-click placement safeguards and station-order semantics are preserved; settings now use an Advanced section and task batching avoids repeated full-list scans. See [usage and Revit field gate](docs/REVIT_CONNECTOR_DIAGNOSTIC.md) and [EVOLVE research findings](docs/research/EVOLVE_WORKFLOW_FINDINGS_2026-10-15.md).
+
+See the [hanger workflow comparison and ranked improvement plan](docs/research/HANGER_TOOL_COMPARISON_2026-10-15.md) for official-source evidence, measured batching results and the Revit UI/performance acceptance gate.

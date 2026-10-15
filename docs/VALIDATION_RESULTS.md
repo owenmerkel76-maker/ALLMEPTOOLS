@@ -96,3 +96,20 @@ network connectivity. `bash CODEX_SETUP.sh`: **394 tests passed, zero skips**,
 Original tool source-preservation checks pass. The revised code requires a retest
 on the same selection; synthetic gap fixtures are not a reproduction of the
 actual model's offsets, and no geometry/spacing/rod claim has been verified.
+
+## Hanger UI and batching evaluation increment
+
+`bash CODEX_SETUP.sh`: **401 tests passed, zero skips**, 47.077 seconds,
+with cloud CPython 3.12 and PowerShell 7.4.13. Both validators pass: 52 Python
+files, 16 XAML files, 17 commands across 10 panels. Seven added regressions cover
+legacy-equivalent identity batching, ordering, input preservation, malformed jobs,
+caller integration, all 15 named XAML controls, numeric/controller defaults,
+primary-mode visibility and advanced-state bindings. Original import manifest
+unchanged; all 124 original files checked (122 baseline matches, two exact
+intentional changes documented in `runtime_change_log.json`).
+
+Official-source evaluation and scoped microbenchmark results are in
+`research/HANGER_TOOL_COMPARISON_2026-10-15.md`. XML parsing/control contracts do
+not verify actual WPF rendering/NameScope behavior, IronPython execution, Revit
+probe timing, real hanger placement/attachment, or model rollback. Those remain
+field-test gates. No geometry, attachment or collision check was removed.

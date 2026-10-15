@@ -36,6 +36,7 @@ import rod_geometry
 import structure_picker
 import linked_obstacles
 import structure_stations
+from robmep_core.planning_batches import group_station_jobs
 
 DOC = revit.doc
 UIDOC = revit.uidoc
@@ -989,13 +990,9 @@ def probe_structural_station(job, choice, cfg):
 
 def align_structure_tasks(tasks, choice, cfg, stats, issues, notes):
     """Bounded rolled-back probes, followed by run-wide coverage selection."""
-    contexts=[]
-    for job in tasks:
-        context=job['run_context']
-        if not any(context is existing for existing in contexts):
-            contexts.append(context)
+    batches=group_station_jobs(tasks)
     selected=[]
-    total=max(1,len(contexts))
+    total=max(1,len(batches))
     budget=600
     stats['structure_probes']=0
     stats['structure_shifted']=0
@@ -1006,11 +1003,9 @@ def align_structure_tasks(tasks, choice, cfg, stats, issues, notes):
            for box in source.bounds[role].values()]
     with forms.ProgressBar(title='Checking steel connections: {value}/{max_value} runs',
                            cancellable=True,step=1) as progress:
-        for run_index,context in enumerate(contexts):
+        for run_index,(context,originals) in enumerate(batches):
             if progress.cancelled:
                 raise ValueError('Structural station search cancelled; probes rolled back')
-            originals=sorted([job for job in tasks if job['run_context'] is context],
-                             key=lambda job:job['station'])
             groups=[]; probes=[]; reasons=[]; candidate_failures=[]; cache={}
             run_budget=160
 

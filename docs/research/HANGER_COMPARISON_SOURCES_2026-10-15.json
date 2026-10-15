@@ -1,0 +1,27 @@
+{
+  "retrieved_utc_date": "2026-10-15",
+  "scope": "Official public documentation; not a hands-on commercial-tool benchmark. sha256 covers fetched HTML bytes.",
+  "sources": [
+    {
+      "url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-MEPEng/files/GUID-B6858FBC-8007-402F-850D-F3728B2A64E3.htm",
+      "title": "Place Fabrication Hangers",
+      "sha256": "818407f81b39d97eb8160fde2dcbaf1ff9952c8f62a22b0c5429f06628b082a5"
+    },
+    {
+      "url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-MEPEng/files/GUID-1F326FF6-C78B-464B-A35C-6B50D3A842A6.htm",
+      "title": "Video: Place Fabrication Hangers",
+      "sha256": "fe1b02502518c90a2465fd4d9de3485f3c880455d5c64680cb8ff882eeee6924"
+    },
+    {
+      "url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-MEPEng/files/GUID-894D1B47-C363-4C61-9798-B270D8D41992.htm",
+      "title": "Modify the Position of Hangers",
+      "sha256": "22d3e3313ee0d9a93fd08e1003c62359cccba398ed9203a2a48a43b22969ebe4"
+    },
+    {
+      "url": "https://www.trimble.com/en/products/trimble-sysque",
+      "final_url": "https://www.trimble.com/en/products/trimble-sysque",
+      "title": "Trimble SysQue | MEP Design Software For Revit Users",
+      "sha256": "1c6a64eae1ae10f98bca850b896aa0b58aecd1035dee1c5a080c5eccc025317b"
+    }
+  ]
+}

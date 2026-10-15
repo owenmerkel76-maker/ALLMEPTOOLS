@@ -42,3 +42,11 @@
 - Distinguish selected-but-rejected and unsupported selected parts from genuinely unselected OUTSIDE_SCOPE references. All incomplete data still blocks uniform-span planning across that boundary.
 - Report connected selected networks through transitions/fittings separately from uniform straight spans. Display summed part lengths as such, excluding fitting/connection offsets.
 - Add eight regression tests for gap proof, units/identity display, selection state, and transition network continuity. Normal-click placement and original tool files remain unchanged.
+
+## 2026-10-15 — Hanger workflow evaluation, simpler settings and stable batching
+
+- Compared official EVOLVE, Autodesk Revit 2025 and Trimble SysQue public workflows with actual hanger code; recorded evidence, retrieval limits and prioritized topology/rule/UI/profiling gates.
+- Simplified Auto Hanger settings using a closed Advanced section. Kept all named controls, service mapping, numeric/controller defaults, visible safe modes and explicit UNATTACHED policy. Live summaries expose hidden clearance/fitting option states.
+- Replaced repeated full-task identity scans with one stable identity-preserving batching pass. Geometry, rod verification, probe budgets, transactions and clearance checks are unchanged.
+- Added seven focused regressions and a reproducible optional Python batching benchmark. No Revit speedup or WPF runtime result is claimed.
+- Preserved the import manifest and continued checking all 124 original assets with an exact two-file change ledger (122 unchanged). No validation was disabled.

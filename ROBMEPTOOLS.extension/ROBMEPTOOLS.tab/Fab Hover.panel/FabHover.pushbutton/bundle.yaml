@@ -1,0 +1,12 @@
+title: Fab Hover
+tooltip: >-
+  Start or stop the cursor-following MEP fabrication information popup. Shift-click
+  opens ROBMEPTOOLS settings for displayed fields, categories, systems, fabrication
+  data, popup appearance, and behavior.
+author: ROBMEPTOOLS
+context: doc-project
+engine:
+  clean: false
+  full_frame: false
+  persistent: true
+  mainthread: true

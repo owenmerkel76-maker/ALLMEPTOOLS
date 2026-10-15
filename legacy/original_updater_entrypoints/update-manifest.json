@@ -1,0 +1,460 @@
+{
+  "bootstrap_files": [
+    "startup.py",
+    "lib/robmep_updater.py",
+    "ROBMEPTOOLS.tab/bundle.yaml",
+    "ROBMEPTOOLS.tab/Updates.panel/bundle.yaml",
+    "ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/bundle.yaml",
+    "ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/config.py",
+    "ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/icon.dark.png",
+    "ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/icon.png",
+    "ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/script.py",
+    "updater/Git-Location.psm1",
+    "updater/Update-Background.ps1",
+    "updater/Update-Core.psm1",
+    "update-manifest.json"
+  ],
+  "build": "ROBMEPTOOLS scheduled updater 1 / Duct AutoDim 6.8 text pockets / Duct AutoTag 5 all straight duct targets",
+  "files": {
+    "AUTODIM_SMART_V232B_AUTOARRANGE_RESTORED_MANIFEST.txt": "69ce0ebed785c39eef83d3ef98e47cc74a88f04301d8ab8239d503f9b3c999e0",
+    "AUTODIM_SMART_V232C_RIBBON_STABILITY_HOTFIX.txt": "81d15082bdb55113eb7d7711aa357b3f56560fc3c90259d569e6d5b1f9da28e0",
+    "AUTODIM_SMART_V232_SELECTED_GRIDS_MANIFEST.txt": "8d6c787c7cb59c47545a262cc821c77aa32cf7bae0c6151b56160defc7a8af73",
+    "AUTODIM_SMART_V233_SELECTED_GRID_COVERAGE_SAFE.txt": "0cdd2a61d71c30c875feaff0dbf546a874b745ff8ec5923baeccd766b4abcbbd",
+    "AUTODIM_SMART_V23_GEOMETRIC_CERTIFICATION_MANIFEST.txt": "b4669a35a99d4ba7ff3d355d66b61ded45519dada39f67686ca4c063c38762eb",
+    "AUTODIM_SMART_v2.3.2a_RIBBON_RELOAD_HOTFIX.txt": "7b86724bb5dbc17bb387d2de13a971d1a89b4dfaa36743eaa344685d24df34ae",
+    "DUCT_AUTOTAG_CROSS_PROFILE_SUPPRESSION_20261007_v23.md": "3719bab43e1c0c87becd8f5c231ae27fff0543342bfc41f95dd7abf5fb939a48",
+    "DUCT_AUTOTAG_HUMAN_PLAN_ANNOTATION_AUDIT_20261007_v22.md": "f6f4249c25d22de26d38d221d025e7a70fcccebb7aaa3c68408fa5d00b8538ce",
+    "DUCT_AUTOTAG_SQUARE_ROUND_TRANSITION_FIX_20261007_v21.md": "ed2c9fcb19676f73bd1e376054f79011a1d8ba05e807d2ae4d3cf774a2ed74dd",
+    "DUCT_HUMAN_COMPLETE_ANNOTATION_RESEARCH_20261007_v24.md": "0e8bf6ee56e8ed0bc720a8f4be67ce8f6644d04f8095feb341d31c2acf7a07b8",
+    "HUMAN_DIM_ORGANIZER_AUDIT_20261006.md": "872ee2d3d803ca115f437458549292d75ee1f26b8aa6aefd9a4323ae850b0ac9",
+    "HUMAN_REFERENCE_AUDIT_20261006.md": "d1494aad6712fba341aade4b4ac16bc613dfba9290064065721c8f81b8f44557",
+    "PIPE_DWP_CENTERLINE_ONLY_RISER_FIX_20261007_v20.md": "9f63335170fdec511d0d1cd0bec005068e726e570d46abcf3839e21fdc76979f",
+    "PIPE_DWP_HUMANIZATION_AUDIT_20261007.md": "817c99ba97556f614dc50fcef7408626952fca5591db1283804fa0a038be98e6",
+    "PIPE_DWP_HUMANIZATION_AUDIT_20261007_v19.md": "d4e909ebc66e0df103c14baa24aebb0d8fcc20e7b706e16edbb0b42c9cd6f25b",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/README.txt": "24d59e1ab251c7a7d4cf286ff7239d38eeaf0ee28165905f9cc3c160dc6e0385",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/autodim.xaml": "7112d1126bdb93afa08c8d838410101d55491512bceaa8eadffa05cdab3af7f5",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/bundle.yaml": "3ecff0144f4aafa4a448cdb281b7ac0a83edcb10e12897ebf33c6539de96728b",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/engines/__init__.py": "8c168cf25b348ea1ed71844508978d4705fb12d35062ba6f9ace53e1da5182ac",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/engines/duct_engine.py": "d91aa78f1d4b5b91ad0fc95fd238c02c7edc993c856cd70bc870f3efa9d9268d",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/engines/pipe_engine.py": "8eee50bc13c61560e35fe9bdfb4440b561026d90686a87879c402a9dac266991",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/icon.dark.png": "ca31a1ebfe118cba257fc622f0ddf6ade3892c1b00963559954c63efca690c3b",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/icon.png": "ca31a1ebfe118cba257fc622f0ddf6ade3892c1b00963559954c63efca690c3b",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/script.py": "2dedae5232ee041ecddc7434343945bd7dc1d620b668f4695caf0e255541dbec",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Controls.xaml": "9be14bcb354550d93b2018460fc681b0f4467847849c861b4119d34ceda33914",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Icons.xaml": "7c0236abd4b4ad12dfed18601ffe53588179042afffc94ecb3a3e0b5d87ee4b1",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Theme.xaml": "e5b1aabb26ef5e7df4f8aa670d934cbecb37899b74d8363971692c9400cc90dc",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS_MENU_TEMPLATE.xaml": "09958e0d014783d8cdd33357f9a8962d86a18c8dabc3d8272321065f0e5d9706",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS_STYLE_GUIDE.md": "482c42768cde1fcb2b5694723c283f94ccf8ec0c397fc33d7e78587944349883",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/README.txt": "c5af01ed293160a770e6719df8323063c5829d4f6a5e53519869f6068ce7cac1",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/autotag.xaml": "7acce828f5599060faf355041ef3ecfb082b5d3190d9d311db887fdb9e435fe3",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/autotag_components.py": "8652ed05e2395546e832dabbdc4aee9838e301a709d197e7544a2ed185cb95ed",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/autotag_menu.py": "a46eb9265d33e8645c3dc98b7e8890071ab48a145dc63bc5560bbb798454137d",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/bundle.yaml": "ab0110bed9f5ac0db74d522e405626a03a1ffd539ae1a89d72b0212058a43fd7",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/engines/duct_engine.py": "291f7ed5bda7a777df1b3865f200c332c23d4cedf8fde2e66fb28de40db6901f",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/engines/pipe_engine.py": "6b4e99c49803eaa6fd24f4f961262cfc5127b9c12c329ed092a0f5e48fbafa28",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/icon.dark.png": "db7f19f0dddf675bbc1170bc93343c34d5f6b312112931bba200386e7c1f5a10",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/icon.png": "6250fb0055f159b506bda3cb05309938cc086c447629add674783335ba5ed889",
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/script.py": "c965f6a41da2b6682c60ef6312611c0e764ead765a4e88b1c29954fc9e00a940",
+    "ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/README.txt": "49fb643aa4d34205ccec2999a8cc5aa3c6c35884d36f01820fb28bd0c4eb535b",
+    "ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/bundle.yaml": "a71f4d093a0fb0e30fc667096eca4da3d01bbd4fa5af730ae5e8f5e837f4396d",
+    "ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/icon.dark.png": "596b20941b523a90a5274db225ba3cdb62dfe306add57b49c200a73c712d9c6f",
+    "ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/icon.png": "42b524db06499d9af628fcd097ff99ac12153b748c19ecfa69680567e690b5ce",
+    "ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/organizer.xaml": "71b727f3d8358a7b5b23a9399332c9bab3c7b1101f36d6cb82160cad1df718b4",
+    "ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/script.py": "c32d5ed96baab7ac783c4d7fec88728df8eee15f1fad267977af4421e1f56cc2",
+    "ROBMEPTOOLS.tab/Annotation.panel/bundle.yaml": "cb2fb8aef7a3a3a1810b2383166bf240195af73fdd0faf4d86b303a4196653d5",
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/README.txt": "97af7569dd3a3cfc9b93725c8f3c6fe5e810fc50f62f63664a0f8061e734bba3",
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/bundle.yaml": "a4520b61afb9c07b0060b4275c0a9218acaba2dba375300f6bfeef4fbe356822",
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/icon.dark.png": "a1307973763661aa59d1cbe01ffba4a14f1fd7d29ea9f614095779028a3d1b1f",
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/icon.png": "a1307973763661aa59d1cbe01ffba4a14f1fd7d29ea9f614095779028a3d1b1f",
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/script.py": "110e894d21520578023ebe321b0cedfbb80ec19c4dd1444a9115a4af3d1b5715",
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/README.txt": "5ba03705c6f80912d69f7240e4eea6c3230d2bc914380a0d7773457e67b3db3c",
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/bundle.yaml": "1ef4f75505672a84f7a3c01f1aea6ae9012c08a5976f7128caf9121c615be483",
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/icon.dark.png": "73a75b6e61e0de3b0fefcf8400994680efba871e1337fc7eb6779d8fe22b7aaa",
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/icon.png": "73a75b6e61e0de3b0fefcf8400994680efba871e1337fc7eb6779d8fe22b7aaa",
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/script.py": "a12d3a614749890d54a226e94a4383aa08b2166355688409d2d5e8bccc5026a1",
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/FOUNDATION_BUILD.txt": "8a38f03a47e821e4815e22fd43592ae3eed2f63b32946ecc6994325f654b7817",
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/bundle.yaml": "124bfe2244eb13b83b264d23da5429718bacb958849169d3f9aa726ebab7e58b",
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/config.py": "91c15e2e33e2091a3859568bf6208a88a57c982710cf1a519898ba9b4c2992b1",
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/config.xaml": "dd18bb427abfbee41960cb6fc632b2372a8040b50ed5f260fe86ce9675aad3ea",
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/fabhover_core.py": "b5ae9fbf9f36e998e6daea86692ef3f74b5250ad8b68401828855aece401e774",
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/fabhover_settings.py": "692b7e1c409228b0d5f27b54702fc5a4ed835e4a7d1c1706f05a562f8aa6c3c9",
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/fabhover_state.py": "34f1176f9a09157b77edf9a4b54351ba6602c43aac28c6d0f2d2ef52dc9ace83",
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/icon.dark.png": "382e77df817f1ebc11912026ea4ef28571b260e348b306d1cb13ab9b9c054651",
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/icon.png": "382e77df817f1ebc11912026ea4ef28571b260e348b306d1cb13ab9b9c054651",
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/script.py": "1f1c1869c3b7cc935942547309d7815cb312b212ec24634cec91bc26e8ea2c38",
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Controls.xaml": "9be14bcb354550d93b2018460fc681b0f4467847849c861b4119d34ceda33914",
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Icons.xaml": "7c0236abd4b4ad12dfed18601ffe53588179042afffc94ecb3a3e0b5d87ee4b1",
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Theme.xaml": "e5b1aabb26ef5e7df4f8aa670d934cbecb37899b74d8363971692c9400cc90dc",
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/ui/ROBMEPTOOLS_MENU_TEMPLATE.xaml": "09958e0d014783d8cdd33357f9a8962d86a18c8dabc3d8272321065f0e5d9706",
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/ui/ROBMEPTOOLS_STYLE_GUIDE.md": "482c42768cde1fcb2b5694723c283f94ccf8ec0c397fc33d7e78587944349883",
+    "ROBMEPTOOLS.tab/Fabrication.panel/bundle.yaml": "69a5d3efa91e5104c334720d8675f62d7673604a4eecf1bf73263ee1fff5a179",
+    "ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/bundle.yaml": "63b48dcc2ec9e60516f0b174879a77f76d7e4375cad32e7ee9aa9d4b9bb8dfb2",
+    "ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/config.py": "e4ab971858ea879b8f15bc2fdafa5fe404e12fd99ee36c479b2c7ce76cb047a6",
+    "ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/icon.dark.png": "ca31a1ebfe118cba257fc622f0ddf6ade3892c1b00963559954c63efca690c3b",
+    "ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/icon.png": "ca31a1ebfe118cba257fc622f0ddf6ade3892c1b00963559954c63efca690c3b",
+    "ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/script.py": "b831b714e23b6ce599d8be3d1cbd3e7616a88211c9fd6813c23924ffa6d0d7bf",
+    "ROBMEPTOOLS.tab/Updates.panel/bundle.yaml": "e986d293c27595ccd647cb9337a3a0a11a960c60a34fe0ea8160aaa0c818f77b",
+    "ROBMEPTOOLS.tab/bundle.yaml": "288f76d99309fac604047080c139cc9705d688efdf66d07a7a942338affed2ae",
+    "ROBMEPTOOLS_AUTODIM_REVIEW.md": "828e30caaf1bf7d74718969a0f55e7eb731a823467cadbe19b0b132665ceab68",
+    "ROBMEPTOOLS_CLOUD_IMPROVEMENTS.md": "a1df998664fab4a876273f24ec21b12a3ca352247a1e079cc539646faa841de2",
+    "ROBMEPTOOLS_DUCT_AUTODIM_64BIT_REVIEW.md": "2e726271c9387751c610189044992111c2bac64a5c59832d63393a5b70fbd679",
+    "ROBMEPTOOLS_DUCT_AUTODIM_AXIS_REVIEW.md": "9f1cc3e3689e41d78fd1ce2624e5d95c00e17dba705f87e884c14de3b0d3ac76",
+    "ROBMEPTOOLS_DUCT_AUTODIM_RUNTIME_REVIEW.md": "6ec7f0c74d87ac0d13afb1c3c9be71d677f2607af2a8eabc35abecc9e98960d1",
+    "ROBMEPTOOLS_DUCT_AUTOTAG_REVIEW.md": "6cf183b1572adb34711ba84dc12c052cd92256901457c8e067cf74c5906964dd",
+    "ROBMEPTOOLS_NATIVE_KS.txt": "5171f6125b9c71c2a04ec427283e426870a68dfed6244db81c570a964cda40cc",
+    "ROBMEPTOOLS_PIPE_REVIEW.md": "67cb9447f913a70db12bd8e0b2d19f6026e1d7d320a438f69beec0a984da184e",
+    "ROBMEPTOOLS_RELEASE_20261006.md": "2b57d6865f04c06c1a101a4e29d8ad7d359186c05269676b01a9909984f3f39d",
+    "ROBMEPTOOLS_RELEASE_20261007_v24.md": "49894e3b1eca3ec206f86e0fe08aff6f294a524369ccb76bbc091e91881aaccc",
+    "WASC_HUMAN_DRAFTING_AUDIT_20261006.md": "ee4451691d0624b95b7cae16db8b60d343e90f4f5ed5028cac8b3333e58fa23d",
+    "lib/robmep_updater.py": "55ed097556904ce18c07bc2764e5437bfe108723b869293d10f412877c27ed68",
+    "startup.py": "a8ae346db19001760dbe74620ebbc4702875ccc050ee2d4a4538d4e5b55ffe7e",
+    "updater/Git-Location.psm1": "4c3ca0b6f47bd6e42dba094ddc0c97e630e63fd414bdb0f47c52ccc5779d2779",
+    "updater/Update-Background.ps1": "ce1372bcf60b5f4b3cfd72a3230f0f5fc563b95c5185c9bdc661c1ab2d30c699",
+    "updater/Update-Core.psm1": "6ebbe7290d7a0dd39ad5a89690f02fd390f900aeae0618631fc25e4b2b106663"
+  },
+  "previous_hashes": {
+    "AUTODIM_SMART_V232B_AUTOARRANGE_RESTORED_MANIFEST.txt": [
+      "69ce0ebed785c39eef83d3ef98e47cc74a88f04301d8ab8239d503f9b3c999e0"
+    ],
+    "AUTODIM_SMART_V232C_RIBBON_STABILITY_HOTFIX.txt": [
+      "81d15082bdb55113eb7d7711aa357b3f56560fc3c90259d569e6d5b1f9da28e0"
+    ],
+    "AUTODIM_SMART_V232_SELECTED_GRIDS_MANIFEST.txt": [
+      "8d6c787c7cb59c47545a262cc821c77aa32cf7bae0c6151b56160defc7a8af73"
+    ],
+    "AUTODIM_SMART_V233_SELECTED_GRID_COVERAGE_SAFE.txt": [
+      "0cdd2a61d71c30c875feaff0dbf546a874b745ff8ec5923baeccd766b4abcbbd"
+    ],
+    "AUTODIM_SMART_V23_GEOMETRIC_CERTIFICATION_MANIFEST.txt": [
+      "b4669a35a99d4ba7ff3d355d66b61ded45519dada39f67686ca4c063c38762eb"
+    ],
+    "AUTODIM_SMART_v2.3.2a_RIBBON_RELOAD_HOTFIX.txt": [
+      "7b86724bb5dbc17bb387d2de13a971d1a89b4dfaa36743eaa344685d24df34ae"
+    ],
+    "DUCT_AUTOTAG_CROSS_PROFILE_SUPPRESSION_20261007_v23.md": [
+      "3719bab43e1c0c87becd8f5c231ae27fff0543342bfc41f95dd7abf5fb939a48"
+    ],
+    "DUCT_AUTOTAG_HUMAN_PLAN_ANNOTATION_AUDIT_20261007_v22.md": [
+      "f6f4249c25d22de26d38d221d025e7a70fcccebb7aaa3c68408fa5d00b8538ce"
+    ],
+    "DUCT_AUTOTAG_SQUARE_ROUND_TRANSITION_FIX_20261007_v21.md": [
+      "ed2c9fcb19676f73bd1e376054f79011a1d8ba05e807d2ae4d3cf774a2ed74dd"
+    ],
+    "DUCT_HUMAN_COMPLETE_ANNOTATION_RESEARCH_20261007_v24.md": [
+      "0e8bf6ee56e8ed0bc720a8f4be67ce8f6644d04f8095feb341d31c2acf7a07b8"
+    ],
+    "HUMAN_DIM_ORGANIZER_AUDIT_20261006.md": [
+      "872ee2d3d803ca115f437458549292d75ee1f26b8aa6aefd9a4323ae850b0ac9"
+    ],
+    "HUMAN_REFERENCE_AUDIT_20261006.md": [
+      "d1494aad6712fba341aade4b4ac16bc613dfba9290064065721c8f81b8f44557"
+    ],
+    "PIPE_DWP_CENTERLINE_ONLY_RISER_FIX_20261007_v20.md": [
+      "9f63335170fdec511d0d1cd0bec005068e726e570d46abcf3839e21fdc76979f"
+    ],
+    "PIPE_DWP_HUMANIZATION_AUDIT_20261007.md": [
+      "817c99ba97556f614dc50fcef7408626952fca5591db1283804fa0a038be98e6"
+    ],
+    "PIPE_DWP_HUMANIZATION_AUDIT_20261007_v19.md": [
+      "d4e909ebc66e0df103c14baa24aebb0d8fcc20e7b706e16edbb0b42c9cd6f25b"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/README.txt": [
+      "24d59e1ab251c7a7d4cf286ff7239d38eeaf0ee28165905f9cc3c160dc6e0385"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/autodim.xaml": [
+      "7112d1126bdb93afa08c8d838410101d55491512bceaa8eadffa05cdab3af7f5"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/bundle.yaml": [
+      "05cb0d63e287577fe89e63ff95a3160408df93ff15f6f83ddda4b4b5bced3aa1",
+      "3ecff0144f4aafa4a448cdb281b7ac0a83edcb10e12897ebf33c6539de96728b",
+      "555b67ced5b6d0770c272c8c4ae71815767bc2f2a24ecb00b9a8a6b1682fcc92"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/engines/__init__.py": [
+      "8c168cf25b348ea1ed71844508978d4705fb12d35062ba6f9ace53e1da5182ac"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/engines/duct_engine.py": [
+      "0744a78b65b221af602706c575e74df5ee323affc88589366124185a915b2d72",
+      "449dfc91e77dca143f2da640bfb9071173d8fac72965f04d7bc74016a3413a3f",
+      "533f251c2fe725e2a6ae315ce65db3e27c9eba3a1863cfa2d1ef58ca236808b1",
+      "5cf1219e4f9faffebdfeeb0a9204fbcdb2d7f0e68190a76e7127ccb702b340fc",
+      "ac2c7c55a332011cd44d8cc6f058f786d2923540c12b97cb38f3602be42e99f1",
+      "c00d4cbe11eaabbd63a3cd21e50693bd5aeeee12ec31b087cf838c8e91e7deed",
+      "c103a22013cd8126b1f5783feba4a0669dad943546fc072ab50b4311e43f0a8a",
+      "cd51ac32dc7e73e2e3b7c545158191a5d24de0ce16505e1a13b017e4411f3b04",
+      "d559d310e5c2f6cd8422999343c94deaf8d6c395ef1a0220175cb50a39b2abde",
+      "d91aa78f1d4b5b91ad0fc95fd238c02c7edc993c856cd70bc870f3efa9d9268d",
+      "e60c72f4653e11a552a5391fcf9d43175851f5590b8d5599a9d9be0408c969fe",
+      "f9f84f32722d61254eafb98afeae4c73901e42d0f33794845a6e486d979f72c9"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/engines/pipe_engine.py": [
+      "8eee50bc13c61560e35fe9bdfb4440b561026d90686a87879c402a9dac266991",
+      "e976e9de3c4948c27cc595e6f3d5f40596d6717ee891b692b0e167bf858f42b4"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/icon.dark.png": [
+      "ca31a1ebfe118cba257fc622f0ddf6ade3892c1b00963559954c63efca690c3b"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/icon.png": [
+      "ca31a1ebfe118cba257fc622f0ddf6ade3892c1b00963559954c63efca690c3b"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/script.py": [
+      "2dedae5232ee041ecddc7434343945bd7dc1d620b668f4695caf0e255541dbec",
+      "c97ab6758723dbdaa75ec178c6ca8b2bffd9348707be9b9cf84884bf33cbbb6e"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Controls.xaml": [
+      "9be14bcb354550d93b2018460fc681b0f4467847849c861b4119d34ceda33914"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Icons.xaml": [
+      "7c0236abd4b4ad12dfed18601ffe53588179042afffc94ecb3a3e0b5d87ee4b1"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Theme.xaml": [
+      "e5b1aabb26ef5e7df4f8aa670d934cbecb37899b74d8363971692c9400cc90dc"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS_MENU_TEMPLATE.xaml": [
+      "09958e0d014783d8cdd33357f9a8962d86a18c8dabc3d8272321065f0e5d9706"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS_STYLE_GUIDE.md": [
+      "482c42768cde1fcb2b5694723c283f94ccf8ec0c397fc33d7e78587944349883"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/README.txt": [
+      "c5af01ed293160a770e6719df8323063c5829d4f6a5e53519869f6068ce7cac1"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/autotag.xaml": [
+      "41fe48801d2f74dae8dfc3cad679e90d293a033716b4321bd734e5d6b569bb57",
+      "4a379ecd66131930c2c468a97523fabe57a2a44e192851988e1b85a5a7cd23d5"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/autotag_components.py": [
+      "41c5203b3f1bfadae041199dc7539dae67a4aa7ffd864b2a20c7b1adfc02a2de",
+      "8652ed05e2395546e832dabbdc4aee9838e301a709d197e7544a2ed185cb95ed",
+      "f6bd4f27a8f64470f974b898795cfab6db01dd7ca8c275030e403966e9c80085"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/autotag_menu.py": [
+      "014e5eee0e12a0e4a4c892ac7b00ffe35640bcb086a061939c5760e273479c99",
+      "db06bf3d1ae345129a3b2a47c49f06acfddd55fbf82750047bd331999f8b183a"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/bundle.yaml": [
+      "47a9301e5e3d6a6544cce892411a819f414b9420bba5d34293d1329e91eba75d",
+      "ab0110bed9f5ac0db74d522e405626a03a1ffd539ae1a89d72b0212058a43fd7"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/engines/duct_engine.py": [
+      "17e1e29097324973314fc5aab7a5a67be39fcb7fef07840a0e69dd7dafed2889",
+      "3805fb86d23493b2d8d233ff5a4c197bd21fbe2fef30e463a7149d1f56733c17",
+      "597e672cad8e9c3f0d6542393481426dc96c0b4685a770bb92f5ca54469a0a7b",
+      "7ba51297ff220d8a314ac58fa1101e6ae45faeb17fe44700b7a46705e782b230",
+      "8d59df854ec2bd55cc66164905cc5428cf9810f9fc0f7e126edd48a7acf3d9e9",
+      "9775974a4c32eb5742bba3ef3423e2bb285bdf9826354ce95d6dd1a90ac4e3be",
+      "fbf75fd7168cef744a1e9d8d253ec7bd8226f0fa2c8bef87639e4b6a5a278377"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/engines/pipe_engine.py": [
+      "6b4e99c49803eaa6fd24f4f961262cfc5127b9c12c329ed092a0f5e48fbafa28",
+      "fad958549844768edaf03c46ed1bb44770515fb27a1727a5283168930e567402"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/icon.dark.png": [
+      "db7f19f0dddf675bbc1170bc93343c34d5f6b312112931bba200386e7c1f5a10"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/icon.png": [
+      "6250fb0055f159b506bda3cb05309938cc086c447629add674783335ba5ed889"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/script.py": [
+      "c965f6a41da2b6682c60ef6312611c0e764ead765a4e88b1c29954fc9e00a940"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/README.txt": [
+      "49fb643aa4d34205ccec2999a8cc5aa3c6c35884d36f01820fb28bd0c4eb535b"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/bundle.yaml": [
+      "a71f4d093a0fb0e30fc667096eca4da3d01bbd4fa5af730ae5e8f5e837f4396d"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/icon.dark.png": [
+      "596b20941b523a90a5274db225ba3cdb62dfe306add57b49c200a73c712d9c6f"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/icon.png": [
+      "42b524db06499d9af628fcd097ff99ac12153b748c19ecfa69680567e690b5ce"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/organizer.xaml": [
+      "71b727f3d8358a7b5b23a9399332c9bab3c7b1101f36d6cb82160cad1df718b4"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/script.py": [
+      "c32d5ed96baab7ac783c4d7fec88728df8eee15f1fad267977af4421e1f56cc2"
+    ],
+    "ROBMEPTOOLS.tab/Annotation.panel/bundle.yaml": [
+      "cb2fb8aef7a3a3a1810b2383166bf240195af73fdd0faf4d86b303a4196653d5"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/README.txt": [
+      "97af7569dd3a3cfc9b93725c8f3c6fe5e810fc50f62f63664a0f8061e734bba3"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/bundle.yaml": [
+      "a4520b61afb9c07b0060b4275c0a9218acaba2dba375300f6bfeef4fbe356822"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/icon.dark.png": [
+      "a1307973763661aa59d1cbe01ffba4a14f1fd7d29ea9f614095779028a3d1b1f"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/icon.png": [
+      "a1307973763661aa59d1cbe01ffba4a14f1fd7d29ea9f614095779028a3d1b1f"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/script.py": [
+      "110e894d21520578023ebe321b0cedfbb80ec19c4dd1444a9115a4af3d1b5715"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/README.txt": [
+      "5ba03705c6f80912d69f7240e4eea6c3230d2bc914380a0d7773457e67b3db3c"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/bundle.yaml": [
+      "1ef4f75505672a84f7a3c01f1aea6ae9012c08a5976f7128caf9121c615be483"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/icon.dark.png": [
+      "73a75b6e61e0de3b0fefcf8400994680efba871e1337fc7eb6779d8fe22b7aaa"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/icon.png": [
+      "73a75b6e61e0de3b0fefcf8400994680efba871e1337fc7eb6779d8fe22b7aaa"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/script.py": [
+      "a12d3a614749890d54a226e94a4383aa08b2166355688409d2d5e8bccc5026a1"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/FOUNDATION_BUILD.txt": [
+      "8a38f03a47e821e4815e22fd43592ae3eed2f63b32946ecc6994325f654b7817"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/bundle.yaml": [
+      "124bfe2244eb13b83b264d23da5429718bacb958849169d3f9aa726ebab7e58b"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/config.py": [
+      "91c15e2e33e2091a3859568bf6208a88a57c982710cf1a519898ba9b4c2992b1"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/config.xaml": [
+      "dd18bb427abfbee41960cb6fc632b2372a8040b50ed5f260fe86ce9675aad3ea"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/fabhover_core.py": [
+      "b5ae9fbf9f36e998e6daea86692ef3f74b5250ad8b68401828855aece401e774"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/fabhover_settings.py": [
+      "692b7e1c409228b0d5f27b54702fc5a4ed835e4a7d1c1706f05a562f8aa6c3c9"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/fabhover_state.py": [
+      "34f1176f9a09157b77edf9a4b54351ba6602c43aac28c6d0f2d2ef52dc9ace83"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/icon.dark.png": [
+      "382e77df817f1ebc11912026ea4ef28571b260e348b306d1cb13ab9b9c054651"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/icon.png": [
+      "382e77df817f1ebc11912026ea4ef28571b260e348b306d1cb13ab9b9c054651"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/script.py": [
+      "1f1c1869c3b7cc935942547309d7815cb312b212ec24634cec91bc26e8ea2c38"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Controls.xaml": [
+      "9be14bcb354550d93b2018460fc681b0f4467847849c861b4119d34ceda33914"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Icons.xaml": [
+      "7c0236abd4b4ad12dfed18601ffe53588179042afffc94ecb3a3e0b5d87ee4b1"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Theme.xaml": [
+      "e5b1aabb26ef5e7df4f8aa670d934cbecb37899b74d8363971692c9400cc90dc"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/ui/ROBMEPTOOLS_MENU_TEMPLATE.xaml": [
+      "09958e0d014783d8cdd33357f9a8962d86a18c8dabc3d8272321065f0e5d9706"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/ui/ROBMEPTOOLS_STYLE_GUIDE.md": [
+      "482c42768cde1fcb2b5694723c283f94ccf8ec0c397fc33d7e78587944349883"
+    ],
+    "ROBMEPTOOLS.tab/Fabrication.panel/bundle.yaml": [
+      "69a5d3efa91e5104c334720d8675f62d7673604a4eecf1bf73263ee1fff5a179"
+    ],
+    "ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/bundle.yaml": [
+      "63b48dcc2ec9e60516f0b174879a77f76d7e4375cad32e7ee9aa9d4b9bb8dfb2"
+    ],
+    "ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/config.py": [
+      "691cc76c6d91cab0b619624515ffaf5e1345ea3ab9f6b6b48a5edaeb5c30551a",
+      "e4ab971858ea879b8f15bc2fdafa5fe404e12fd99ee36c479b2c7ce76cb047a6"
+    ],
+    "ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/icon.dark.png": [
+      "ca31a1ebfe118cba257fc622f0ddf6ade3892c1b00963559954c63efca690c3b"
+    ],
+    "ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/icon.png": [
+      "ca31a1ebfe118cba257fc622f0ddf6ade3892c1b00963559954c63efca690c3b"
+    ],
+    "ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/script.py": [
+      "b831b714e23b6ce599d8be3d1cbd3e7616a88211c9fd6813c23924ffa6d0d7bf"
+    ],
+    "ROBMEPTOOLS.tab/Updates.panel/bundle.yaml": [
+      "e986d293c27595ccd647cb9337a3a0a11a960c60a34fe0ea8160aaa0c818f77b"
+    ],
+    "ROBMEPTOOLS.tab/bundle.yaml": [
+      "288f76d99309fac604047080c139cc9705d688efdf66d07a7a942338affed2ae",
+      "5aa52e531d690c05ad14d545c4e810d92b31b706ab76dd28adae934793e6d852"
+    ],
+    "ROBMEPTOOLS_AUTODIM_REVIEW.md": [
+      "828e30caaf1bf7d74718969a0f55e7eb731a823467cadbe19b0b132665ceab68"
+    ],
+    "ROBMEPTOOLS_CLOUD_IMPROVEMENTS.md": [
+      "a1df998664fab4a876273f24ec21b12a3ca352247a1e079cc539646faa841de2"
+    ],
+    "ROBMEPTOOLS_DUCT_AUTODIM_64BIT_REVIEW.md": [
+      "2e726271c9387751c610189044992111c2bac64a5c59832d63393a5b70fbd679"
+    ],
+    "ROBMEPTOOLS_DUCT_AUTODIM_AXIS_REVIEW.md": [
+      "9f1cc3e3689e41d78fd1ce2624e5d95c00e17dba705f87e884c14de3b0d3ac76"
+    ],
+    "ROBMEPTOOLS_DUCT_AUTODIM_RUNTIME_REVIEW.md": [
+      "6ec7f0c74d87ac0d13afb1c3c9be71d677f2607af2a8eabc35abecc9e98960d1"
+    ],
+    "ROBMEPTOOLS_DUCT_AUTOTAG_REVIEW.md": [
+      "01a5d09f92d9b9a38416fa4dc3a24f41ae9d094a00501099f6ad63361a2b52c0",
+      "34c5cee302ed5d60a0541f1c62ce4fc436a7236f57ba9dc9b63092c89d317bd2",
+      "7257ade41e8b91b9a700e519b8e88e1faf98f8453d71ddaba8a54f5154f15c8f",
+      "be5601dcd657582ec171a57ad88593817951ea717032556c9f7fc3316549d006",
+      "c06f4627ebc7b856238fed6294392b824cfe5650f6b3cd296e2f3026383dcda1"
+    ],
+    "ROBMEPTOOLS_NATIVE_KS.txt": [
+      "5171f6125b9c71c2a04ec427283e426870a68dfed6244db81c570a964cda40cc"
+    ],
+    "ROBMEPTOOLS_PIPE_REVIEW.md": [
+      "67cb9447f913a70db12bd8e0b2d19f6026e1d7d320a438f69beec0a984da184e"
+    ],
+    "ROBMEPTOOLS_RELEASE_20261006.md": [
+      "2b57d6865f04c06c1a101a4e29d8ad7d359186c05269676b01a9909984f3f39d"
+    ],
+    "ROBMEPTOOLS_RELEASE_20261007_v24.md": [
+      "49894e3b1eca3ec206f86e0fe08aff6f294a524369ccb76bbc091e91881aaccc"
+    ],
+    "WASC_HUMAN_DRAFTING_AUDIT_20261006.md": [
+      "ee4451691d0624b95b7cae16db8b60d343e90f4f5ed5028cac8b3333e58fa23d"
+    ],
+    "lib/robmep_updater.py": [
+      "2f9eed20fddf9c12d115689da0235a28cc1ab9bfc37d5326b81e167819d2057d",
+      "55ed097556904ce18c07bc2764e5437bfe108723b869293d10f412877c27ed68",
+      "cc607afca343c1781a645138a5396287a99542e45ff9cf6c51eafeb7109d11b0"
+    ],
+    "startup.py": [
+      "a8ae346db19001760dbe74620ebbc4702875ccc050ee2d4a4538d4e5b55ffe7e",
+      "d8579b055475833784bff222886bde7d7a27d2cb34370d029119c4ca854a1bd6"
+    ],
+    "update-manifest.json": [
+      "0f9525677095c2c8ff476faa64f2f74c6d231ad38769dbed9387632dc543d80b",
+      "2d31c328527c0fd19133b33df8d196aac319aba76eba727b99efb4d98643e5c9",
+      "2f47ba8fcec51b1f0798652b1d902bfd8c5d920379d1ba466eb95cfbff89c98f",
+      "4086449dce5c52dd5e800c920bc5ed1b0e1b11937d68d8d279bd66ff6800fb40",
+      "506ff0a3d292930f880a6b5fa60ad85a038d63c8db68d36c006d378671bfefd5",
+      "53a1f59221cbed50d6906ed173755521925662a9fbf77d709bc7dbfe8570aeca",
+      "54e62e19b085b62c8603e806be07bdb77fcea2cb7cf50d5cbef286d4a58a2783",
+      "77c9ce408ff04f514c0f030463a98922c5c15b1b2e9a3756becf9087f87fd5b4",
+      "8a6239e240b3a079d541ae4bfbd9eca58d89a44eba371d15fbc0d403e716610b",
+      "8ba3442d5a2b8ea288984fcbebb1a1e30c70d8bd30d0037904442a30a4d4a23a",
+      "9d6298b34322752b70aa62d73108090ba2c9e61fc9daa398e5a1a1901f56a7c4",
+      "9f61014739ae72d5b540d76b663dc0137e5bb7bb08011405cefd3b71567aefe4",
+      "cf5493ba5b88aecb1e2c299b8ec4dce659ac39e389e9b2eb1f4474156a1555e2",
+      "d0d2ca4a86fe2f8f472e5ea7c804f956e4952c514eb67a2b9b3bae5d838d478c",
+      "d6a4a1761ee45ca92f1047c1d77dad30d1bd1200d2ab279f6028ee735a594b93",
+      "f62b423b9feb9aa3d18ff1edfa33ba8e2c5fc0e8328255bffefaba0e15f8b44d"
+    ],
+    "updater/Git-Location.psm1": [
+      "4c3ca0b6f47bd6e42dba094ddc0c97e630e63fd414bdb0f47c52ccc5779d2779"
+    ],
+    "updater/Update-Background.ps1": [
+      "1cc6c6c119684692ddd7c1f6362154e82b1806df7476d533d86e42b3a0a3526c",
+      "ce1372bcf60b5f4b3cfd72a3230f0f5fc563b95c5185c9bdc661c1ab2d30c699",
+      "ddc5c479b5a6d990070eaaa2994cd5eda87573f2f287ec06d5dc1193401a9768"
+    ],
+    "updater/Update-Core.psm1": [
+      "6ebbe7290d7a0dd39ad5a89690f02fd390f900aeae0618631fc25e4b2b106663"
+    ]
+  },
+  "restart_required": false,
+  "schema": 1
+}

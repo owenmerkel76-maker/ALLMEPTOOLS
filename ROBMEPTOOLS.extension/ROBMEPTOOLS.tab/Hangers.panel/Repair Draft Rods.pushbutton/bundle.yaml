@@ -1,0 +1,7 @@
+title: Repair Draft Rods
+tooltip: >-
+  Repair existing Auto Hanger v0.3.6 DRAFTs in place. Measures EACH rod to
+  selected linked IFC framing first, then the native roof/deck underneath;
+  uses exact overhead solid intersection. No hanger creation or deletion.
+  Does not mark rods as attached. Review clearance and anchorage manually.
+author: ROB MEP Tools

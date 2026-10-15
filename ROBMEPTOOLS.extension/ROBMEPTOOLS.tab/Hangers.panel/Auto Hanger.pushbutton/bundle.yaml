@@ -1,0 +1,8 @@
+title: Auto Hanger
+tooltip: >-
+  Revit fabrication duct hangers: size-aware preliminary SMACNA spacing,
+  accessory and side-tap clearance, preferred IFC beam/joist per-rod
+  geometry, native roof/deck fallback, and minimized run-wide hanger counts.
+  Clearly marks measured but UNATTACHED hanger rods for manual anchorage.
+  Default Preview; review engineering, anchors and structural capacity.
+author: ROB MEP Tools

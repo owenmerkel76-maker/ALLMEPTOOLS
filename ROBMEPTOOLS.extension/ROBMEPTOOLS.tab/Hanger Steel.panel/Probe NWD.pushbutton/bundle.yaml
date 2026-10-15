@@ -1,0 +1,3 @@
+title: 'Probe NWD'
+tooltip: 'Read-only nested geometry diagnostic for linked Navisworks NWDs (v0.4.5). No selection, no model changes.'
+author: 'STEELTOOLS'

@@ -1,0 +1,9 @@
+title: "Reconstruct\nSteel"
+tooltip: >
+  STEELTOOLS v0.2 BOS for Revit 2025. Create native Structural Framing proxies
+  by rapid trace or joist array. Supply a verified Bottom of Steel elevation;
+  the tool shifts each physical solid to BOS and rechecks within 1/32 inch.
+  This does not unlock, extract or automatically measure published NWD geometry.
+  Verify Revit/NWD coordinates and test a real Fabrication hanger.
+author: "STEELTOOLS"
+min_revit_version: "2025"

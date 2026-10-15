@@ -1,0 +1,2 @@
+# Keep manifest checksums identical in Windows Git checkouts and ZIP packages.
+* -text

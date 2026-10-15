@@ -1,0 +1,14 @@
+ROBMEPTOOLS AutoDim Smart v2.3.2a - Ribbon Reload Hotfix
+
+Base: ROBMEPTOOLS_EXTENSION_AUTODIM_SMART_v2.3_GEOMETRIC_CERTIFICATION + Selected Grids option.
+
+Fix:
+- Renamed the internal pyRevit bundle key from "Fab Hover" to "FabHover" while preserving the displayed title "Fab Hover".
+- This avoids pyRevit Reload reusing a stale RibbonGroupItem named "Fab Hover" and then calling pushbutton tooltip APIs on the wrong ribbon object type.
+- Fab Hover script/config/runtime files are otherwise unchanged.
+- AutoDim Selected Grids feature is unchanged.
+
+Recommended install:
+1. Close Revit once if the old ribbon object is already cached.
+2. Delete/replace the existing ROBMEPTOOLS.extension folder rather than merging over it.
+3. Start Revit / pyRevit. Future Reloads should resolve the renamed bundle as a pushbutton.

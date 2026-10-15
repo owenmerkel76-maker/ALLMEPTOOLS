@@ -1,0 +1,3 @@
+title: 'Slope\nJoists'
+tooltip: 'Create level or sloped joist hanger-support proxies from group BOS start/end or roof pitch. Supports changes across rows. Verifies physical underside at three locations and rejects failures.'
+author: STEELTOOLS

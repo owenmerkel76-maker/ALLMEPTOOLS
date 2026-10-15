@@ -1,0 +1,9 @@
+title: AutoDim Smart
+tooltip: >-
+  AutoDim review update: Duct v6.1 / Pipe v5.1. Dimensions duct and pipe to
+  host grids with source coverage checks and per-run target audits. Pipe keeps
+  centerline datums and records long-locator diagnostics. Preferred and strict
+  selected grid modes are available. Test this review build on a model copy.
+author: ROBMEPTOOLS
+context: doc-project
+min_revit_version: 2025

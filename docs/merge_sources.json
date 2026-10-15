@@ -1,0 +1,51 @@
+{
+  "merge_date": "2026-10-15",
+  "source_archive": "NEW ALL ROB MEP TOOLS.zip",
+  "main": "ROBMEPTOOLSPUBLSIHEDV.1/ROBMEPTOOLS.extension",
+  "added": [
+    {
+      "from": "ROBHANGERTOOL/ROBMEPHANGERS.extension/HANGERS.tab/Tools.panel",
+      "panel": "Hangers.panel",
+      "buttons": [
+        "Auto Hanger.pushbutton",
+        "Repair Draft Rods.pushbutton",
+        "Review Extra Hangers.pushbutton"
+      ]
+    },
+    {
+      "from": "ROBSTEELTOOLS/STEELTOOLS.extension/STEELTOOLS.tab/Hanger Steel.panel",
+      "panel": "Hanger Steel.panel",
+      "buttons": [
+        "Import Navis BOS.pushbutton",
+        "Joist Groups.pushbutton",
+        "Probe NWD.pushbutton",
+        "Reconstruct Steel.pushbutton"
+      ]
+    },
+    {
+      "from": "ROOF DECK FROM DXF/ROOFDECKTOOLS.extension/ROOFDECKTOOLS.tab/Roof Deck.panel",
+      "panel": "Roof Deck.panel",
+      "buttons": [
+        "Roof Deck From DXF.pushbutton",
+        "Roof Deck From IFC.pushbutton"
+      ]
+    },
+    {
+      "from": "SCHEDULETOOL/SCHEDULE RENUMBER/ScheduleNumber2025.extension/SCHEDULETOOLS.tab/Numbering.panel",
+      "panel": "Schedules.panel",
+      "buttons": [
+        "ROBMEPTOOLS Schedule Number.pushbutton"
+      ]
+    }
+  ],
+  "excluded": "Original downloads/ PDFs and historical release ZIPs remain in the user original source archive. No AutoSleeve .pushbutton found.",
+  "change_policy": "Tool scripts copied byte-for-byte except original Update Tool entrypoint; original published startup.py replaced with no-op. Tab/panel metadata consolidated.",
+  "repository_import": {
+    "date": "2026-10-15",
+    "source": "Both uploaded ROBMEPTOOLS archives; 149 identical extension files",
+    "panels": "Dedicated AutoDim, AutoTag and Fab Hover panels; all original button names unchanged",
+    "provenance": "import_provenance.json",
+    "path_migrations": "ribbon_path_migrations.json",
+    "logic_changes": "None"
+  }
+}

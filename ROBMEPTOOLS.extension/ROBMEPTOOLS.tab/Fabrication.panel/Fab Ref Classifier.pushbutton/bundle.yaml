@@ -1,0 +1,8 @@
+title: Fab Ref Classifier
+tooltip: >-
+  Classifies usable MEP Fabrication geometry references for dimensioning across
+  fabrication ductwork and pipework, with validation trials that leave the model
+  unchanged.
+author: ROBMEPTOOLS
+context: doc-project
+min_revit_version: 2025

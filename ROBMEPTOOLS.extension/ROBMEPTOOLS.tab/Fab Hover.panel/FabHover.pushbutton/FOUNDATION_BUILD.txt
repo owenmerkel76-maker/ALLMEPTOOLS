@@ -1,0 +1,18 @@
+ROBMEPTOOLS Fab Hover — UI System V7.2
+
+V7.2 preserves the V7.1 ROBMEPTOOLS UI system and smoother HVAC/plumbing hover
+engine while adding a cross-engine AppDomain active flag for a direct native
+compiled toggle command.
+
+Native toggle hot path:
+  - no IronPython execution
+  - no settings read
+  - no WPF construction
+  - no category/filter rebuild
+  - no hover-cache rebuild
+  - no timer recreation
+  - one AppDomain state flip + immediate popup hide on OFF
+
+Use the included one-time "Build Native Hover Toggle" command to create the
+Fab Hover Toggle.invokebutton, then assign the Revit keyboard shortcut to that
+native command.

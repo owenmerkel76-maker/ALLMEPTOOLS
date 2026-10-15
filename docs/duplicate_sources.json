@@ -1,0 +1,58 @@
+[
+  {
+    "sha256": "5c66fe7a4010779fc709e825cc2df471d9e6fe5c7f339427d35d926b9469f41d",
+    "paths": [
+      "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Repair Draft Rods.pushbutton/rod_geometry.py",
+      "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/rod_geometry.py"
+    ]
+  },
+  {
+    "sha256": "7cc7ade284cb29bda5908cb809c75ca65e14053fc8b4a3311f23e7b5c5718e58",
+    "paths": [
+      "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Repair Draft Rods.pushbutton/structure_priority.py",
+      "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_priority.py"
+    ]
+  },
+  {
+    "sha256": "7c0236abd4b4ad12dfed18601ffe53588179042afffc94ecb3a3e0b5d87ee4b1",
+    "paths": [
+      "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Icons.xaml",
+      "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Icons.xaml"
+    ]
+  },
+  {
+    "sha256": "e5b1aabb26ef5e7df4f8aa670d934cbecb37899b74d8363971692c9400cc90dc",
+    "paths": [
+      "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Theme.xaml",
+      "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Theme.xaml"
+    ]
+  },
+  {
+    "sha256": "9be14bcb354550d93b2018460fc681b0f4467847849c861b4119d34ceda33914",
+    "paths": [
+      "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Controls.xaml",
+      "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Controls.xaml"
+    ]
+  },
+  {
+    "sha256": "09958e0d014783d8cdd33357f9a8962d86a18c8dabc3d8272321065f0e5d9706",
+    "paths": [
+      "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS_MENU_TEMPLATE.xaml",
+      "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/ui/ROBMEPTOOLS_MENU_TEMPLATE.xaml"
+    ]
+  },
+  {
+    "sha256": "2ebc27e0eebdc2f6572f55b45d9ef5b85477a8292eeb006eb2911cb32f7b261d",
+    "paths": [
+      "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/surface_utils.py",
+      "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From DXF.pushbutton/surface_utils.py"
+    ]
+  },
+  {
+    "sha256": "bcf089bc3581ac812cc60948404356ef8647efd8ef12b838698fb7a304822532",
+    "paths": [
+      "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/geometry_utils.py",
+      "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From DXF.pushbutton/geometry_utils.py"
+    ]
+  }
+]

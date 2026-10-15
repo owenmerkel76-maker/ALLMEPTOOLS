@@ -1,0 +1,11 @@
+title: AutoTag Smart
+tooltip: >-
+  ROBMEPTOOLS AutoTag Smart: Pipe v1.5 review / Duct v1.12 workflow. Unified Duct + Pipe workflow with
+  direct BOD/BOP event-tag selection, NONE / SKIP mappings for every tag type,
+  component profiles and Pipe source/type survival diagnostics. Pipe protects
+  required changes and rejects blocked text placement. Pipe BOP hard-excludes
+  coupling/union fabrication fittings. Test this review build on a model copy.
+  Suggested native KS: QAT (assign once in Revit Keyboard Shortcuts).
+author: ROBMEPTOOLS
+context: doc-project
+min_revit_version: 2025

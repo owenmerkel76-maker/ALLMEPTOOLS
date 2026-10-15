@@ -1,0 +1,12 @@
+ROBMEPTOOLS v2.3.2c — Selected Grids + Auto Arrange + Fab Hover Ribbon Stability
+
+Base:
+- AutoDim Smart remains the v2.3 Geometric Certification baseline with the v2.3.2 Selected Grids option.
+- Tag + Dim Organizer / Auto Arrange remains restored from v2.3.2b.
+
+Ribbon hotfix:
+- Restored the Fabrication panel from the proven v2.3.2a package.
+- Fab Hover is again a single FabHover.pushbutton (visible title: Fab Hover), matching the ribbon item type already loaded in the user's current Revit/pyRevit session.
+- Removed the newer Fab Hover.pulldown from v2.3.2b that caused pyRevit to treat an existing button as a pulldown and throw create_push_button errors on Reload.
+
+No AutoDim engine logic was changed in this hotfix.

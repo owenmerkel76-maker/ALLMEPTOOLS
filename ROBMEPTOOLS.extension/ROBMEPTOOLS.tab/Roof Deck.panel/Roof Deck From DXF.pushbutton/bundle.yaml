@@ -1,0 +1,9 @@
+title: "Roof Deck\nFrom DXF"
+tooltip: >-
+  v0.2: Inspects each DXF 3D ACIS solid individually, reconstructs its planar
+  bottom face as a native structural Floor, including positive/negative slopes.
+  Verifies every created underside before committing. Supports Revit 2025+.
+  Structural floor hanger HOST proxy, not flute-accurate sheet-metal deck.
+author: ROOFDECKTOOLS
+engine:
+  clean: false

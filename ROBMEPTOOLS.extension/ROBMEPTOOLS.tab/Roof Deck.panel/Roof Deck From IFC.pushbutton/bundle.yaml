@@ -1,0 +1,8 @@
+title: Roof Deck
+  From IFC
+tooltip: >-
+  Read a Revit 2026 roof-only IFC2x3 file DIRECTLY (no Revit IFC link required),
+  reconstruct the flat/sloped roof undersides as native structural floors for
+  fabrication hanger testing, and validate the new undersides within 1/8 inch.
+  This creates simplified hanger hosts, not exact corrugated decking.
+author: ROOFDECKTOOLS

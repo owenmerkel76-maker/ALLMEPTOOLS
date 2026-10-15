@@ -1,0 +1,9 @@
+title: "Update Tool"
+tooltip: |
+  Update this installed ROBMEPTOOLS extension from GitHub, then reload pyRevit.
+  The active folder is detected automatically. Backups are kept and local edits
+  are preserved. Hold Shift to see the installed folder and updater settings.
+author: ROBMEPTOOLS
+min_revit_version: 2025
+engine:
+  clean: true

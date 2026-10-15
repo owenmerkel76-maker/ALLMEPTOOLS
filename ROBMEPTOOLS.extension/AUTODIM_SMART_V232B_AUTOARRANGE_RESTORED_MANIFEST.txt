@@ -1,0 +1,9 @@
+ROBMEPTOOLS v2.3.2b - Selected Grids + Auto Arrange Restored
+
+Build intent:
+- Full ROBMEPTOOLS shell restored from the full Annotation-panel package so Tag + Dim Organizer (Auto Arrange) is present.
+- AutoDim Smart pushbutton replaced with the exact v2.3.2a Selected Grids build derived from ROBMEPTOOLS_EXTENSION_AUTODIM_SMART_v2.3_GEOMETRIC_CERTIFICATION.zip.
+- AutoTag Smart, Tag + Dim Organizer, Fab Hover, Fab Ref Probe, and Fab Ref Classifier retained from the full package shell.
+- This corrects the prior packaging mistake where the AutoDim-only baseline shell omitted the Organizer button.
+
+Revit target: 2025+

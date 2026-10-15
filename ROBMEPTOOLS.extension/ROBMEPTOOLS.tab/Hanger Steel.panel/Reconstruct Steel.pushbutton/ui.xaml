@@ -1,0 +1,79 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="STEELTOOLS | Bottom of Steel Reconstruction" Width="630" Height="720"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        Background="#111C2D" Foreground="#EFF4FA" FontFamily="Segoe UI"
+        ShowInTaskbar="False">
+  <Window.Resources>
+    <Style TargetType="TextBlock"><Setter Property="TextWrapping" Value="Wrap" /></Style>
+    <Style TargetType="ComboBox">
+      <Setter Property="Height" Value="31"/><Setter Property="Margin" Value="0,5,0,13"/>
+      <Setter Property="Background" Value="#EEF3F8"/><Setter Property="Foreground" Value="#162438"/>
+    </Style>
+    <Style TargetType="TextBox">
+      <Setter Property="Height" Value="31"/><Setter Property="Padding" Value="7,5"/>
+      <Setter Property="Background" Value="#EEF3F8"/><Setter Property="Foreground" Value="#162438"/>
+    </Style>
+    <Style TargetType="Button">
+      <Setter Property="Height" Value="39"/><Setter Property="Padding" Value="18,8"/>
+      <Setter Property="Cursor" Value="Hand"/><Setter Property="BorderThickness" Value="0"/>
+    </Style>
+  </Window.Resources>
+  <Grid Margin="22,17,22,17">
+    <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+    <StackPanel Grid.Row="0" Margin="0,0,0,13">
+      <TextBlock Text="STEELTOOLS  /  REVIT 2025" Foreground="#6BC8ED" FontSize="12" FontWeight="Bold"/>
+      <TextBlock Text="Reconstruct Steel  —  BOS Mode" FontSize="22" FontWeight="SemiBold" Margin="0,3,0,4"/>
+      <TextBlock Text="Accurate underside elevation for MEP Fabrication hangers" Foreground="#AEC4D7" FontSize="12"/>
+    </StackPanel>
+    <Border Grid.Row="1" BorderBrush="#365876" BorderThickness="1" Background="#1C3048"
+            CornerRadius="7" Padding="11" Margin="0,0,0,13">
+      <TextBlock Foreground="#BDD9EB" FontSize="12">
+        The linked locked NWD is a visual / snap reference. Enter verified Bottom of Steel (BOS) elevation; the tool creates native Structural Framing, measures actual physical solids, and aligns their underside to that BOS.
+      </TextBlock>
+    </Border>
+    <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+      <StackPanel Margin="2,0,8,10">
+        <TextBlock Text="1  STRUCTURAL FRAMING FAMILY / TYPE" Foreground="#9FB8CE" FontSize="11" FontWeight="Bold"/>
+        <ComboBox x:Name="beam_combo"/>
+        <TextBlock Text="2  CONSTRUCTION MODE" Foreground="#9FB8CE" FontSize="11" FontWeight="Bold"/>
+        <ComboBox x:Name="mode_combo"/>
+        <TextBlock Text="3  POINT PICKING" Foreground="#9FB8CE" FontSize="11" FontWeight="Bold"/>
+        <ComboBox x:Name="point_combo"/>
+        <TextBlock Text="4  REFERENCE REVIT LEVEL" Foreground="#9FB8CE" FontSize="11" FontWeight="Bold"/>
+        <ComboBox x:Name="level_combo"/>
+        <TextBlock Text="5  BOTTOM OF STEEL (BOS) ELEVATION MODE" Foreground="#9FB8CE" FontSize="11" FontWeight="Bold"/>
+        <ComboBox x:Name="z_combo"/>
+        <Grid Margin="0,2,0,9">
+          <Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="18"/>
+            <ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+          <StackPanel Grid.Column="0">
+            <TextBlock Text="BOS elevation / level offset" Foreground="#9FB8CE" FontSize="11" Margin="0,0,0,5"/>
+            <TextBox x:Name="bos_text"/>
+          </StackPanel>
+          <StackPanel Grid.Column="2">
+            <TextBlock Text="Parallel array count (1–200)" Foreground="#9FB8CE" FontSize="11" Margin="0,0,0,5"/>
+            <TextBox x:Name="count_text"/>
+          </StackPanel>
+        </Grid>
+        <CheckBox x:Name="per_beam_check" Foreground="#E3F0F8" Margin="0,5,0,10"
+                  Content="Ask for Bottom of Steel for every beam (Rapid Trace only)"/>
+        <Border Background="#213B55" CornerRadius="5" Padding="10">
+          <StackPanel>
+            <TextBlock Text="IMPORTANT" Foreground="#87D8FA" FontSize="11" FontWeight="Bold"/>
+            <TextBlock Text="Level offset is measured from Project Elevation, not shared/survey display. Verify the NWD to Revit datum relationship. Physical beam shape need not match the NWD, but its footprint must cover hanger rod XY positions." Foreground="#D1E5F2" FontSize="11" Margin="0,4,0,0"/>
+          </StackPanel>
+        </Border>
+        <TextBlock Foreground="#94B7CC" FontSize="11" Margin="0,11,0,0"
+                   Text="Safety: beams that cannot be measured and verified to 1/32 inch BOS tolerance are deleted. This is a placement proxy, not a structural design model."/>
+      </StackPanel>
+    </ScrollViewer>
+    <Border Grid.Row="3" BorderBrush="#31465E" BorderThickness="0,1,0,0" Padding="0,15,0,0">
+      <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+        <Button x:Name="cancel_button" Content="Cancel" Width="100" Margin="0,0,10,0" Background="#34455B" Foreground="#FFFFFF"/>
+        <Button x:Name="run_button" Content="Start BOS Reconstruction  →" Width="242" Background="#19A4CD" Foreground="#071727" FontWeight="Bold"/>
+      </StackPanel>
+    </Border>
+  </Grid>
+</Window>

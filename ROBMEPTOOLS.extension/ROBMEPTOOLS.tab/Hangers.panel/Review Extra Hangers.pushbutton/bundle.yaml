@@ -1,0 +1,6 @@
+title: Review Extra Hangers
+tooltip: >-
+  Read-only review of AUTO HANGER DRAFTs. Flags co-linear hangers within 1 ft
+  as potential duplicates, with selectable IDs for visual inspection.
+  Never deletes hangers or certifies support spacing/loads.
+author: ROB MEP Tools

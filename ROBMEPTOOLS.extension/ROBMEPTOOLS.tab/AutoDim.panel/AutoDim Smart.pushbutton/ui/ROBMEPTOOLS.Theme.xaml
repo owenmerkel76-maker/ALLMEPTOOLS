@@ -1,0 +1,40 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <!-- ROBMEPTOOLS design tokens. Keep tool windows visually consistent by
+       consuming these keys through DynamicResource instead of hard-coding. -->
+
+  <SolidColorBrush x:Key="RB.Canvas" Color="#07131F"/>
+  <SolidColorBrush x:Key="RB.Sidebar" Color="#071725"/>
+  <SolidColorBrush x:Key="RB.Header" Color="#091A29"/>
+  <SolidColorBrush x:Key="RB.Footer" Color="#081624"/>
+  <SolidColorBrush x:Key="RB.Card" Color="#091C2B"/>
+  <SolidColorBrush x:Key="RB.CardAlt" Color="#0B263A"/>
+  <SolidColorBrush x:Key="RB.Input" Color="#0C2233"/>
+  <SolidColorBrush x:Key="RB.Hover" Color="#102A3F"/>
+  <SolidColorBrush x:Key="RB.HoverStrong" Color="#17344C"/>
+  <SolidColorBrush x:Key="RB.Border" Color="#234963"/>
+  <SolidColorBrush x:Key="RB.BorderStrong" Color="#35607B"/>
+  <SolidColorBrush x:Key="RB.Text" Color="#F2F7FA"/>
+  <SolidColorBrush x:Key="RB.TextSoft" Color="#D6E4EC"/>
+  <SolidColorBrush x:Key="RB.TextMuted" Color="#7897AA"/>
+  <SolidColorBrush x:Key="RB.TextFaint" Color="#607F92"/>
+  <SolidColorBrush x:Key="RB.Accent" Color="#168CF3"/>
+  <SolidColorBrush x:Key="RB.AccentSoft" Color="#55B8F4"/>
+  <SolidColorBrush x:Key="RB.AccentDark" Color="#0F4D79"/>
+  <SolidColorBrush x:Key="RB.Success" Color="#36D39A"/>
+  <SolidColorBrush x:Key="RB.Warning" Color="#E8BC64"/>
+  <SolidColorBrush x:Key="RB.Danger" Color="#E65454"/>
+  <SolidColorBrush x:Key="RB.Focus" Color="#7BCDF6"/>
+
+  <sys:Double x:Key="RB.Radius.Card">8</sys:Double>
+  <sys:Double x:Key="RB.Radius.Control">6</sys:Double>
+  <GridLength x:Key="RB.Sidebar.Width">214</GridLength>
+  <GridLength x:Key="RB.Header.Height">76</GridLength>
+  <GridLength x:Key="RB.Footer.Height">60</GridLength>
+  <sys:Double x:Key="RB.Space.XS">4</sys:Double>
+  <sys:Double x:Key="RB.Space.SM">8</sys:Double>
+  <sys:Double x:Key="RB.Space.MD">12</sys:Double>
+  <sys:Double x:Key="RB.Space.LG">16</sys:Double>
+  <sys:Double x:Key="RB.Space.XL">22</sys:Double>
+</ResourceDictionary>

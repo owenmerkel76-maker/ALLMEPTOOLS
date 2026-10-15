@@ -1,0 +1,14 @@
+title: |-
+  Schedule
+  Number
+tooltip: >-
+  v0.8 for Revit 2025. Numbers drawing notes (writable instance
+  Note/Note Number, integer or text), hanger Tag, Item Number or Part Number.
+  Uses the numbering target itself as a reversible element identifier if
+  Comments/Mark is absent (only when safe).
+  Works with Itemize Every Instance ON or OFF: ON assigns one number per
+  schedule detail row; OFF assigns one number shared by all members of
+  each grouped row. Supports normal element schedules and key-schedule rows.
+  Original sorting, grouping, columns and Count values remain unchanged;
+  preview, mapping validation, and rollback on conflict. Test on a copy first.
+author: ROBMEPTOOLS

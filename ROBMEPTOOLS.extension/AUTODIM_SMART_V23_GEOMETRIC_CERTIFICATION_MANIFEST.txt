@@ -1,0 +1,21 @@
+ROBMEPTOOLS AUTODIM SMART v2.3
+
+DUCT v6.0 / PIPE v5.0
+
+PRIMARY CHANGE
+Actual Revit dimension geometry now decides coverage.
+
+Certification requires:
+- intended grid ElementId exists in Dimension.References
+- actual Dimension.Value matches intended target-to-grid distance within 1/8 inch
+- dimension line is geometrically compatible with grid
+
+False coverage is deleted and then rescued. Rescue dimensions are certified again.
+
+VALIDATION
+Python compile PASS
+Unresolved-global audit PASS
+XAML PASS
+YAML PASS
+Ribbon layout PASS
+Normal/dark icon pair PASS

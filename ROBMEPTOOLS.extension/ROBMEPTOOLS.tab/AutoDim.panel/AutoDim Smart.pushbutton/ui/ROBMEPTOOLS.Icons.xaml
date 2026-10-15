@@ -1,0 +1,15 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <!-- Standard Windows navigation/action glyphs only. Domain-specific MEP cards
+       intentionally use text badges (HVAC, PL, EQ, etc.) instead of invented icons. -->
+  <sys:String x:Key="RB.Icon.Overview">&#xE80F;</sys:String>
+  <sys:String x:Key="RB.Icon.Fields">&#xE8FD;</sys:String>
+  <sys:String x:Key="RB.Icon.Presets">&#xE8B7;</sys:String>
+  <sys:String x:Key="RB.Icon.Appearance">&#xE790;</sys:String>
+  <sys:String x:Key="RB.Icon.Behavior">&#xE713;</sys:String>
+  <sys:String x:Key="RB.Icon.Categories">&#xE8EC;</sys:String>
+  <sys:String x:Key="RB.Icon.Advanced">&#xE712;</sys:String>
+  <sys:String x:Key="RB.Icon.Search">&#xE721;</sys:String>
+  <sys:String x:Key="RB.Icon.Clear">&#xE894;</sys:String>
+</ResourceDictionary>

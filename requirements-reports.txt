@@ -1,0 +1,3 @@
+# Optional CPython-only PDF comparison/report tools; never install into pyRevit.
+numpy==2.3.5
+PyMuPDF==1.26.6

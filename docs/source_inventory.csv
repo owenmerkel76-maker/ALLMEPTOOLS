@@ -1,0 +1,237 @@
+path,bytes,lines,imports
+.gitattributes,87,2,
+.github/workflows/validate.yml,295,13,
+.gitignore,25,3,
+AGENTS.md,5663,45,
+CHANGELOG.md,1604,18,
+CODEX_SETUP.sh,420,10,
+CODEX_START_HERE.md,4328,27,
+INSTALL_WINDOWS.ps1,3277,56,
+README.md,5873,67,
+ROBMEPTOOLS.extension/AUTODIM_SMART_V232B_AUTOARRANGE_RESTORED_MANIFEST.txt,620,9,
+ROBMEPTOOLS.extension/AUTODIM_SMART_V232C_RIBBON_STABILITY_HOTFIX.txt,727,12,
+ROBMEPTOOLS.extension/AUTODIM_SMART_V232_SELECTED_GRIDS_MANIFEST.txt,893,17,
+ROBMEPTOOLS.extension/AUTODIM_SMART_V233_SELECTED_GRID_COVERAGE_SAFE.txt,989,13,
+ROBMEPTOOLS.extension/AUTODIM_SMART_V23_GEOMETRIC_CERTIFICATION_MANIFEST.txt,554,21,
+ROBMEPTOOLS.extension/AUTODIM_SMART_v2.3.2a_RIBBON_RELOAD_HOTFIX.txt,815,14,
+ROBMEPTOOLS.extension/DUCT_AUTOTAG_CROSS_PROFILE_SUPPRESSION_20261007_v23.md,1534,22,
+ROBMEPTOOLS.extension/DUCT_AUTOTAG_HUMAN_PLAN_ANNOTATION_AUDIT_20261007_v22.md,3094,38,
+ROBMEPTOOLS.extension/DUCT_AUTOTAG_SQUARE_ROUND_TRANSITION_FIX_20261007_v21.md,1658,27,
+ROBMEPTOOLS.extension/DUCT_HUMAN_COMPLETE_ANNOTATION_RESEARCH_20261007_v24.md,4745,75,
+ROBMEPTOOLS.extension/HUMAN_DIM_ORGANIZER_AUDIT_20261006.md,3041,50,
+ROBMEPTOOLS.extension/HUMAN_REFERENCE_AUDIT_20261006.md,5989,116,
+ROBMEPTOOLS.extension/PIPE_DWP_CENTERLINE_ONLY_RISER_FIX_20261007_v20.md,1011,17,
+ROBMEPTOOLS.extension/PIPE_DWP_HUMANIZATION_AUDIT_20261007.md,3294,61,
+ROBMEPTOOLS.extension/PIPE_DWP_HUMANIZATION_AUDIT_20261007_v19.md,1803,24,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/README.txt,4278,71,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/bundle.yaml,625,9,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/icon.dark.png,1070,14,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/icon.png,1069,15,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/organizer.xaml,14332,153,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/script.py,75206,1724,System;System.Collections.Generic;System.Windows.Media.Imaging;clr;math;os;pyrevit;traceback
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/bundle.yaml,48,3,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/README.txt,2514,70,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/autodim.xaml,19227,371,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/bundle.yaml,409,9,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/engines/__init__.py,37,1,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/engines/duct_engine.py,261078,6669,System;System.Collections.Generic;System.Drawing;clr;collections;json;math;pyrevit;time;uuid
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/engines/pipe_engine.py,244381,6484,System.Collections.Generic;collections;json;math;pyrevit;time;uuid
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/icon.dark.png,8240,76,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/icon.png,8240,76,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/script.py,13369,395,System;System.Collections.Generic;System.Windows.Media.Imaging;clr;imp;os;pyrevit;sys;traceback
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Controls.xaml,13808,162,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Icons.xaml,970,15,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Theme.xaml,2167,40,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS_MENU_TEMPLATE.xaml,21481,250,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS_STYLE_GUIDE.md,3394,64,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/bundle.yaml,41,3,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/README.txt,6667,91,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/autotag.xaml,22744,65,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/autotag_components.py,29743,852,System;pyrevit;time
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/autotag_menu.py,24777,544,System;System.Windows;System.Windows.Media.Imaging;clr;os;pyrevit
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/bundle.yaml,585,11,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/engines/duct_engine.py,273375,6650,System;autotag_components;autotag_menu;collections;json;math;os;pyrevit;sys;time;uuid
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/engines/pipe_engine.py,262658,6551,System;autotag_components;autotag_menu;collections;json;math;os;pyrevit;sys;time;uuid
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/icon.dark.png,5919,41,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/icon.png,5965,58,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/script.py,4823,135,autotag_menu;clr;imp;os;pyrevit;sys;traceback
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/bundle.yaml,41,3,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/FOUNDATION_BUILD.txt,634,18,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/bundle.yaml,359,12,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/config.py,28646,661,System;System.Windows;System.Windows.Controls;System.Windows.Media;System.Windows.Media.Imaging;System.Windows.Threading;clr;fabhover_settings;os;pyrevit;sys
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/config.xaml,62824,524,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/fabhover_core.py,94969,2527,Autodesk.Revit;Autodesk.Revit.UI;System;System.Windows;System.Windows.Forms;System.Windows.Media;System.Windows.Threading;clr;fabhover_settings;os;pyrevit;sys
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/fabhover_settings.py,12718,338,os
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/fabhover_state.py,2244,82,System.Windows;clr;fabhover_core;pyrevit
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/icon.dark.png,9061,72,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/icon.png,9061,72,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/script.py,1396,47,fabhover_state;os;sys
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Controls.xaml,13808,162,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Icons.xaml,970,15,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Theme.xaml,2167,40,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/ui/ROBMEPTOOLS_MENU_TEMPLATE.xaml,21481,250,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/ui/ROBMEPTOOLS_STYLE_GUIDE.md,3394,64,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/bundle.yaml,38,3,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/README.txt,2423,61,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/bundle.yaml,277,8,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/icon.dark.png,8332,104,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/icon.png,8332,104,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/script.py,29218,900,System;datetime;math;os;pyrevit;time
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/README.txt,2494,62,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/bundle.yaml,308,8,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/icon.dark.png,9585,64,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/icon.png,9585,64,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/script.py,31518,987,System;datetime;math;os;pyrevit;time
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/bundle.yaml,68,4,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Import Navis BOS.pushbutton/bundle.yaml,202,3,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Import Navis BOS.pushbutton/icon.png,5710,50,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Import Navis BOS.pushbutton/script.py,13458,306,__future__;csv;hashlib;os;pyrevit
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Joist Groups.pushbutton/bundle.yaml,244,3,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Joist Groups.pushbutton/icon.png,1060,11,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Joist Groups.pushbutton/script.py,30988,733,Autodesk.Revit.DB.Structure;Autodesk.Revit.Exceptions;System.Collections.Generic;__future__;math;pyrevit;re;traceback
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Joist Groups.pushbutton/ui.xaml,6592,96,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Probe NWD.pushbutton/bundle.yaml,157,3,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Probe NWD.pushbutton/icon.png,846,18,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Probe NWD.pushbutton/script.py,16063,396,Autodesk.Revit.DB.DirectContext3D;System;__future__;datetime;os;pyrevit;traceback
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Reconstruct Steel.pushbutton/bundle.yaml,467,9,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Reconstruct Steel.pushbutton/icon.png,5710,50,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Reconstruct Steel.pushbutton/script.py,22532,577,Autodesk.Revit.DB.Structure;Autodesk.Revit.Exceptions;Autodesk.Revit.UI.Selection;System.Collections.Generic;__future__;math;pyrevit;traceback
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Reconstruct Steel.pushbutton/ui.xaml,5303,79,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/bundle.yaml,104,6,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/bundle.yaml,418,8,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/collision_guard.py,1291,34,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/icon.png,2636,18,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/linked_obstacles.py,27868,632,Autodesk.Revit.DB;math;re;rod_geometry
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/planner.py,24361,569,math
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/rod_geometry.py,20117,517,Autodesk.Revit.DB
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/script.py,96321,1965,Autodesk.Revit.DB;Autodesk.Revit.Exceptions;Autodesk.Revit.UI.Selection;System.Collections.Generic;System.Windows;System.Windows.Controls;collision_guard;linked_obstacles;math;os;planner;pyrevit;rod_geometry;structure_picker;structure_priority;structure_stations;sys;traceback
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/settings.xaml,10262,138,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_catalog.py,16899,395,__future__;hashlib;json;math;re
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_discovery.py,20573,492,Autodesk.Revit.DB;hashlib;json;os;re;structure_catalog;uuid
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_picker.py,23353,475,Autodesk.Revit.DB;Autodesk.Revit.Exceptions;Autodesk.Revit.UI.Selection;System.Windows;System.Windows.Controls;json;os;pyrevit;structure_catalog;structure_discovery
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_picker.xaml,5351,88,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_priority.py,30556,683,Autodesk.Revit.DB;Autodesk.Revit.UI.Selection;pyrevit;rod_geometry
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_stations.py,6149,153,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Repair Draft Rods.pushbutton/bundle.yaml,358,7,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Repair Draft Rods.pushbutton/icon.png,2636,18,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Repair Draft Rods.pushbutton/rod_geometry.py,20117,517,Autodesk.Revit.DB
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Repair Draft Rods.pushbutton/script.py,8200,184,Autodesk.Revit.DB;Autodesk.Revit.Exceptions;Autodesk.Revit.UI.Selection;os;pyrevit;rod_geometry;structure_priority;sys;traceback
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Repair Draft Rods.pushbutton/structure_priority.py,30556,683,Autodesk.Revit.DB;Autodesk.Revit.UI.Selection;pyrevit;rod_geometry
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Review Extra Hangers.pushbutton/bundle.yaml,270,6,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Review Extra Hangers.pushbutton/icon.png,2636,18,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Review Extra Hangers.pushbutton/script.py,4683,107,Autodesk.Revit.DB;System.Collections.Generic;math;pyrevit
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/bundle.yaml,86,5,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From DXF.pushbutton/bundle.yaml,395,9,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From DXF.pushbutton/geometry_utils.py,7053,229,math
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From DXF.pushbutton/icon.png,1960,28,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From DXF.pushbutton/script.py,20343,476,Autodesk.Revit.DB;System.Collections.Generic;clr;geometry_utils;math;os;pyrevit;surface_utils;sys;traceback
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From DXF.pushbutton/surface_utils.py,1857,58,math
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/bundle.yaml,370,8,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/geometry_utils.py,7053,229,math
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/icon.png,1960,28,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/ifc_geometry.py,9195,213,__future__;math;os;re
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/script.py,13708,323,Autodesk.Revit.DB;System.Collections.Generic;clr;geometry_utils;ifc_geometry;math;os;pyrevit;surface_utils;sys;traceback
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/surface_utils.py,1857,58,math
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/bundle.yaml,71,4,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Schedules.panel/ROBMEPTOOLS Schedule Number.pushbutton/bundle.yaml,694,14,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Schedules.panel/ROBMEPTOOLS Schedule Number.pushbutton/icon.png,2272,18,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Schedules.panel/ROBMEPTOOLS Schedule Number.pushbutton/script.py,42614,955,System;pyrevit;re
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Schedules.panel/bundle.yaml,57,3,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/bundle.yaml,294,7,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/config.py,1148,24,imp;os;pyrevit
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/icon.dark.png,8240,76,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/icon.png,8240,76,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/script.py,643,13,pyrevit
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/bundle.yaml,39,3,
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/bundle.yaml,165,12,
+ROBMEPTOOLS.extension/ROBMEPTOOLS_AUTODIM_REVIEW.md,5599,91,
+ROBMEPTOOLS.extension/ROBMEPTOOLS_CLOUD_IMPROVEMENTS.md,2195,38,
+ROBMEPTOOLS.extension/ROBMEPTOOLS_DUCT_AUTODIM_64BIT_REVIEW.md,3572,27,
+ROBMEPTOOLS.extension/ROBMEPTOOLS_DUCT_AUTODIM_AXIS_REVIEW.md,3840,33,
+ROBMEPTOOLS.extension/ROBMEPTOOLS_DUCT_AUTODIM_RUNTIME_REVIEW.md,3345,25,
+ROBMEPTOOLS.extension/ROBMEPTOOLS_DUCT_AUTOTAG_REVIEW.md,13171,67,
+ROBMEPTOOLS.extension/ROBMEPTOOLS_NATIVE_KS.txt,1046,32,
+ROBMEPTOOLS.extension/ROBMEPTOOLS_PIPE_REVIEW.md,5983,100,
+ROBMEPTOOLS.extension/ROBMEPTOOLS_RELEASE_20261006.md,15713,248,
+ROBMEPTOOLS.extension/ROBMEPTOOLS_RELEASE_20261007_v24.md,667,11,
+ROBMEPTOOLS.extension/WASC_HUMAN_DRAFTING_AUDIT_20261006.md,4425,100,
+ROBMEPTOOLS.extension/lib/robmep_updater.py,16189,378,Autodesk.Revit.UI.Events;System;System.Diagnostics;System.IO;__future__;distutils.spawn;glob;hashlib;json;os;shutil;subprocess;tempfile;time
+ROBMEPTOOLS.extension/startup.py,306,7,
+ROBMEPTOOLS.extension/updater/Git-Location.psm1,3294,73,
+ROBMEPTOOLS.extension/updater/Update-Background.ps1,7038,129,
+ROBMEPTOOLS.extension/updater/Update-Core.psm1,8248,150,
+docs/NEXT_CODEX_TASK.md,1351,19,
+docs/REPOSITORY_AUDIT.md,7166,89,
+docs/REVIT_VALIDATION.md,3315,46,
+docs/ROADMAP.md,2379,12,
+docs/VALIDATION_RESULTS.md,1839,26,
+docs/duplicate_sources.json,2663,58,
+docs/import_provenance.json,68136,1337,
+docs/merge_sources.json,1910,51,
+docs/original_tool_notes/hanger/FIELD_TESTING.md,22499,136,
+docs/original_tool_notes/hanger/IFC_STRUCTURE_SELECTION.md,11713,198,
+docs/original_tool_notes/hanger/NEXT_TEST.md,2624,42,
+docs/original_tool_notes/hanger/PUBLIC_TOOL_COMPARISON.md,7543,87,
+docs/original_tool_notes/hanger/README_FIRST.md,7384,50,
+docs/original_tool_notes/hanger/RELEASE_NOTES.md,19330,310,
+docs/original_tool_notes/roof_deck/INSTALL_README.txt,6239,118,
+docs/original_tool_notes/steel/README-INSTALL-FIRST.txt,3285,56,
+docs/original_tool_notes/steel/VERSION.txt,115,2,
+docs/research/ROBMEPTOOLS_EVOLVE_Research_and_Codex_Masterplan.md,25964,178,
+docs/ribbon_path_migrations.json,263,5,
+docs/unified_source_hashes.json,12699,90,
+installer/Check-Updater.ps1,11884,173,
+installer/Install-Location.psm1,2340,49,
+installer/Install-Updater.cmd,115,3,
+installer/Install-Updater.ps1,11920,208,
+installer/Scheduled-Task.psm1,6875,128,
+legacy/original_update_tests/test_update_release.py,2192,41,hashlib;importlib.util;pathlib;unittest;zipfile
+legacy/original_updater_entrypoints/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/bundle.yaml,336,9,
+legacy/original_updater_entrypoints/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/script.py,854,22,imp;os;pyrevit;pyrevit.loader
+legacy/original_updater_entrypoints/startup.py,893,23,imp;os;pyrevit;pyrevit.coreutils.logger;pyrevit.loader
+legacy/original_updater_entrypoints/update-manifest.json,32077,460,
+legacy/updater_docs/AUTOUPDATE.md,8540,44,
+legacy/updater_docs/Check Auto Updates.cmd,130,3,
+legacy/updater_docs/Setup Auto Updates.cmd,125,3,
+legacy_AGENTS.md,2736,12,
+legacy_README.md,1232,13,
+requirements-reports.txt,110,3,
+tests/run_check_updater.ps1,13147,200,
+tests/run_git_location.ps1,8280,124,
+tests/run_install_location.ps1,3429,54,
+tests/run_updater_powershell.ps1,6627,112,
+tests/test_autodim_accounting.py,12513,266,ast;math;os;pathlib;types;unittest
+tests/test_autodim_attempt_diagnostics.py,5069,88,ast;pathlib;types;unittest
+tests/test_autodim_audit.py,3865,86,ast;json;math;pathlib;tempfile;types;unittest;uuid
+tests/test_autodim_branch_measurement_reuse.py,2831,58,ast;pathlib;test_autodim_accounting;types;unittest
+tests/test_autodim_element_id_64.py,3309,68,ast;pathlib;test_autodim_accounting;unittest
+tests/test_autodim_grid_axes.py,4927,101,ast;math;pathlib;types;unittest
+tests/test_autodim_layout.py,5617,126,ast;math;pathlib;types;unittest
+tests/test_autodim_model_references.py,20796,347,ast;math;pathlib;test_autodim_accounting;types;unittest
+tests/test_autodim_reused_helpers.py,4271,84,ast;pathlib;test_autodim_accounting;types;unittest
+tests/test_autodim_text_pockets.py,6851,131,test_autodim_layout;types;unittest
+tests/test_duct_autotag_review.py,38169,763,ast;json;math;os;pathlib;time;types;unittest
+tests/test_duct_human_plan.py,18360,356,ast;collections;math;test_duct_autotag_review;types;unittest
+tests/test_installer.py,9734,158,hashlib;json;os;pathlib;shutil;subprocess;tempfile;unittest
+tests/test_launchers.py,8488,191,ast;pathlib;sys;types;unittest
+tests/test_manual_install.py,3836,71,os;pathlib;shutil;subprocess;tempfile;unittest
+tests/test_pipe_autodim_accounting.py,14451,308,ast;math;os;pathlib;types;unittest
+tests/test_pipe_autodim_audit.py,6311,127,ast;json;math;pathlib;tempfile;types;unittest;uuid
+tests/test_pipe_autodim_layout.py,5621,126,ast;math;pathlib;types;unittest
+tests/test_pipe_autotag.py,22057,406,ast;json;math;os;pathlib;time;types;unittest
+tests/test_pipe_autotag_datums.py,2325,44,test_pipe_autotag;types;unittest
+tests/test_pipe_components.py,17993,418,ast;pathlib;time;types;unittest
+tests/test_reload_updater.py,19283,366,hashlib;importlib.util;json;os;pathlib;shutil;subprocess;sys;tempfile;types;unittest;unittest.mock
+tests/test_source_preservation.py,1092,26,hashlib;json;pathlib;unittest
+tests/test_unified_ribbon.py,654,13,pathlib;sys;unittest;validate_unified
+tests/test_updater_check.py,2875,45,os;pathlib;shutil;subprocess;tempfile;unittest
+tests/test_updater_powershell.py,3262,63,hashlib;importlib.util;json;os;pathlib;shutil;subprocess;tempfile;unittest
+tools/build_autotag_human_oct15.py,15653,243,argparse;collections;csv;fitz;hashlib;json;math;pathlib;re
+tools/build_autotag_review4_rerun.py,11599,178,argparse;build_autotag_human_oct15;collections;csv;fitz;hashlib;json;pathlib
+tools/build_duct_direct_review.py,15152,135,argparse;build_duct_run_review;collections;csv;fitz;hashlib;json;numpy;pathlib
+tools/build_duct_run_review.py,17457,169,argparse;collections;csv;fitz;hashlib;json;numpy;pathlib;re
+tools/build_human_run3_comparison.py,14783,110,argparse;build_duct_run_review;collections;csv;fitz;hashlib;json;numpy;pathlib;re
+tools/install_powershell.py,1735,43,hashlib;os;pathlib;platform;shutil;tarfile;tempfile;urllib.request
+tools/package_autoupdate.py,3709,69,hashlib;json;pathlib;zipfile
+tools/validate_extension.py,1791,45,ast;pathlib;sys;xml.etree.ElementTree
+tools/validate_unified.py,2788,58,ast;hashlib;json;pathlib;sys;xml.etree.ElementTree

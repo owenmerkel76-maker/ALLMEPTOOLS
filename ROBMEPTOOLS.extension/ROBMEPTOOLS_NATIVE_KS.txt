@@ -1,0 +1,32 @@
+ROBMEPTOOLS — NATIVE REVIT KEYBOARD SHORTCUTS
+Release 2026-10-06
+
+Every user-facing action is a real pyRevit/Revit command so it can be assigned
+through Revit's native Keyboard Shortcuts dialog (KS). No modifier-click workflow
+is required.
+
+Suggested shortcuts:
+
+  QAT  -> AutoTag Smart
+  QAD  -> AutoDim Smart
+  QTO  -> Tag + Dim Organizer
+  QHT  -> Fab Hover Toggle
+  QHS  -> Fab Hover Settings
+  QRP  -> Fab Ref Probe
+  QRC  -> Fab Ref Classifier
+
+FAB HOVER
+Fab Hover is a standard pyRevit pulldown for pyRevit 5.1 compatibility:
+  Fab Hover
+    - Fab Hover Toggle
+    - Fab Hover Settings
+Both child actions remain separate commands and can be assigned independently in KS.
+
+ONE-TIME SETUP
+1. Reload pyRevit after installing this extension.
+2. Type KS in Revit.
+3. Search each exact command title above.
+4. Assign the suggested shortcut or your office-preferred shortcut.
+
+The extension does not overwrite KeyboardShortcuts.xml. That preserves existing
+user/office shortcut mappings and avoids relying on unsupported silent shortcut edits.

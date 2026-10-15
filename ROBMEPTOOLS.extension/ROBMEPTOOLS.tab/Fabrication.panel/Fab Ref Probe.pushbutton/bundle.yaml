@@ -1,0 +1,8 @@
+title: Fab Ref Probe
+tooltip: >-
+  Diagnostic tool that tests which MEP Fabrication geometry references Revit accepts
+  for linear dimensions. Supports fabrication ductwork and pipework and leaves the
+  model unchanged after reference trials.
+author: ROBMEPTOOLS
+context: doc-project
+min_revit_version: 2025

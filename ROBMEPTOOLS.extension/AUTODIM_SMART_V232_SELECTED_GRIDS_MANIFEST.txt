@@ -1,0 +1,17 @@
+ROBMEPTOOLS AUTODIM SMART v2.3.2 — SELECTED GRIDS
+
+BASELINE
+ROBMEPTOOLS_EXTENSION_AUTODIM_SMART_v2.3_GEOMETRIC_CERTIFICATION.zip
+
+CHANGE
+AutoDim Smart menu adds a Grid Source choice:
+- ALL USABLE GRIDS: original v2.3 behavior.
+- SELECT GRIDS ON RUN: after the menu closes, the user selects one or more straight host-model grids and clicks Finish.
+
+Both Duct v6.0 and Pipe v5.0 receive the same run-local grid ElementId allow-list. All nearest-grid resolution, branch recovery, helper rescue, collision layout, and geometric certification operate only against that allow-list.
+
+SAFETY
+- Grid ElementIds are not persisted across projects.
+- Current Revit selection is restored after grid picking so CURRENT SELECTION scope remains intact.
+- Curved grids and linked-model grids remain unsupported, matching v2.3.
+- Choosing ALL USABLE GRIDS preserves the original v2.3 grid collector behavior.

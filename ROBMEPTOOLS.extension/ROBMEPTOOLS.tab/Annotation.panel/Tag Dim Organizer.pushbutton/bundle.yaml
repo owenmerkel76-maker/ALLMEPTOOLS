@@ -1,0 +1,9 @@
+title: Tag + Dim Organizer
+tooltip: >-
+  ROBMEPTOOLS Tag + Dim Organizer v0.4 Human Compact Dimensions Beta. Post-processes annotations visible in the active view (including copied/dependent-view cases) to reduce conflicts, consolidate matching nearby
+  duct/pipe tags into guarded multi-leader groups when the loaded tag type supports
+  it, bank parallel dimensions into consistent local lanes, reset dragged dimension text leaders, and compact dimension lines toward referenced MEP to shorten witness lines. Never moves MEP
+  Fabrication parts. Revit 2025+.
+author: ROBMEPTOOLS
+context: doc-project
+min_revit_version: 2025

@@ -1,0 +1,1337 @@
+{
+  "archives": [
+    {
+      "name": "ROBMEPTOOLS_Master_Codex_Workspace_2026-10-15.zip",
+      "sha256": "9c62df542dbcb6a55c24264fcf2e71d98f5c63f765e9b92dd9ac7166a2c37faa",
+      "bytes": 957622
+    },
+    {
+      "name": "ROBMEPTOOLS_Unified_Revit_Extension_2026-10-15.zip",
+      "sha256": "e19a6b5d9a7de6a56873124534a2c6c49a51a69d01578efb9e5f19e754fc709e",
+      "bytes": 742323
+    }
+  ],
+  "extension_archives_identical": true,
+  "original_files": [
+    {
+      "source_path": ".gitattributes",
+      "repository_path": ".gitattributes",
+      "sha256": "0f941bbf2c1f5073b3b09e39d827579a48c69c2eb9e07bbabbd19078ed3ddae8",
+      "size": 87
+    },
+    {
+      "source_path": ".gitignore",
+      "repository_path": ".gitignore",
+      "sha256": "ac2de72f51a815d5d4c3b2c16f8aa800a4c817c4b4f5e054218e300c661b47fa",
+      "size": 25
+    },
+    {
+      "source_path": "AGENTS.md",
+      "repository_path": "AGENTS.md",
+      "sha256": "f38bb4121d6b1cfa3b72b250b0e9fda5f9d9b7a24fcf119f4dd0da2eeba7bf10",
+      "size": 5273
+    },
+    {
+      "source_path": "CHANGELOG.md",
+      "repository_path": "CHANGELOG.md",
+      "sha256": "72106b6cc5a897244456d1f7a2b45219b667d139100a5b15a55c3f1af49ac204",
+      "size": 939
+    },
+    {
+      "source_path": "CODEX_SETUP.sh",
+      "repository_path": "CODEX_SETUP.sh",
+      "sha256": "c6a182136ab5858f518750e144435bbdf0b795c14cb8104a44dd8e54300854a9",
+      "size": 325
+    },
+    {
+      "source_path": "CODEX_START_HERE.md",
+      "repository_path": "CODEX_START_HERE.md",
+      "sha256": "b0a39a184e44b58bba151586ec64e79b1482565760f9c4b3e088b7f88af99cc6",
+      "size": 4091
+    },
+    {
+      "source_path": "INSTALL_WINDOWS.ps1",
+      "repository_path": "INSTALL_WINDOWS.ps1",
+      "sha256": "6c6920224c42fcd5e534a5a43d5dc1391bf37faec5da12d550e79f324da09b57",
+      "size": 3277
+    },
+    {
+      "source_path": "README.md",
+      "repository_path": "README.md",
+      "sha256": "6d86dff48c90f26b7ab5f589a893f9763a4b3b46a25afc659f02032169bec11a",
+      "size": 4771
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/AUTODIM_SMART_V232B_AUTOARRANGE_RESTORED_MANIFEST.txt",
+      "repository_path": "ROBMEPTOOLS.extension/AUTODIM_SMART_V232B_AUTOARRANGE_RESTORED_MANIFEST.txt",
+      "sha256": "69ce0ebed785c39eef83d3ef98e47cc74a88f04301d8ab8239d503f9b3c999e0",
+      "size": 620
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/AUTODIM_SMART_V232C_RIBBON_STABILITY_HOTFIX.txt",
+      "repository_path": "ROBMEPTOOLS.extension/AUTODIM_SMART_V232C_RIBBON_STABILITY_HOTFIX.txt",
+      "sha256": "81d15082bdb55113eb7d7711aa357b3f56560fc3c90259d569e6d5b1f9da28e0",
+      "size": 727
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/AUTODIM_SMART_V232_SELECTED_GRIDS_MANIFEST.txt",
+      "repository_path": "ROBMEPTOOLS.extension/AUTODIM_SMART_V232_SELECTED_GRIDS_MANIFEST.txt",
+      "sha256": "8d6c787c7cb59c47545a262cc821c77aa32cf7bae0c6151b56160defc7a8af73",
+      "size": 893
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/AUTODIM_SMART_V233_SELECTED_GRID_COVERAGE_SAFE.txt",
+      "repository_path": "ROBMEPTOOLS.extension/AUTODIM_SMART_V233_SELECTED_GRID_COVERAGE_SAFE.txt",
+      "sha256": "0cdd2a61d71c30c875feaff0dbf546a874b745ff8ec5923baeccd766b4abcbbd",
+      "size": 989
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/AUTODIM_SMART_V23_GEOMETRIC_CERTIFICATION_MANIFEST.txt",
+      "repository_path": "ROBMEPTOOLS.extension/AUTODIM_SMART_V23_GEOMETRIC_CERTIFICATION_MANIFEST.txt",
+      "sha256": "b4669a35a99d4ba7ff3d355d66b61ded45519dada39f67686ca4c063c38762eb",
+      "size": 554
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/AUTODIM_SMART_v2.3.2a_RIBBON_RELOAD_HOTFIX.txt",
+      "repository_path": "ROBMEPTOOLS.extension/AUTODIM_SMART_v2.3.2a_RIBBON_RELOAD_HOTFIX.txt",
+      "sha256": "7b86724bb5dbc17bb387d2de13a971d1a89b4dfaa36743eaa344685d24df34ae",
+      "size": 815
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/DUCT_AUTOTAG_CROSS_PROFILE_SUPPRESSION_20261007_v23.md",
+      "repository_path": "ROBMEPTOOLS.extension/DUCT_AUTOTAG_CROSS_PROFILE_SUPPRESSION_20261007_v23.md",
+      "sha256": "3719bab43e1c0c87becd8f5c231ae27fff0543342bfc41f95dd7abf5fb939a48",
+      "size": 1534
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/DUCT_AUTOTAG_HUMAN_PLAN_ANNOTATION_AUDIT_20261007_v22.md",
+      "repository_path": "ROBMEPTOOLS.extension/DUCT_AUTOTAG_HUMAN_PLAN_ANNOTATION_AUDIT_20261007_v22.md",
+      "sha256": "f6f4249c25d22de26d38d221d025e7a70fcccebb7aaa3c68408fa5d00b8538ce",
+      "size": 3094
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/DUCT_AUTOTAG_SQUARE_ROUND_TRANSITION_FIX_20261007_v21.md",
+      "repository_path": "ROBMEPTOOLS.extension/DUCT_AUTOTAG_SQUARE_ROUND_TRANSITION_FIX_20261007_v21.md",
+      "sha256": "ed2c9fcb19676f73bd1e376054f79011a1d8ba05e807d2ae4d3cf774a2ed74dd",
+      "size": 1658
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/DUCT_HUMAN_COMPLETE_ANNOTATION_RESEARCH_20261007_v24.md",
+      "repository_path": "ROBMEPTOOLS.extension/DUCT_HUMAN_COMPLETE_ANNOTATION_RESEARCH_20261007_v24.md",
+      "sha256": "0e8bf6ee56e8ed0bc720a8f4be67ce8f6644d04f8095feb341d31c2acf7a07b8",
+      "size": 4745
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/HUMAN_DIM_ORGANIZER_AUDIT_20261006.md",
+      "repository_path": "ROBMEPTOOLS.extension/HUMAN_DIM_ORGANIZER_AUDIT_20261006.md",
+      "sha256": "872ee2d3d803ca115f437458549292d75ee1f26b8aa6aefd9a4323ae850b0ac9",
+      "size": 3041
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/HUMAN_REFERENCE_AUDIT_20261006.md",
+      "repository_path": "ROBMEPTOOLS.extension/HUMAN_REFERENCE_AUDIT_20261006.md",
+      "sha256": "d1494aad6712fba341aade4b4ac16bc613dfba9290064065721c8f81b8f44557",
+      "size": 5989
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/PIPE_DWP_CENTERLINE_ONLY_RISER_FIX_20261007_v20.md",
+      "repository_path": "ROBMEPTOOLS.extension/PIPE_DWP_CENTERLINE_ONLY_RISER_FIX_20261007_v20.md",
+      "sha256": "9f63335170fdec511d0d1cd0bec005068e726e570d46abcf3839e21fdc76979f",
+      "size": 1011
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/PIPE_DWP_HUMANIZATION_AUDIT_20261007.md",
+      "repository_path": "ROBMEPTOOLS.extension/PIPE_DWP_HUMANIZATION_AUDIT_20261007.md",
+      "sha256": "817c99ba97556f614dc50fcef7408626952fca5591db1283804fa0a038be98e6",
+      "size": 3294
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/PIPE_DWP_HUMANIZATION_AUDIT_20261007_v19.md",
+      "repository_path": "ROBMEPTOOLS.extension/PIPE_DWP_HUMANIZATION_AUDIT_20261007_v19.md",
+      "sha256": "d4e909ebc66e0df103c14baa24aebb0d8fcc20e7b706e16edbb0b42c9cd6f25b",
+      "size": 1803
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/README.txt",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/README.txt",
+      "sha256": "24d59e1ab251c7a7d4cf286ff7239d38eeaf0ee28165905f9cc3c160dc6e0385",
+      "size": 2514
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/autodim.xaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/autodim.xaml",
+      "sha256": "7112d1126bdb93afa08c8d838410101d55491512bceaa8eadffa05cdab3af7f5",
+      "size": 19227
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/bundle.yaml",
+      "sha256": "3ecff0144f4aafa4a448cdb281b7ac0a83edcb10e12897ebf33c6539de96728b",
+      "size": 409
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/engines/__init__.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/engines/__init__.py",
+      "sha256": "8c168cf25b348ea1ed71844508978d4705fb12d35062ba6f9ace53e1da5182ac",
+      "size": 37
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/engines/duct_engine.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/engines/duct_engine.py",
+      "sha256": "d91aa78f1d4b5b91ad0fc95fd238c02c7edc993c856cd70bc870f3efa9d9268d",
+      "size": 261078
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/engines/pipe_engine.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/engines/pipe_engine.py",
+      "sha256": "8eee50bc13c61560e35fe9bdfb4440b561026d90686a87879c402a9dac266991",
+      "size": 244381
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/icon.dark.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/icon.dark.png",
+      "sha256": "ca31a1ebfe118cba257fc622f0ddf6ade3892c1b00963559954c63efca690c3b",
+      "size": 8240
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/icon.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/icon.png",
+      "sha256": "ca31a1ebfe118cba257fc622f0ddf6ade3892c1b00963559954c63efca690c3b",
+      "size": 8240
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/script.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/script.py",
+      "sha256": "2dedae5232ee041ecddc7434343945bd7dc1d620b668f4695caf0e255541dbec",
+      "size": 13369
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Controls.xaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Controls.xaml",
+      "sha256": "9be14bcb354550d93b2018460fc681b0f4467847849c861b4119d34ceda33914",
+      "size": 13808
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Icons.xaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Icons.xaml",
+      "sha256": "7c0236abd4b4ad12dfed18601ffe53588179042afffc94ecb3a3e0b5d87ee4b1",
+      "size": 970
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Theme.xaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS.Theme.xaml",
+      "sha256": "e5b1aabb26ef5e7df4f8aa670d934cbecb37899b74d8363971692c9400cc90dc",
+      "size": 2167
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS_MENU_TEMPLATE.xaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS_MENU_TEMPLATE.xaml",
+      "sha256": "09958e0d014783d8cdd33357f9a8962d86a18c8dabc3d8272321065f0e5d9706",
+      "size": 21481
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS_STYLE_GUIDE.md",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoDim.panel/AutoDim Smart.pushbutton/ui/ROBMEPTOOLS_STYLE_GUIDE.md",
+      "sha256": "482c42768cde1fcb2b5694723c283f94ccf8ec0c397fc33d7e78587944349883",
+      "size": 3394
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/README.txt",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/README.txt",
+      "sha256": "c5af01ed293160a770e6719df8323063c5829d4f6a5e53519869f6068ce7cac1",
+      "size": 6667
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/autotag.xaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/autotag.xaml",
+      "sha256": "7acce828f5599060faf355041ef3ecfb082b5d3190d9d311db887fdb9e435fe3",
+      "size": 22744
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/autotag_components.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/autotag_components.py",
+      "sha256": "8652ed05e2395546e832dabbdc4aee9838e301a709d197e7544a2ed185cb95ed",
+      "size": 29743
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/autotag_menu.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/autotag_menu.py",
+      "sha256": "a46eb9265d33e8645c3dc98b7e8890071ab48a145dc63bc5560bbb798454137d",
+      "size": 24777
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/bundle.yaml",
+      "sha256": "ab0110bed9f5ac0db74d522e405626a03a1ffd539ae1a89d72b0212058a43fd7",
+      "size": 585
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/engines/duct_engine.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/engines/duct_engine.py",
+      "sha256": "291f7ed5bda7a777df1b3865f200c332c23d4cedf8fde2e66fb28de40db6901f",
+      "size": 273375
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/engines/pipe_engine.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/engines/pipe_engine.py",
+      "sha256": "6b4e99c49803eaa6fd24f4f961262cfc5127b9c12c329ed092a0f5e48fbafa28",
+      "size": 262658
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/icon.dark.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/icon.dark.png",
+      "sha256": "db7f19f0dddf675bbc1170bc93343c34d5f6b312112931bba200386e7c1f5a10",
+      "size": 5919
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/icon.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/icon.png",
+      "sha256": "6250fb0055f159b506bda3cb05309938cc086c447629add674783335ba5ed889",
+      "size": 5965
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/AutoTag Smart.pushbutton/script.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/AutoTag.panel/AutoTag Smart.pushbutton/script.py",
+      "sha256": "c965f6a41da2b6682c60ef6312611c0e764ead765a4e88b1c29954fc9e00a940",
+      "size": 4823
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/README.txt",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/README.txt",
+      "sha256": "49fb643aa4d34205ccec2999a8cc5aa3c6c35884d36f01820fb28bd0c4eb535b",
+      "size": 4278
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/bundle.yaml",
+      "sha256": "a71f4d093a0fb0e30fc667096eca4da3d01bbd4fa5af730ae5e8f5e837f4396d",
+      "size": 625
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/icon.dark.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/icon.dark.png",
+      "sha256": "596b20941b523a90a5274db225ba3cdb62dfe306add57b49c200a73c712d9c6f",
+      "size": 1070
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/icon.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/icon.png",
+      "sha256": "42b524db06499d9af628fcd097ff99ac12153b748c19ecfa69680567e690b5ce",
+      "size": 1069
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/organizer.xaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/organizer.xaml",
+      "sha256": "71b727f3d8358a7b5b23a9399332c9bab3c7b1101f36d6cb82160cad1df718b4",
+      "size": 14332
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/script.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/Tag Dim Organizer.pushbutton/script.py",
+      "sha256": "c32d5ed96baab7ac783c4d7fec88728df8eee15f1fad267977af4421e1f56cc2",
+      "size": 75206
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Annotation.panel/bundle.yaml",
+      "sha256": "cb2fb8aef7a3a3a1810b2383166bf240195af73fdd0faf4d86b303a4196653d5",
+      "size": 84
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/README.txt",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/README.txt",
+      "sha256": "97af7569dd3a3cfc9b93725c8f3c6fe5e810fc50f62f63664a0f8061e734bba3",
+      "size": 2423
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/bundle.yaml",
+      "sha256": "a4520b61afb9c07b0060b4275c0a9218acaba2dba375300f6bfeef4fbe356822",
+      "size": 277
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/icon.dark.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/icon.dark.png",
+      "sha256": "a1307973763661aa59d1cbe01ffba4a14f1fd7d29ea9f614095779028a3d1b1f",
+      "size": 8332
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/icon.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/icon.png",
+      "sha256": "a1307973763661aa59d1cbe01ffba4a14f1fd7d29ea9f614095779028a3d1b1f",
+      "size": 8332
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/script.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Classifier.pushbutton/script.py",
+      "sha256": "110e894d21520578023ebe321b0cedfbb80ec19c4dd1444a9115a4af3d1b5715",
+      "size": 29218
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/README.txt",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/README.txt",
+      "sha256": "5ba03705c6f80912d69f7240e4eea6c3230d2bc914380a0d7773457e67b3db3c",
+      "size": 2494
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/bundle.yaml",
+      "sha256": "1ef4f75505672a84f7a3c01f1aea6ae9012c08a5976f7128caf9121c615be483",
+      "size": 308
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/icon.dark.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/icon.dark.png",
+      "sha256": "73a75b6e61e0de3b0fefcf8400994680efba871e1337fc7eb6779d8fe22b7aaa",
+      "size": 9585
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/icon.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/icon.png",
+      "sha256": "73a75b6e61e0de3b0fefcf8400994680efba871e1337fc7eb6779d8fe22b7aaa",
+      "size": 9585
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/script.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/Fab Ref Probe.pushbutton/script.py",
+      "sha256": "a12d3a614749890d54a226e94a4383aa08b2166355688409d2d5e8bccc5026a1",
+      "size": 31518
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/FOUNDATION_BUILD.txt",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/FOUNDATION_BUILD.txt",
+      "sha256": "8a38f03a47e821e4815e22fd43592ae3eed2f63b32946ecc6994325f654b7817",
+      "size": 634
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/bundle.yaml",
+      "sha256": "124bfe2244eb13b83b264d23da5429718bacb958849169d3f9aa726ebab7e58b",
+      "size": 359
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/config.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/config.py",
+      "sha256": "91c15e2e33e2091a3859568bf6208a88a57c982710cf1a519898ba9b4c2992b1",
+      "size": 28646
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/config.xaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/config.xaml",
+      "sha256": "dd18bb427abfbee41960cb6fc632b2372a8040b50ed5f260fe86ce9675aad3ea",
+      "size": 62824
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/fabhover_core.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/fabhover_core.py",
+      "sha256": "b5ae9fbf9f36e998e6daea86692ef3f74b5250ad8b68401828855aece401e774",
+      "size": 94969
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/fabhover_settings.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/fabhover_settings.py",
+      "sha256": "692b7e1c409228b0d5f27b54702fc5a4ed835e4a7d1c1706f05a562f8aa6c3c9",
+      "size": 12718
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/fabhover_state.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/fabhover_state.py",
+      "sha256": "34f1176f9a09157b77edf9a4b54351ba6602c43aac28c6d0f2d2ef52dc9ace83",
+      "size": 2244
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/icon.dark.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/icon.dark.png",
+      "sha256": "382e77df817f1ebc11912026ea4ef28571b260e348b306d1cb13ab9b9c054651",
+      "size": 9061
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/icon.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/icon.png",
+      "sha256": "382e77df817f1ebc11912026ea4ef28571b260e348b306d1cb13ab9b9c054651",
+      "size": 9061
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/script.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/script.py",
+      "sha256": "1f1c1869c3b7cc935942547309d7815cb312b212ec24634cec91bc26e8ea2c38",
+      "size": 1396
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Controls.xaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Controls.xaml",
+      "sha256": "9be14bcb354550d93b2018460fc681b0f4467847849c861b4119d34ceda33914",
+      "size": 13808
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Icons.xaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Icons.xaml",
+      "sha256": "7c0236abd4b4ad12dfed18601ffe53588179042afffc94ecb3a3e0b5d87ee4b1",
+      "size": 970
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Theme.xaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/ui/ROBMEPTOOLS.Theme.xaml",
+      "sha256": "e5b1aabb26ef5e7df4f8aa670d934cbecb37899b74d8363971692c9400cc90dc",
+      "size": 2167
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/ui/ROBMEPTOOLS_MENU_TEMPLATE.xaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/ui/ROBMEPTOOLS_MENU_TEMPLATE.xaml",
+      "sha256": "09958e0d014783d8cdd33357f9a8962d86a18c8dabc3d8272321065f0e5d9706",
+      "size": 21481
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/FabHover.pushbutton/ui/ROBMEPTOOLS_STYLE_GUIDE.md",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fab Hover.panel/FabHover.pushbutton/ui/ROBMEPTOOLS_STYLE_GUIDE.md",
+      "sha256": "482c42768cde1fcb2b5694723c283f94ccf8ec0c397fc33d7e78587944349883",
+      "size": 3394
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Fabrication.panel/bundle.yaml",
+      "sha256": "69a5d3efa91e5104c334720d8675f62d7673604a4eecf1bf73263ee1fff5a179",
+      "size": 81
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Import Navis BOS.pushbutton/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Import Navis BOS.pushbutton/bundle.yaml",
+      "sha256": "5f2ce00a4bc8ec02dfe57c32a6e24849e9f47f16d7d36f2abb1b6ac975cb5e86",
+      "size": 202
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Import Navis BOS.pushbutton/icon.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Import Navis BOS.pushbutton/icon.png",
+      "sha256": "112bcc737bfbefde093582db0de9e2f07818b9bdc85841fa1abf29bab77d4ebc",
+      "size": 5710
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Import Navis BOS.pushbutton/script.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Import Navis BOS.pushbutton/script.py",
+      "sha256": "c74cda4106ec53fbd4058681248964e332040210c939235d0a37c9ab71f96abf",
+      "size": 13458
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Joist Groups.pushbutton/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Joist Groups.pushbutton/bundle.yaml",
+      "sha256": "acc8d818c9500d65c74d7edb71525734019032010450abf5a5debe247f34f70c",
+      "size": 244
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Joist Groups.pushbutton/icon.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Joist Groups.pushbutton/icon.png",
+      "sha256": "44532366bd68f0cf5c416a86a5187e123a2d5d004aae2d70a0ebd06561773537",
+      "size": 1060
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Joist Groups.pushbutton/script.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Joist Groups.pushbutton/script.py",
+      "sha256": "bae452beffa805706184752e309e0a1c7ba71390ec1fdf8f721edc27c116ab4c",
+      "size": 30988
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Joist Groups.pushbutton/ui.xaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Joist Groups.pushbutton/ui.xaml",
+      "sha256": "479f9a389c5d845881231bc1b2fd11a8d20b867c911b85306d2722685f29dbe5",
+      "size": 6592
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Probe NWD.pushbutton/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Probe NWD.pushbutton/bundle.yaml",
+      "sha256": "447d925344ea6ac961dc43c600532385006301d53783990fe78ad3127d6d0785",
+      "size": 157
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Probe NWD.pushbutton/icon.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Probe NWD.pushbutton/icon.png",
+      "sha256": "583ce5233fa50d54f030338fdee03e875560c56bc78406a144e6fb8ba9ffa1d2",
+      "size": 846
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Probe NWD.pushbutton/script.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Probe NWD.pushbutton/script.py",
+      "sha256": "b0422f611f66d37024e539b7cbca0b31b73362eda48b744d04922d9dadb3bf69",
+      "size": 16063
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Reconstruct Steel.pushbutton/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Reconstruct Steel.pushbutton/bundle.yaml",
+      "sha256": "2ab1fbbd816ee13b665d533412199585c5d1a7e7ad46d9d573e9038bf1f5402f",
+      "size": 467
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Reconstruct Steel.pushbutton/icon.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Reconstruct Steel.pushbutton/icon.png",
+      "sha256": "112bcc737bfbefde093582db0de9e2f07818b9bdc85841fa1abf29bab77d4ebc",
+      "size": 5710
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Reconstruct Steel.pushbutton/script.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Reconstruct Steel.pushbutton/script.py",
+      "sha256": "50ea2313ddf4fda4b64d4da5aa7bd6448e86b1adc32e6811f6e29ad31bad1de4",
+      "size": 22532
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Reconstruct Steel.pushbutton/ui.xaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Reconstruct Steel.pushbutton/ui.xaml",
+      "sha256": "f190e92d37fd0be7d21b550d60ec0c27071b74ee5b0e02b3f03a8cc04e63d8ae",
+      "size": 5303
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/bundle.yaml",
+      "sha256": "429d92c862e7d0c56d014fd43fca7fe9fc9ad8ac32b3fbd3060beba7c58b3768",
+      "size": 104
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/bundle.yaml",
+      "sha256": "87d2fc5c041bb828292a54050d741619b80bd881563e39791fe041f66e36d71b",
+      "size": 418
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/collision_guard.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/collision_guard.py",
+      "sha256": "e03c3df5d6101ccf11104f1bd8d5c89ebcacb8b56a01d5cdf56ccb5a902b949e",
+      "size": 1291
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/icon.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/icon.png",
+      "sha256": "3c6ff66ad76360c7125d7a4c6979085a05568df67cb9638a00985439aa72d1c7",
+      "size": 2636
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/linked_obstacles.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/linked_obstacles.py",
+      "sha256": "a6235dce21ba46f4846b17f526820628e3794b3d006401144f210d534dce8317",
+      "size": 27868
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/planner.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/planner.py",
+      "sha256": "cddeae5d6988bb0b712ebb4ffae948becea5b679469963692cd1ed6f14db0206",
+      "size": 24361
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/rod_geometry.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/rod_geometry.py",
+      "sha256": "5c66fe7a4010779fc709e825cc2df471d9e6fe5c7f339427d35d926b9469f41d",
+      "size": 20117
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/script.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/script.py",
+      "sha256": "fac932e125e3ba65105402f63665ef5180c84720b6071a0d37f834551a4f475d",
+      "size": 96321
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/settings.xaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/settings.xaml",
+      "sha256": "ac1b6d8aac6c02662c542c51f9841b4554dc323cd28eb23197d87756d288e496",
+      "size": 10262
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_catalog.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_catalog.py",
+      "sha256": "d3f436e11b7a1ae67e847f1e524c1108663bc695f865ba1034a7298e48075e54",
+      "size": 16899
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_discovery.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_discovery.py",
+      "sha256": "0d5f2eea034d0278417f337f736c53f847501b75f245be60cfb17552a065e7b6",
+      "size": 20573
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_picker.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_picker.py",
+      "sha256": "bfcf86cc429d89e0f9140adc3275e75e0f3e245bbd0bfa39823f922618a5ef75",
+      "size": 23353
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_picker.xaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_picker.xaml",
+      "sha256": "2ec2654d69bc3ac89a1faa402113dcc5884ff9ca52c810a6161700b8768d5eee",
+      "size": 5351
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_priority.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_priority.py",
+      "sha256": "7cc7ade284cb29bda5908cb809c75ca65e14053fc8b4a3311f23e7b5c5718e58",
+      "size": 30556
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_stations.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/structure_stations.py",
+      "sha256": "dea066e00f9f3945dea781a5a0854bc567ac931201bb30ccb104bfec9e3f9c44",
+      "size": 6149
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Repair Draft Rods.pushbutton/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Repair Draft Rods.pushbutton/bundle.yaml",
+      "sha256": "9a2cd30f4c33e306a6525090db240eef2869895a84df6843656987467b02a6d8",
+      "size": 358
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Repair Draft Rods.pushbutton/icon.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Repair Draft Rods.pushbutton/icon.png",
+      "sha256": "3c6ff66ad76360c7125d7a4c6979085a05568df67cb9638a00985439aa72d1c7",
+      "size": 2636
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Repair Draft Rods.pushbutton/rod_geometry.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Repair Draft Rods.pushbutton/rod_geometry.py",
+      "sha256": "5c66fe7a4010779fc709e825cc2df471d9e6fe5c7f339427d35d926b9469f41d",
+      "size": 20117
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Repair Draft Rods.pushbutton/script.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Repair Draft Rods.pushbutton/script.py",
+      "sha256": "1eb88b972217c450c73e68f8037c118586bd90039a9a494809a6641fde49927c",
+      "size": 8200
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Repair Draft Rods.pushbutton/structure_priority.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Repair Draft Rods.pushbutton/structure_priority.py",
+      "sha256": "7cc7ade284cb29bda5908cb809c75ca65e14053fc8b4a3311f23e7b5c5718e58",
+      "size": 30556
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Review Extra Hangers.pushbutton/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Review Extra Hangers.pushbutton/bundle.yaml",
+      "sha256": "5ff60346dfe8a38858bf240a9a533815a70f14ccd564e3c816a01d1afa1d9612",
+      "size": 270
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Review Extra Hangers.pushbutton/icon.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Review Extra Hangers.pushbutton/icon.png",
+      "sha256": "3c6ff66ad76360c7125d7a4c6979085a05568df67cb9638a00985439aa72d1c7",
+      "size": 2636
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Review Extra Hangers.pushbutton/script.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Review Extra Hangers.pushbutton/script.py",
+      "sha256": "70951ec16d0e90d2a293dd9520109df7a1472895da28b68b94c2f06cdf551fbb",
+      "size": 4683
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/bundle.yaml",
+      "sha256": "00b6ad965a9bfa171ee425b311a11b8dc19a135cdad4ae3b33573330bac37748",
+      "size": 86
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From DXF.pushbutton/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From DXF.pushbutton/bundle.yaml",
+      "sha256": "e912362d6577a39542e21bd612fdb5a4cb9e6d6c28b466eb7c7d83dcd8f5ff3a",
+      "size": 395
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From DXF.pushbutton/geometry_utils.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From DXF.pushbutton/geometry_utils.py",
+      "sha256": "bcf089bc3581ac812cc60948404356ef8647efd8ef12b838698fb7a304822532",
+      "size": 7053
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From DXF.pushbutton/icon.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From DXF.pushbutton/icon.png",
+      "sha256": "a5fb58101baf8662d6ea0a9be475e6f49a98c7f63fb17b9201e732ae632be2c3",
+      "size": 1960
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From DXF.pushbutton/script.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From DXF.pushbutton/script.py",
+      "sha256": "1729c0ea72a23a73821fa6c41cf8387a36c00f7f9828a9604d885592d3f28aca",
+      "size": 20343
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From DXF.pushbutton/surface_utils.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From DXF.pushbutton/surface_utils.py",
+      "sha256": "2ebc27e0eebdc2f6572f55b45d9ef5b85477a8292eeb006eb2911cb32f7b261d",
+      "size": 1857
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/bundle.yaml",
+      "sha256": "bb4dec6024aa1340cc34db769a8d033d5a54bb0ad23f48a8c07cd418bf308eef",
+      "size": 370
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/geometry_utils.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/geometry_utils.py",
+      "sha256": "bcf089bc3581ac812cc60948404356ef8647efd8ef12b838698fb7a304822532",
+      "size": 7053
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/icon.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/icon.png",
+      "sha256": "a5fb58101baf8662d6ea0a9be475e6f49a98c7f63fb17b9201e732ae632be2c3",
+      "size": 1960
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/ifc_geometry.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/ifc_geometry.py",
+      "sha256": "1009b71784d663bf2070fd7ac9e22e1a6634c162f7e535f0b130f39a17715574",
+      "size": 9195
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/script.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/script.py",
+      "sha256": "b6d722bfd500b3fa72160bb7ad50d851ad562044d361227968434f37cfe26dc1",
+      "size": 13708
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/surface_utils.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/Roof Deck From IFC.pushbutton/surface_utils.py",
+      "sha256": "2ebc27e0eebdc2f6572f55b45d9ef5b85477a8292eeb006eb2911cb32f7b261d",
+      "size": 1857
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Roof Deck.panel/bundle.yaml",
+      "sha256": "928ecf37c06783b71c254c860055ea0a66aa954b0dbe8f8875c8c82d8887b9ac",
+      "size": 71
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Schedules.panel/ROBMEPTOOLS Schedule Number.pushbutton/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Schedules.panel/ROBMEPTOOLS Schedule Number.pushbutton/bundle.yaml",
+      "sha256": "719783826cee60ab3be24572c9ef9493bd1de041655f7dc082d47837deb8eac5",
+      "size": 694
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Schedules.panel/ROBMEPTOOLS Schedule Number.pushbutton/icon.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Schedules.panel/ROBMEPTOOLS Schedule Number.pushbutton/icon.png",
+      "sha256": "aa2161dd7ef856acde080ff9c319c9e3334fb28b32d3a372e9346ead46393880",
+      "size": 2272
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Schedules.panel/ROBMEPTOOLS Schedule Number.pushbutton/script.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Schedules.panel/ROBMEPTOOLS Schedule Number.pushbutton/script.py",
+      "sha256": "362b000ee3f01a582940ecdacc8e895722576060d507baec569d6dd7bc4d13dc",
+      "size": 42614
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Schedules.panel/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Schedules.panel/bundle.yaml",
+      "sha256": "d200a0c84969f1dd65592d8c328d92e51583c5a5945f8dc66f7e7872a89ed870",
+      "size": 57
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/bundle.yaml",
+      "sha256": "fc740c1a85b0a249338f4883a745776b6b30cfafb7360c31d4a3d5083290df5d",
+      "size": 294
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/config.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/config.py",
+      "sha256": "e4ab971858ea879b8f15bc2fdafa5fe404e12fd99ee36c479b2c7ce76cb047a6",
+      "size": 1148
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/icon.dark.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/icon.dark.png",
+      "sha256": "ca31a1ebfe118cba257fc622f0ddf6ade3892c1b00963559954c63efca690c3b",
+      "size": 8240
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/icon.png",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/icon.png",
+      "sha256": "ca31a1ebfe118cba257fc622f0ddf6ade3892c1b00963559954c63efca690c3b",
+      "size": 8240
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/script.py",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/script.py",
+      "sha256": "cc5ee34fc0579210d27b324764f3383d273fbf8fdc24ba180283898eae85a265",
+      "size": 643
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Updates.panel/bundle.yaml",
+      "sha256": "e986d293c27595ccd647cb9337a3a0a11a960c60a34fe0ea8160aaa0c818f77b",
+      "size": 39
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/bundle.yaml",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/bundle.yaml",
+      "sha256": "f5b14353763513b5ccb66ef76a5a991f7888c512cc61c1042252d1a95ef224d2",
+      "size": 127
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_AUTODIM_REVIEW.md",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_AUTODIM_REVIEW.md",
+      "sha256": "828e30caaf1bf7d74718969a0f55e7eb731a823467cadbe19b0b132665ceab68",
+      "size": 5599
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_CLOUD_IMPROVEMENTS.md",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_CLOUD_IMPROVEMENTS.md",
+      "sha256": "a1df998664fab4a876273f24ec21b12a3ca352247a1e079cc539646faa841de2",
+      "size": 2195
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_DUCT_AUTODIM_64BIT_REVIEW.md",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_DUCT_AUTODIM_64BIT_REVIEW.md",
+      "sha256": "2e726271c9387751c610189044992111c2bac64a5c59832d63393a5b70fbd679",
+      "size": 3572
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_DUCT_AUTODIM_AXIS_REVIEW.md",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_DUCT_AUTODIM_AXIS_REVIEW.md",
+      "sha256": "9f1cc3e3689e41d78fd1ce2624e5d95c00e17dba705f87e884c14de3b0d3ac76",
+      "size": 3840
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_DUCT_AUTODIM_RUNTIME_REVIEW.md",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_DUCT_AUTODIM_RUNTIME_REVIEW.md",
+      "sha256": "6ec7f0c74d87ac0d13afb1c3c9be71d677f2607af2a8eabc35abecc9e98960d1",
+      "size": 3345
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_DUCT_AUTOTAG_REVIEW.md",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_DUCT_AUTOTAG_REVIEW.md",
+      "sha256": "6cf183b1572adb34711ba84dc12c052cd92256901457c8e067cf74c5906964dd",
+      "size": 13171
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_NATIVE_KS.txt",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_NATIVE_KS.txt",
+      "sha256": "5171f6125b9c71c2a04ec427283e426870a68dfed6244db81c570a964cda40cc",
+      "size": 1046
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_PIPE_REVIEW.md",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_PIPE_REVIEW.md",
+      "sha256": "67cb9447f913a70db12bd8e0b2d19f6026e1d7d320a438f69beec0a984da184e",
+      "size": 5983
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_RELEASE_20261006.md",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_RELEASE_20261006.md",
+      "sha256": "2b57d6865f04c06c1a101a4e29d8ad7d359186c05269676b01a9909984f3f39d",
+      "size": 15713
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_RELEASE_20261007_v24.md",
+      "repository_path": "ROBMEPTOOLS.extension/ROBMEPTOOLS_RELEASE_20261007_v24.md",
+      "sha256": "49894e3b1eca3ec206f86e0fe08aff6f294a524369ccb76bbc091e91881aaccc",
+      "size": 667
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/WASC_HUMAN_DRAFTING_AUDIT_20261006.md",
+      "repository_path": "ROBMEPTOOLS.extension/WASC_HUMAN_DRAFTING_AUDIT_20261006.md",
+      "sha256": "ee4451691d0624b95b7cae16db8b60d343e90f4f5ed5028cac8b3333e58fa23d",
+      "size": 4425
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/lib/robmep_updater.py",
+      "repository_path": "ROBMEPTOOLS.extension/lib/robmep_updater.py",
+      "sha256": "55ed097556904ce18c07bc2764e5437bfe108723b869293d10f412877c27ed68",
+      "size": 16189
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/startup.py",
+      "repository_path": "ROBMEPTOOLS.extension/startup.py",
+      "sha256": "4d45c18feee5f876f67067f6c792543cf8b4e055a8728e4394b56750fb8e93c9",
+      "size": 306
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/updater/Git-Location.psm1",
+      "repository_path": "ROBMEPTOOLS.extension/updater/Git-Location.psm1",
+      "sha256": "4c3ca0b6f47bd6e42dba094ddc0c97e630e63fd414bdb0f47c52ccc5779d2779",
+      "size": 3294
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/updater/Update-Background.ps1",
+      "repository_path": "ROBMEPTOOLS.extension/updater/Update-Background.ps1",
+      "sha256": "ce1372bcf60b5f4b3cfd72a3230f0f5fc563b95c5185c9bdc661c1ab2d30c699",
+      "size": 7038
+    },
+    {
+      "source_path": "ROBMEPTOOLS.extension/updater/Update-Core.psm1",
+      "repository_path": "ROBMEPTOOLS.extension/updater/Update-Core.psm1",
+      "sha256": "6ebbe7290d7a0dd39ad5a89690f02fd390f900aeae0618631fc25e4b2b106663",
+      "size": 8248
+    },
+    {
+      "source_path": "docs/merge_sources.json",
+      "repository_path": "docs/merge_sources.json",
+      "sha256": "56f785d1dceb57da31c22cd63866927f13e1eee6731eac7a44df0c5fc26e31a0",
+      "size": 1542
+    },
+    {
+      "source_path": "docs/original_tool_notes/hanger/FIELD_TESTING.md",
+      "repository_path": "docs/original_tool_notes/hanger/FIELD_TESTING.md",
+      "sha256": "4d840158a5b230f4c1e870b5749dd2adcc57c127a55da20340bd6736b7f6b30e",
+      "size": 22499
+    },
+    {
+      "source_path": "docs/original_tool_notes/hanger/IFC_STRUCTURE_SELECTION.md",
+      "repository_path": "docs/original_tool_notes/hanger/IFC_STRUCTURE_SELECTION.md",
+      "sha256": "64fc06afc88504972e1fb81bf0704dd3706d41f87973f3b5f201277747e1ccfc",
+      "size": 11713
+    },
+    {
+      "source_path": "docs/original_tool_notes/hanger/NEXT_TEST.md",
+      "repository_path": "docs/original_tool_notes/hanger/NEXT_TEST.md",
+      "sha256": "3b5dea1e5f5c4dc260ef1140ce0d1afda97af2a203f1b43f0b92b2da7746aa5f",
+      "size": 2624
+    },
+    {
+      "source_path": "docs/original_tool_notes/hanger/PUBLIC_TOOL_COMPARISON.md",
+      "repository_path": "docs/original_tool_notes/hanger/PUBLIC_TOOL_COMPARISON.md",
+      "sha256": "59309b85943283889cf5bc60d951415c9ebdfa0f520c9e45880add8a6761e399",
+      "size": 7543
+    },
+    {
+      "source_path": "docs/original_tool_notes/hanger/README_FIRST.md",
+      "repository_path": "docs/original_tool_notes/hanger/README_FIRST.md",
+      "sha256": "c76276d986a6397f925987c84f0b737c48e29962a534eebab14771c672e11ef5",
+      "size": 7384
+    },
+    {
+      "source_path": "docs/original_tool_notes/hanger/RELEASE_NOTES.md",
+      "repository_path": "docs/original_tool_notes/hanger/RELEASE_NOTES.md",
+      "sha256": "62ac59fe4551a78fc79539b4fbed0cbc484052ecdf7d840ddd064865bde3e3ec",
+      "size": 19330
+    },
+    {
+      "source_path": "docs/original_tool_notes/roof_deck/INSTALL_README.txt",
+      "repository_path": "docs/original_tool_notes/roof_deck/INSTALL_README.txt",
+      "sha256": "477677d6f88647a689a0264abca2d59431eed34aabbb2669e7a4ac136a331b96",
+      "size": 6239
+    },
+    {
+      "source_path": "docs/original_tool_notes/steel/README-INSTALL-FIRST.txt",
+      "repository_path": "docs/original_tool_notes/steel/README-INSTALL-FIRST.txt",
+      "sha256": "a2868b8e5f2d13384ce7ae49c4f306971c93bf25cdaf9b8c02527abc48f77d25",
+      "size": 3285
+    },
+    {
+      "source_path": "docs/original_tool_notes/steel/VERSION.txt",
+      "repository_path": "docs/original_tool_notes/steel/VERSION.txt",
+      "sha256": "d47415af6f44280568077f398e0c61c15bc5f4f85e0e81a051464bc4cfc8b792",
+      "size": 115
+    },
+    {
+      "source_path": "docs/research/ROBMEPTOOLS_EVOLVE_Research_and_Codex_Masterplan.md",
+      "repository_path": "docs/research/ROBMEPTOOLS_EVOLVE_Research_and_Codex_Masterplan.md",
+      "sha256": "71c552b476aa16b05ea909492217dd4ce2a2217f22ff18c6bae7b55ada10dc3f",
+      "size": 25964
+    },
+    {
+      "source_path": "docs/unified_source_hashes.json",
+      "repository_path": "docs/unified_source_hashes.json",
+      "sha256": "b4bd958a1d6f6697ec232b92193c09dd8ad0440fb3d0914280f6fbd2115a73f2",
+      "size": 12699
+    },
+    {
+      "source_path": "installer/Check-Updater.ps1",
+      "repository_path": "installer/Check-Updater.ps1",
+      "sha256": "e6e66140e1440b5d8d8bcfb8b9b64a69161bd06ae4911a070706f20c3a13be8f",
+      "size": 11884
+    },
+    {
+      "source_path": "installer/Install-Location.psm1",
+      "repository_path": "installer/Install-Location.psm1",
+      "sha256": "c7f497fe407429285f9d8bb1fdd407a3f87cfd73099ee3b72c995a43deef9a21",
+      "size": 2340
+    },
+    {
+      "source_path": "installer/Install-Updater.cmd",
+      "repository_path": "installer/Install-Updater.cmd",
+      "sha256": "6417be293f49947dc7b16e9946f788987ed361187a9c739229031787e7c9c7e5",
+      "size": 115
+    },
+    {
+      "source_path": "installer/Install-Updater.ps1",
+      "repository_path": "installer/Install-Updater.ps1",
+      "sha256": "e33e622821518733e677469f9b646e930c9642b98fad78e37c5d6c2f97a28822",
+      "size": 11920
+    },
+    {
+      "source_path": "installer/Scheduled-Task.psm1",
+      "repository_path": "installer/Scheduled-Task.psm1",
+      "sha256": "98f75e4e86a09e72d6f38d53bd83f3bfab60e1be5244d9ab06af2af619a04eb7",
+      "size": 6875
+    },
+    {
+      "source_path": "legacy/original_update_tests/test_update_release.py",
+      "repository_path": "legacy/original_update_tests/test_update_release.py",
+      "sha256": "076830bc3bad138a41fad35751da643f387309188c69bdbc33642cbdf3ffb647",
+      "size": 2192
+    },
+    {
+      "source_path": "legacy/original_updater_entrypoints/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/bundle.yaml",
+      "repository_path": "legacy/original_updater_entrypoints/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/bundle.yaml",
+      "sha256": "63b48dcc2ec9e60516f0b174879a77f76d7e4375cad32e7ee9aa9d4b9bb8dfb2",
+      "size": 336
+    },
+    {
+      "source_path": "legacy/original_updater_entrypoints/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/script.py",
+      "repository_path": "legacy/original_updater_entrypoints/ROBMEPTOOLS.tab/Updates.panel/Update Tool.pushbutton/script.py",
+      "sha256": "b831b714e23b6ce599d8be3d1cbd3e7616a88211c9fd6813c23924ffa6d0d7bf",
+      "size": 854
+    },
+    {
+      "source_path": "legacy/original_updater_entrypoints/startup.py",
+      "repository_path": "legacy/original_updater_entrypoints/startup.py",
+      "sha256": "a8ae346db19001760dbe74620ebbc4702875ccc050ee2d4a4538d4e5b55ffe7e",
+      "size": 893
+    },
+    {
+      "source_path": "legacy/original_updater_entrypoints/update-manifest.json",
+      "repository_path": "legacy/original_updater_entrypoints/update-manifest.json",
+      "sha256": "a9fe25adc1ab3ec5c1cfed4b4bf0d792f24d6671b67a1ae2d8568cb89cbb77b7",
+      "size": 32077
+    },
+    {
+      "source_path": "legacy/updater_docs/AUTOUPDATE.md",
+      "repository_path": "legacy/updater_docs/AUTOUPDATE.md",
+      "sha256": "397187e5fcb5d7363297f3ad3e4d0ac07b886ecd884cedfa0e55f5981c6c24af",
+      "size": 8540
+    },
+    {
+      "source_path": "legacy/updater_docs/Check Auto Updates.cmd",
+      "repository_path": "legacy/updater_docs/Check Auto Updates.cmd",
+      "sha256": "759af44f83a99151782e38c7a2521011d847b6ba5610c9e1e66ac38d719225be",
+      "size": 130
+    },
+    {
+      "source_path": "legacy/updater_docs/Setup Auto Updates.cmd",
+      "repository_path": "legacy/updater_docs/Setup Auto Updates.cmd",
+      "sha256": "68e2235595e116bfccbae838fcd8985190681fd4955512f9332bf011be788689",
+      "size": 125
+    },
+    {
+      "source_path": "legacy_AGENTS.md",
+      "repository_path": "legacy_AGENTS.md",
+      "sha256": "0fb0a89d3de4f77844b3a4819ee720b5c77848eaa7faa2ac1df8afa682c7deb3",
+      "size": 2736
+    },
+    {
+      "source_path": "legacy_README.md",
+      "repository_path": "legacy_README.md",
+      "sha256": "ae7ee4e39f344ca7d3ae6129dfa1a93f0d0cd1c5f0d7a524e990dde821bb1eb8",
+      "size": 1232
+    },
+    {
+      "source_path": "tests/run_check_updater.ps1",
+      "repository_path": "tests/run_check_updater.ps1",
+      "sha256": "de1a1c1bb97eb20aa51c0c1299418937797375d99291a2a2bfd4022d0acfca00",
+      "size": 13147
+    },
+    {
+      "source_path": "tests/run_git_location.ps1",
+      "repository_path": "tests/run_git_location.ps1",
+      "sha256": "0bf7842f875fc80ccf027678dfdaa1765040b6e583f68ee44a3885ace0e80d82",
+      "size": 8280
+    },
+    {
+      "source_path": "tests/run_install_location.ps1",
+      "repository_path": "tests/run_install_location.ps1",
+      "sha256": "703ecec1b2f9bc4c0402c03e2da7b0107ccf3be77be1d2f56a61c94fe1bf0203",
+      "size": 3334
+    },
+    {
+      "source_path": "tests/run_updater_powershell.ps1",
+      "repository_path": "tests/run_updater_powershell.ps1",
+      "sha256": "96ced0eff9439cc7bf2cf065db7224956eeea3dbe6942d39fb584179cc5944b4",
+      "size": 6627
+    },
+    {
+      "source_path": "tests/test_autodim_accounting.py",
+      "repository_path": "tests/test_autodim_accounting.py",
+      "sha256": "2080f9352f7b8c45d68af674b08cdd444d99b27d8c2372aaab907959dd136d67",
+      "size": 12516
+    },
+    {
+      "source_path": "tests/test_autodim_attempt_diagnostics.py",
+      "repository_path": "tests/test_autodim_attempt_diagnostics.py",
+      "sha256": "26dc3a50ab09c7c5a5ad69aa6fbfa11ae5fd158bcac1b19f7d2540201b1908f0",
+      "size": 5072
+    },
+    {
+      "source_path": "tests/test_autodim_audit.py",
+      "repository_path": "tests/test_autodim_audit.py",
+      "sha256": "1ada1a6bd0e717ff502a71831fb50123a11f2b68dc8fddd23ebc8a5b8cb0ae6e",
+      "size": 3868
+    },
+    {
+      "source_path": "tests/test_autodim_branch_measurement_reuse.py",
+      "repository_path": "tests/test_autodim_branch_measurement_reuse.py",
+      "sha256": "13745ad8c9282ab07226555d09205717873705cff2278a1db5f1d466e6b2ca1c",
+      "size": 2834
+    },
+    {
+      "source_path": "tests/test_autodim_element_id_64.py",
+      "repository_path": "tests/test_autodim_element_id_64.py",
+      "sha256": "ec21c39277e30617b88674321665d516a898d4636e051b07edd97ac391a59194",
+      "size": 3312
+    },
+    {
+      "source_path": "tests/test_autodim_grid_axes.py",
+      "repository_path": "tests/test_autodim_grid_axes.py",
+      "sha256": "5eaa72fce8d61281c88495c194156841fc2042bffd48d72aa478a5437347701f",
+      "size": 4930
+    },
+    {
+      "source_path": "tests/test_autodim_layout.py",
+      "repository_path": "tests/test_autodim_layout.py",
+      "sha256": "07505d9d3a20ba39f688c99813b0b5cfacdd1423b30b4543b72480f40b5a9d14",
+      "size": 5620
+    },
+    {
+      "source_path": "tests/test_autodim_model_references.py",
+      "repository_path": "tests/test_autodim_model_references.py",
+      "sha256": "755435ce530900b5bf4c54c4ea62bc5cc9a435ff434c759e6865125f239095a9",
+      "size": 20799
+    },
+    {
+      "source_path": "tests/test_autodim_reused_helpers.py",
+      "repository_path": "tests/test_autodim_reused_helpers.py",
+      "sha256": "f43403e5087ba48a91cd92cd6e90d56d92ca421e5d9ca1f54cf20d841c3c3560",
+      "size": 4274
+    },
+    {
+      "source_path": "tests/test_autodim_text_pockets.py",
+      "repository_path": "tests/test_autodim_text_pockets.py",
+      "sha256": "71e84bfedd53249c344e6cd92ad4c40d154aec1f39afed68dcd2d37ed3d9caca",
+      "size": 6851
+    },
+    {
+      "source_path": "tests/test_duct_autotag_review.py",
+      "repository_path": "tests/test_duct_autotag_review.py",
+      "sha256": "73d3ecb898c8b2f62981299d10d07ea69a85b13a69bffe19d081db7df8f2f2ce",
+      "size": 38172
+    },
+    {
+      "source_path": "tests/test_duct_human_plan.py",
+      "repository_path": "tests/test_duct_human_plan.py",
+      "sha256": "5e1eccbecbdf1126bab01c01f380a2d36f8d7892d22b1b4e30ba4b2fae8c9eac",
+      "size": 18360
+    },
+    {
+      "source_path": "tests/test_installer.py",
+      "repository_path": "tests/test_installer.py",
+      "sha256": "16f32a1b53aed4b624f173d6643a6d443dcad179d3f2fb43f870d6ecfd926602",
+      "size": 9130
+    },
+    {
+      "source_path": "tests/test_launchers.py",
+      "repository_path": "tests/test_launchers.py",
+      "sha256": "d793b9f55da1342fad757d107cea7f8f02c00750dbd1ab2af84936b09a73f164",
+      "size": 8489
+    },
+    {
+      "source_path": "tests/test_pipe_autodim_accounting.py",
+      "repository_path": "tests/test_pipe_autodim_accounting.py",
+      "sha256": "8372d97365d90ed289e0ebadd3d849221c7a2fe47c959718280b02bf45fbbaad",
+      "size": 14454
+    },
+    {
+      "source_path": "tests/test_pipe_autodim_audit.py",
+      "repository_path": "tests/test_pipe_autodim_audit.py",
+      "sha256": "48c52b2a52343c49f5870fef2bccadf47534315f258d5bef667075f219178d70",
+      "size": 6314
+    },
+    {
+      "source_path": "tests/test_pipe_autodim_layout.py",
+      "repository_path": "tests/test_pipe_autodim_layout.py",
+      "sha256": "615dcc3f8260184563b435ffbfe38ebb49426dc81a25d8085b8239c350696e6c",
+      "size": 5624
+    },
+    {
+      "source_path": "tests/test_pipe_autotag.py",
+      "repository_path": "tests/test_pipe_autotag.py",
+      "sha256": "19226572b0a0668d27eb4a304a8127c96bfbc684f7c776faf2cac78274e3fcbb",
+      "size": 22060
+    },
+    {
+      "source_path": "tests/test_pipe_autotag_datums.py",
+      "repository_path": "tests/test_pipe_autotag_datums.py",
+      "sha256": "d878a64a80728410d92e39c0b14926ea2995fee2251131f581ae7bb520de58ec",
+      "size": 2325
+    },
+    {
+      "source_path": "tests/test_pipe_components.py",
+      "repository_path": "tests/test_pipe_components.py",
+      "sha256": "02497fb9dd70b0a4be3b4de32716271a536ce2b58ccf24afec7b451a338b63e1",
+      "size": 17996
+    },
+    {
+      "source_path": "tests/test_reload_updater.py",
+      "repository_path": "tests/test_reload_updater.py",
+      "sha256": "86cf379e6b65fa4920b6c2d5b0bbf38b1d8551d97451a6131609ac95de24fded",
+      "size": 19283
+    },
+    {
+      "source_path": "tests/test_unified_ribbon.py",
+      "repository_path": "tests/test_unified_ribbon.py",
+      "sha256": "e8ca56566e3739758b648b70296b343fe879f6596a6b80c80b9463a5a352b826",
+      "size": 654
+    },
+    {
+      "source_path": "tests/test_updater_check.py",
+      "repository_path": "tests/test_updater_check.py",
+      "sha256": "9c1c0377c543a2115d76a20a94115124f59c365e56f5036300227ac8530d5f37",
+      "size": 2875
+    },
+    {
+      "source_path": "tests/test_updater_powershell.py",
+      "repository_path": "tests/test_updater_powershell.py",
+      "sha256": "94c71e62de680752d77b2237f58d310121a2b2de384273d0268c1be015be5c64",
+      "size": 3262
+    },
+    {
+      "source_path": "tools/build_autotag_human_oct15.py",
+      "repository_path": "tools/build_autotag_human_oct15.py",
+      "sha256": "4ea7380606b200b5f58c2214b9ada9cd962ced2ef7f34eace2e403eb9cf93c27",
+      "size": 15653
+    },
+    {
+      "source_path": "tools/build_autotag_review4_rerun.py",
+      "repository_path": "tools/build_autotag_review4_rerun.py",
+      "sha256": "347f0d5d66ad25525c1ef6676d8aa46653bf5e7506bd69f4593f3829d8e757e7",
+      "size": 11599
+    },
+    {
+      "source_path": "tools/build_duct_direct_review.py",
+      "repository_path": "tools/build_duct_direct_review.py",
+      "sha256": "ed8e3b2246f76d3541c43c06f1918a9d5b7e8391b23b4365a905b5f4f85a3c71",
+      "size": 15152
+    },
+    {
+      "source_path": "tools/build_duct_run_review.py",
+      "repository_path": "tools/build_duct_run_review.py",
+      "sha256": "11ac7c7655b900d2546b899c0724e511dbdd1b4027c31462a61838204af264a0",
+      "size": 17457
+    },
+    {
+      "source_path": "tools/build_human_run3_comparison.py",
+      "repository_path": "tools/build_human_run3_comparison.py",
+      "sha256": "e174a11530390f264570881faa5a38903804163a2a3b4882209f5df11d7d5d50",
+      "size": 14783
+    },
+    {
+      "source_path": "tools/package_autoupdate.py",
+      "repository_path": "tools/package_autoupdate.py",
+      "sha256": "ad0be0ce3d4c96abb272a10ac05028f51f49f37fa32657cb497775c4383d728c",
+      "size": 3709
+    },
+    {
+      "source_path": "tools/validate_extension.py",
+      "repository_path": "tools/validate_extension.py",
+      "sha256": "806d56baf0aa710ace3448366717949d7f784004e03adf9c4aa686cd3d214147",
+      "size": 1791
+    },
+    {
+      "source_path": "tools/validate_unified.py",
+      "repository_path": "tools/validate_unified.py",
+      "sha256": "9edc75e2d66f942a2b132893c22a51c39f0bd92428d6966968351c0df26e558d",
+      "size": 2722
+    }
+  ]
+}

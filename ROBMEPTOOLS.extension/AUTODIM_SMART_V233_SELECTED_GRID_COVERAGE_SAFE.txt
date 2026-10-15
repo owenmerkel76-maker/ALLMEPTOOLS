@@ -1,0 +1,13 @@
+ROBMEPTOOLS AutoDim Smart v2.3.3 — Selected Grid Coverage Safety
+
+Baseline: ROBMEPTOOLS_EXTENSION_AUTODIM_SMART_v2.3_GEOMETRIC_CERTIFICATION.zip
+
+Reason for hotfix
+The first selected-grid implementation filtered the grid inventory before the original v2.3 geometric-certification/recovery pipeline ran. That made some previously-covered Duct targets become no-grid targets whenever the picked set did not contain a compatible grid for that specific target.
+
+Modes
+1. ALL USABLE GRIDS — original v2.3 behavior.
+2. PREFER SELECTED GRIDS — selected grids rank ahead of unselected grids, but original v2.3 grids remain available only when needed to preserve a target that otherwise has no compatible selected grid.
+3. SELECTED GRIDS ONLY — strict filtering by choice; misses are possible/expected.
+
+The Duct and Pipe engines were restored from the exact v2.3 Geometric Certification baseline before this small grid-ranking hook was added. No tagging or organizer behavior was changed.

@@ -19,3 +19,5 @@ AutoSleeve is absent; do not claim it exists or implement it without a separatel
 scoped milestone. Do not enable legacy updates. Keep Revit 2025/IronPython 2.7 as
 baseline; Revit 2027 requires independent verification. Document exact checks and
 remaining Revit acceptance steps. Commit the focused change and open a PR.
+
+Current next gate: field-verify the new Auto Hanger Shift-click connector diagnostic using `REVIT_CONNECTOR_DIAGNOSTIC.md`. The read-only adapter exists; do not duplicate it or migrate the apply path before its model/API assumptions are verified.

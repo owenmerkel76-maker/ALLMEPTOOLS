@@ -31,3 +31,7 @@ connections and selection scope against a detached field fixture. Then feed the
 analyzer into a preview-only hanger path, compare with the existing planner, and
 add approved rule/station/deduplication tests before any apply-path migration.
 Per-rod structural intersections and native attachment checks remain separate gates.
+
+## Next increment implemented
+
+A read-only host FabricationPart snapshot adapter and Auto Hanger Shift-click diagnostic are now implemented for field verification. See `REVIT_CONNECTOR_DIAGNOSTIC.md`. They do not change the original placement path, implement linked geometry, or complete Phase 1.

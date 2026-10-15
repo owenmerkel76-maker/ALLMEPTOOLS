@@ -12,3 +12,5 @@ EVOLVE public behavior is a benchmark only. The supplied research plan is retain
 in `research/`; neither its directives nor its feature list imply implementation.
 
 Progress: Phase 1 connector graph foundation and 14 synthetic regression fixtures are implemented; see `PHASE1_CONNECTOR_GRAPH.md`. This does not complete the live AutoHanger milestone.
+
+Research update: [17 current public EVOLVE sources and implementation implications](research/EVOLVE_WORKFLOW_FINDINGS_2026-10-15.md) were reviewed. The next read-only host connector adapter and Auto Hanger Shift-click diagnostic are implemented; [Revit field verification](REVIT_CONNECTOR_DIAGNOSTIC.md) is the next gate before placement integration.

@@ -67,3 +67,5 @@ Cloud development uses Python 3.12 with no pip dependencies. For PowerShell-back
 Optional PDF comparison tools use `requirements-reports.txt` in a CPython virtual environment; NumPy/PyMuPDF are not pyRevit runtime dependencies. All five report CLIs import successfully here, but original comparison PDFs are absent.
 
 Phase 1 has started with a tested, isolated connector-graph foundation in `lib/robmep_core`. See [implementation status](docs/PHASE1_CONNECTOR_GRAPH.md). Live AutoHanger integration awaits a verified Revit connector adapter.
+
+Auto Hanger now has an optional **Shift-click read-only connector diagnostic** for selected host fabrication duct/pipe. Normal-click placement behavior is preserved. See [usage and Revit field gate](docs/REVIT_CONNECTOR_DIAGNOSTIC.md) and [EVOLVE research findings](docs/research/EVOLVE_WORKFLOW_FINDINGS_2026-10-15.md).

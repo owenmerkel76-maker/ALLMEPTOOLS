@@ -176,3 +176,7 @@ The generic `attachToStructure=True` does NOT promise that Revit will find or ph
 - Current EVOLVE Mechanical feature release notes, including the 10.2.1 tag arranger and sleeve bug fixes: https://help-mechanical.evolvemep.com/announcements-release-notes/evolve-mechanical-10-2-0
 - EVOLVE's published feature/bug list notes historically troublesome link moves and rod/slope interactions; code must treat geometry updates as invalidating prior calculations: https://help-mechanical.evolvemep.com/announcements-release-notes/known-limitations
 - EVOLVE documentation describes *user-facing behavior*, not proprietary source-level algorithms. All implementation decisions above are original engineering recommendations to Codex and must be tested in the user's Revit environment.
+
+## Public documentation refresh and current implementation
+
+See [EVOLVE workflow findings](EVOLVE_WORKFLOW_FINDINGS_2026-10-15.md) and its source index for 17 directly retrieved official pages, version-specific caveats and prioritized requirements. Phase 1 now includes the pure graph foundation and a read-only host connector diagnostic; placement migration, per-rod/linked geometry verification and AutoSleeve remain unfinished.

@@ -5,4 +5,5 @@ tooltip: >-
   geometry, native roof/deck fallback, and minimized run-wide hanger counts.
   Clearly marks measured but UNATTACHED hanger rods for manual anchorage.
   Default Preview; review engineering, anchors and structural capacity.
+  Shift-click: read-only selected fabrication connector/run diagnostics.
 author: ROB MEP Tools

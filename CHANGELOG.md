@@ -28,3 +28,10 @@
 - Fixed the legacy Git-rediscovery test's implicit dependency on a setuptools-provided distutils shim. The test now supplies its mocked IronPython dependency through standard-library module fixtures and verifies both PATH lookups before checking actual rediscovery/deployment.
 - Kept every offline check and all 362 tests enabled; no production extension files, settings or ribbon layouts changed.
 - Added Actions failure annotations while preserving pipeline exit status, so failing tracebacks remain available through the Checks API.
+
+## 2026-10-15 — EVOLVE research and read-only connector diagnostic
+
+- Reviewed 17 official EVOLVE help/release pages and recorded source metadata, version conflicts and requirements mapped to ROBMEPTOOLS.
+- Added a host-model FabricationPart snapshot adapter with reciprocal physical connection proof, scope/error diagnostics, stable axes and 64-bit source IDs.
+- Added Auto Hanger Shift-click topology output without changing the normal-click placement script or adding ribbon commands.
+- Added 24 API-double/launcher tests and a detailed Revit 2025 field gate. Live Revit/IronPython and linked geometry remain unverified.

@@ -60,3 +60,17 @@ Complete corrected setup in that clean Python 3.12 environment with PowerShell
 7.6.6: **362 tests passed, zero skips**, 49.887 seconds. Both validators pass:
 49 Python files, 16 XAML files, 17 commands across 10 panels. `bash -n
 CODEX_SETUP.sh` also passes. All original runtime source-preservation checks pass.
+
+## EVOLVE research and read-only Revit connector snapshot increment
+
+- Retrieved 17 official EVOLVE help/release articles successfully; public-source
+  metadata and implementation implications are saved under `docs/research/`.
+- Added 24 adapter/launcher tests. An enumeration-order regression first reproduced
+  an axis-direction flip, then passed after sorting end connectors by stable ID.
+- Final `bash CODEX_SETUP.sh` in a clean CPython 3.12 venv with PowerShell 7.6.6:
+  **386 tests passed, zero skips**, 48.521 seconds.
+- Both validators pass: 51 runtime Python files, 16 XAML files, 17 commands and
+  10 panels. Existing 124 non-metadata import hashes remain unchanged.
+- Live Revit 2025/IronPython loading, actual connector semantics, pyRevit Shift-click
+  dispatch and document-modified/Undo checks are NOT RUN. Revit 2027 is unverified.
+  Follow `REVIT_CONNECTOR_DIAGNOSTIC.md` before any placement-path integration.

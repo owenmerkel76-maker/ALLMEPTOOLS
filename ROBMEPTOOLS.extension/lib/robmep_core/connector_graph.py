@@ -6,7 +6,8 @@ verified physical connector edges, not proximity guesses or logical-system edges
 Each part has a source-qualified string key, source, kind, service, shape, size,
 length_ft and direction. Only straight parts need the last five fields. All
 coordinates/lengths must already be in host-world feet. Source identity and key
-must remain stable across snapshots. Revit snapshot collection is NOT implemented.
+must remain stable across snapshots. The separate revit_connector_snapshot
+adapter collects selected host FabricationPart data; linked collection is pending.
 
 Runs stop at fittings/equipment, branches, scope cuts, source/service/profile
 boundaries and direction changes. No station placement or hardware rule is implied.

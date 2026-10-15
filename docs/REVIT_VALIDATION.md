@@ -44,3 +44,5 @@ Test on a detached model copy; keep baseline model and settings backups.
 For failures capture command, source IDs, linked source/transform, actual vs expected
 geometry, rule profile, created/skipped/unresolved counts and transaction result.
 Remove private project names/paths from logs before committing fixtures.
+
+Phase 1 addition: run the Auto Hanger Shift-click diagnostic cases in `REVIT_CONNECTOR_DIAGNOSTIC.md` before preview/apply migration. A passing offline double is not evidence that actual Revit connector semantics or engine loading have passed.

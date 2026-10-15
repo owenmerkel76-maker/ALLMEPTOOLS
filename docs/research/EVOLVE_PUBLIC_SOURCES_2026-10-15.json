@@ -1,0 +1,125 @@
+{
+  "reviewed_on": "2026-10-15",
+  "scope": "Public behavior documentation only; no vendor runtime or proprietary source inspected",
+  "sources": [
+    {
+      "requested_url": "https://help-mechanical.evolvemep.com/getting-started/list-of-features",
+      "resolved_url": "https://help-mechanical.evolvemep.com/getting-started/list-of-features",
+      "title": "List of Features",
+      "date_modified": "2026-09-08T15:34:46Z",
+      "article_body_sha256": "5d1c79a86ee02238a4e6d7251aeb17e1f434f9b884635c001e5aaabe2569dd25"
+    },
+    {
+      "requested_url": "https://help-mechanical.evolvemep.com/hangers/multi-service-bearers",
+      "resolved_url": "https://help-mechanical.evolvemep.com/hangers/multi-service-bearers",
+      "title": "Hanger Placement",
+      "date_modified": "2026-07-09T04:01:51Z",
+      "article_body_sha256": "336a03972f5e84ed86277a890b26355f584c079c8d87b89245dfa48a5f536d6b"
+    },
+    {
+      "requested_url": "https://help-mechanical.evolvemep.com/hangers/msb-settings",
+      "resolved_url": "https://help-mechanical.evolvemep.com/hangers/msb-settings",
+      "title": "Hanger Placement Settings",
+      "date_modified": "2026-08-21T23:08:25Z",
+      "article_body_sha256": "fb8c9d4d32faafc920db424bb2faf374ccc47dc536cf1cbb490676fbc74721c0"
+    },
+    {
+      "requested_url": "https://help-mechanical.evolvemep.com/settings/hanger-specifications",
+      "resolved_url": "https://help-mechanical.evolvemep.com/settings/hanger-specifications",
+      "title": "ITM Hanger Settings",
+      "date_modified": "2025-08-27T13:22:06Z",
+      "article_body_sha256": "f51c2f9a38a37ce991e8bfdfddd80cb9d617b597426826659896b467f505916f"
+    },
+    {
+      "requested_url": "https://help-mechanical.evolvemep.com/hangers/intro-to-hangers",
+      "resolved_url": "https://help-mechanical.evolvemep.com/hangers/intro-to-hangers",
+      "title": "ITM Hangers",
+      "date_modified": "2022-11-22T13:30:21Z",
+      "article_body_sha256": "3387121506d670315c16c59d96f8a428eaa3f2469decf5862ed7f1d65dbb97c1"
+    },
+    {
+      "requested_url": "https://help-mechanical.evolvemep.com/hangers/hanger-rod-adjustments",
+      "resolved_url": "https://help-mechanical.evolvemep.com/hangers/hanger-rod-adjustments",
+      "title": "ITM Hanger Adjustments",
+      "date_modified": "2025-08-27T13:21:43Z",
+      "article_body_sha256": "13c2c22cbc3633c89911ac0fd14f3e6dcfbbc83377303c8867c9569049dcf338"
+    },
+    {
+      "requested_url": "https://help-mechanical.evolvemep.com/hangers/family-rod-adjustments",
+      "resolved_url": "https://help-mechanical.evolvemep.com/hangers/family-rod-adjustments",
+      "title": "Family Hanger Adjustments",
+      "date_modified": "2025-08-27T09:07:49Z",
+      "article_body_sha256": "543a892f076782d6e95af29c802b5df1aa51216e813d06cd5c205f701d8bf92e"
+    },
+    {
+      "requested_url": "https://help-mechanical.evolvemep.com/sleeves/sleeve-settings",
+      "resolved_url": "https://help-mechanical.evolvemep.com/sleeves/sleeve-settings",
+      "title": "Sleeve Settings",
+      "date_modified": "2026-05-29T17:05:19Z",
+      "article_body_sha256": "4a67fc731eadee5d161c752b195442a5130c159e470b202392974020905829a6"
+    },
+    {
+      "requested_url": "https://help-mechanical.evolvemep.com/sleeves/auto-place-sleeves",
+      "resolved_url": "https://help-mechanical.evolvemep.com/sleeves/auto-place-sleeves",
+      "title": "Auto Place Sleeves",
+      "date_modified": "2026-07-08T01:18:00Z",
+      "article_body_sha256": "0ecffcc5e6926418f3ecf325de1c06a36c1c5eac86d905f5b5ba2bf5c8e1cda9"
+    },
+    {
+      "requested_url": "https://help-mechanical.evolvemep.com/sleeves/convert-to-box-out",
+      "resolved_url": "https://help-mechanical.evolvemep.com/sleeves/convert-to-box-out",
+      "title": "Convert to Box-Out",
+      "date_modified": "2026-05-29T17:32:30Z",
+      "article_body_sha256": "7f1c9c45c5135d199b39dae1d5aa76926864cd0fa7f81ef0cb74cc12cd69c731"
+    },
+    {
+      "requested_url": "https://help-mechanical.evolvemep.com/settings/annotation-settings",
+      "resolved_url": "https://help-mechanical.evolvemep.com/settings/annotation-settings",
+      "title": "Annotation Settings",
+      "date_modified": "2023-03-29T00:44:30Z",
+      "article_body_sha256": "7e28c28e0022955cdf76e35f2481e60f80ffaa74136b0ae7c270b7f360ff6897"
+    },
+    {
+      "requested_url": "https://help-mechanical.evolvemep.com/annotations-annotation/auto-arrange-tags",
+      "resolved_url": "https://help-mechanical.evolvemep.com/annotations-annotation/auto-arrange-tags",
+      "title": "Arrange Tags",
+      "date_modified": "2026-09-08T15:53:19Z",
+      "article_body_sha256": "c8d84319b9c964864c42a631ae89196d27b1746f21f045522607465236d62dd3"
+    },
+    {
+      "requested_url": "https://help-mechanical.evolvemep.com/quick-tools/quick-dimensions",
+      "resolved_url": "https://help-mechanical.evolvemep.com/quick-tools/quick-dimensions",
+      "title": "Quick Dimensions",
+      "date_modified": "2024-10-24T07:33:50Z",
+      "article_body_sha256": "1aff4307195e47771de0cc64cc65ec1894c6c82ca24b0a5ba645c7675fb5a3c8"
+    },
+    {
+      "requested_url": "https://help-mechanical.evolvemep.com/spooling-prefabrication/prefab-manager",
+      "resolved_url": "https://help-mechanical.evolvemep.com/spooling-prefabrication/prefab-manager",
+      "title": "Prefab Manager",
+      "date_modified": "2026-07-11T02:42:43Z",
+      "article_body_sha256": "e4447b8bff1b7db31973aa736f870eb5b05dbb2cbd08eb554a2be23d42c1cf90"
+    },
+    {
+      "requested_url": "https://help-mechanical.evolvemep.com/announcements-release-notes/known-limitations",
+      "resolved_url": "https://help-mechanical.evolvemep.com/announcements-release-notes/known-limitations",
+      "title": "Known Limitations",
+      "date_modified": "2026-09-30T14:57:57Z",
+      "article_body_sha256": "1336fb234b9511f513a14bee5e668307313e59446ebb0ffd90b968a3daaf71d5"
+    },
+    {
+      "requested_url": "https://help-mechanical.evolvemep.com/announcements-release-notes/evolve-mechanical-10-0",
+      "resolved_url": "https://help-mechanical.evolvemep.com/announcements-release-notes/evolve-mechanical-10-0",
+      "title": "EVOLVE Mechanical 10.0.1",
+      "date_modified": "2026-09-08T15:51:44Z",
+      "article_body_sha256": "c93da109a507f4b0571bf4a307d849b8054e62281d3666a7fde974042a84c8f5"
+    },
+    {
+      "requested_url": "https://help-mechanical.evolvemep.com/announcements-release-notes/evolve-mechanical-10-2-0",
+      "resolved_url": "https://help-mechanical.evolvemep.com/announcements-release-notes/evolve-mechanical-10-2-0",
+      "title": "EVOLVE Mechanical 10.2.1",
+      "date_modified": "2026-09-08T20:14:36Z",
+      "article_body_sha256": "fea21ae1103eaf1512b94c05bb18d5b750e123a5553dbd3a51a06f44669fc742"
+    }
+  ]
+}

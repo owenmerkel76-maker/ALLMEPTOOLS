@@ -161,6 +161,64 @@ class RoutePreviewTests(unittest.TestCase):
         for cap,offset in ((0,1.5),(8,0),(float('nan'),1.5),(8,float('inf'))):
             with self.assertRaises(ValueError):build_route_preview(snap,empty_inventory(),planner,cap,offset)
 
+    def short_branched_fixture(self, branch_station=1., length=4.7, stations=(.25,3.9)):
+        doc,parts=fixture((length,),())
+        neighbor=Part(doc,9,branch_station)
+        branch=Connector(parts[0],9,branch_station);branch.ConnectorType=API.ConnectorType.Curve
+        parts[0].ConnectorManager.Connectors.append(branch)
+        connect(branch,neighbor.ConnectorManager.Connectors[0])
+        snap=capture(doc,parts);key=snap['parts'][0]['key']
+        inv=dict(hangers=[dict(element_id=100+i,host_key=key,point_ft=(s,0,0))
+                          for i,s in enumerate(stations)],issues=[],global_issues=[])
+        return snap,inv
+
+    def test_existing_coverage_survives_from_scratch_branch_candidate_conflict(self):
+        snap,inv=self.short_branched_fixture()
+        with patch.object(planner,'plan_run',wraps=planner.plan_run) as plan:
+            r=build_route_preview(snap,inv,planner)['routes'][0]
+        self.assertEqual(8.,r['maximum_ft'])
+        self.assertTrue(r['coordination_coverage_complete'])
+        self.assertEqual([],r['stations'])
+        self.assertIn('EXISTING_STATIONS_COVER_PRELIMINARY_DISTANCES',r['reasons'])
+        # The separately labeled geometric baseline still runs. There is no
+        # unnecessary new-candidate pass with the branch/keep-out arguments.
+        self.assertFalse(any(len(c.args)>3 for c in plan.call_args_list))
+        self.assertFalse(r['apply_ready'])
+
+    def test_existing_near_branch_warning_survives_complete_distance_coverage(self):
+        snap,inv=self.short_branched_fixture(branch_station=.3)
+        r=build_route_preview(snap,inv,planner)['routes'][0]
+        self.assertTrue(r['coordination_coverage_complete'])
+        self.assertEqual([],r['stations'])
+        self.assertIn('EXISTING_STATION_NEAR_BRANCH_CLEARANCE_UNVERIFIED',r['reasons'])
+        self.assertEqual(100,r['existing_branch_conflicts'][0]['element_id'])
+        self.assertAlmostEqual(.05,r['existing_branch_conflicts'][0]['separation_ft'])
+        self.assertFalse(r['apply_ready'])
+
+    def test_existing_stations_do_not_override_missing_spacing_rule_or_unknown_inventory(self):
+        snap,inv=self.short_branched_fixture()
+        snap['parts'][0]['size']=(100.,1.)
+        r=build_route_preview(snap,inv,planner)['routes'][0]
+        self.assertIsNone(r['maximum_ft'])
+        self.assertFalse(r['coordination_coverage_complete'])
+        self.assertEqual([],r['stations'])
+        snap,inv=self.short_branched_fixture();inv['global_issues']=['EXISTING_HANGER_HOST_UNREADABLE']
+        r=build_route_preview(snap,inv,planner)['routes'][0]
+        self.assertFalse(r['coordination_coverage_complete'])
+        self.assertEqual([],r['stations'])
+
+    def test_existing_end_shortfall_does_not_bypass_candidate_branch_checks(self):
+        snap,inv=self.short_branched_fixture(length=9.4,stations=(.25,5.2))
+        with patch.object(planner,'plan_run',wraps=planner.plan_run) as plan:
+            r=build_route_preview(snap,inv,planner)['routes'][0]
+        self.assertEqual(8.,r['maximum_ft'])
+        self.assertNotIn('EXISTING_STATIONS_COVER_PRELIMINARY_DISTANCES',r['reasons'])
+        self.assertTrue(any(len(c.args)>3 for c in plan.call_args_list))
+        if r['coordination_coverage_complete']:
+            self.assertTrue(r['stations'])
+        self.assertTrue(all(abs(j['station_ft']-1.) >= .75 for j in r['stations']))
+        self.assertFalse(r['apply_ready'])
+
     def test_legacy_geometric_comparison_is_distinct_from_physical_routes(self):
         doc,parts=fixture((6,6),())
         for p in parts:

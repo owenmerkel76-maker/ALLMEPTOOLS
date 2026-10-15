@@ -57,3 +57,10 @@
 - Retained connector port identities and optional fitting normals for verified aligned transitions; gaps, turns, offsets, ambiguous ends, unsupported geometry and source/service changes remain boundaries. Fitting bodies never host candidates.
 - Added read-only existing-hanger host/Origin inventory, exact ID deduplication, conservative unknown-data handling and coordination-only coverage checks. No bbox, rod or structural-attachment fallback.
 - Added candidate ID/station/XYZ and unresolved-reason tables plus a clearly scoped geometric baseline. All results remain non-apply-ready; approved profiles and Revit field gates are documented.
+
+## 2026-10-15 — Existing-first read-only distance coverage
+
+- Fixed a reproduced preview defect where a new-candidate branch conflict erased the size-based spacing limit and falsely prevented evaluating existing distance coverage.
+- Resolve spacing independently and evaluate known existing end/span/branch distances before requesting new candidates. Already distance-covered routes propose zero additions.
+- Keep near-branch existing hangers explicitly clearance-unverified, with source IDs/separations. Unknown inventory, unsupported rules and incomplete coverage retain conservative handling; candidate branch checks are unchanged.
+- Changed report wording to distinguish covered distances from unverified clearance. Normal-click placement, rods, transactions and all 17 commands are unchanged.

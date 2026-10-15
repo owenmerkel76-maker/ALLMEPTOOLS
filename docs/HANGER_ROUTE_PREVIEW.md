@@ -55,7 +55,7 @@ must not be presented as the full normal-click result or an equal-scope speed te
   host ID and Origin are read; no bbox center or arbitrary station fallback is
   used. Duplicate IDs count once. An unreadable host identity/collector withholds
   all new candidates; an unreadable selected-host Origin withholds its route.
-- Known existing stations enter the original count optimizer. Candidates within
+- Known existing stations are evaluated against end/span/branch distances before new candidates are requested. The spacing rule remains available even if a later candidate pass is withheld. Fully distance-covered routes need no new candidates; existing stations within the preliminary 0.75 ft branch band are separately reported and remain clearance-unverified. Routes with a distance shortfall still run the unchanged candidate branch/clearance checks, followed by the original count optimizer. Candidates within
   0.25 ft of them are suppressed, then end/span/branch coordination coverage is
   rechecked. Any resulting coverage gap is explicit. This is not an apply-path
   idempotence or structural-support guarantee.
@@ -95,3 +95,25 @@ existing records and zero additional coordination candidates on a simulated reru
 They use API doubles; they do not reproduce the private project or demonstrate
 actual Revit WPF/connector semantics, ITM placement, rod attachment, collision
 clearance or end-to-end speed. Revit 2027 remains unverified.
+
+## Existing-first distance correction from field feedback
+
+A subsequent field report identified 17 readable parts, 13 existing fabrication
+hangers, six partial routes and four candidates. Two routes were withheld by a
+from-scratch branch layout. A synthetic short-route regression reproduced the
+reporting defect: existing stations satisfied end/span/branch distances, but the
+failed candidate pass set the spacing limit to None and forced coverage unresolved.
+
+The preview now resolves the size-based limit independently and checks known
+existing distance coverage first. When that coverage is complete, no hypothetical
+new layout is needed. Branch station positions and nearest existing hanger IDs/axial distances are now shown for diagnosing withheld routes. Near-branch existing stations retain explicit warning rows;
+**distance coverage never establishes clearance, attachment or approved support**.
+Unknown inventory/geometry and unsupported size rules still prevent a complete
+coverage claim. A genuine end shortfall remains unresolved unless the unchanged
+candidate planner supplies suitable candidates.
+
+This is a focused correction, not a general existing-aware branch layout solver:
+when existing distance coverage is incomplete, the candidate planner can still
+withhold a from-scratch solution. Revit field recheck is required, especially for
+the previously withheld routes. The private model's exact branch coordinates and
+geometry were not available offline; synthetic fixtures do not reproduce them.

@@ -76,6 +76,18 @@ def _lane(part, geometry):
                 hostable=hostable, part=part)
 
 
+def _distance_coverage(stations, length, maximum, branches):
+    """Preliminary station distances only; no clearance/attachment conclusion."""
+    if maximum is None or not stations:
+        return False
+    ordered = sorted(stations)
+    if ordered[0] > 2.+1e-6 or length-ordered[-1] > 2.+1e-6:
+        return False
+    if any(b-a > maximum+1e-6 for a,b in zip(ordered,ordered[1:])):
+        return False
+    return all(min(abs(s-b) for s in ordered) <= 4.+1e-6 for b in branches)
+
+
 def build_route_preview(snapshot, existing, planner, spacing_cap_ft=8., end_offset_ft=1.5):
     """Return geometric candidate stations only, never an apply-ready plan.
 
@@ -199,9 +211,11 @@ def build_route_preview(snapshot, existing, planner, spacing_cap_ft=8., end_offs
             errors.update(boundaries[key])
         run = dict(origin=origin, direction=direct, pieces=pieces)
         blocked = [(max(0.,s-.5),min(length,s+.5)) for s in branch_stations]
-        jobs, note = planner.plan_run(run,cap,offset,branch_stations,blocked)
-        maximum = min(planner.rule_spacing(p['shape'],p['w'],p['h'],cap)[0]
-                      for lo,hi,p in pieces) if jobs else None
+        # Rule resolution is independent of whether a from-scratch candidate
+        # layout succeeds. Existing stations must be evaluated before that pass.
+        rules = [planner.rule_spacing(p['shape'],p['w'],p['h'],cap) for lo,hi,p in pieces]
+        maximum = min(row[0] for row in rules) if all(row[0] is not None for row in rules) else None
+        jobs, note = [], ''
         old = []; old_rows = []
         existing_issues = list(existing.get('global_issues', []))
         for row in existing.get('hangers', []):
@@ -220,9 +234,26 @@ def build_route_preview(snapshot, existing, planner, spacing_cap_ft=8., end_offs
         # Unknown geometry or unreadable existing-host positions cannot justify
         # a claim that proposed stations are nonduplicate.
         fatal = bool(errors & set(['NONCONTINUOUS_ROUTE_AXIS','BRANCH_STATION_OUTSIDE_HOST'])) or bool(existing_issues)
+        existing_conflicts = []
+        for row in old_rows:
+            for branch in sorted(set(branch_stations)):
+                separation = abs(row['station_ft']-branch)
+                if separation < .75:
+                    existing_conflicts.append(dict(element_id=row['element_id'],
+                        station_ft=row['station_ft'],branch_station_ft=branch,
+                        separation_ft=separation,clearance_ft=.75))
+        if existing_conflicts:
+            errors.add('EXISTING_STATION_NEAR_BRANCH_CLEARANCE_UNVERIFIED')
         if fatal:
-            jobs = []; errors.update(existing_issues)
-        elif jobs:
+            errors.update(existing_issues)
+        elif maximum is None:
+            errors.add('SPACING_RULE_UNRESOLVED')
+            errors.update(row[1] for row in rules if row[0] is None)
+        elif _distance_coverage(old,length,maximum,branch_stations):
+            errors.add('EXISTING_STATIONS_COVER_PRELIMINARY_DISTANCES')
+        else:
+            jobs, note = planner.plan_run(run,cap,offset,branch_stations,blocked)
+        if jobs:
             jobs = planner.optimize_support_count(jobs,old,length,maximum,branch_stations,
                                                   end_limits=(2.,2.))
             jobs = [j for j in jobs if not any(abs(j['station']-s) <= .25 for s in old)]
@@ -231,22 +262,15 @@ def build_route_preview(snapshot, existing, planner, spacing_cap_ft=8., end_offs
             stations.append(dict(element_id=job['piece']['id'], host_key=job['piece']['key'],
                                  station_ft=job['station'], from_a_ft=job['from_a'],
                                  point_ft=tuple(origin[i]+direct[i]*job['station'] for i in range(3))))
-        coverage = sorted(old+[j['station_ft'] for j in stations])
-        complete = bool(coverage) and coverage[0] <= 2.+1e-6 and length-coverage[-1] <= 2.+1e-6
-        if maximum is not None:
-            complete = complete and all(b-a <= maximum+1e-6 for a,b in zip(coverage,coverage[1:]))
-        else:
-            complete = False
-        if branch_stations:
-            complete = complete and all(min([abs(s-b) for s in coverage] or [1e9]) <= 4.+1e-6
-                                        for b in branch_stations)
-        complete = complete and not fatal
+        coverage = old+[j['station_ft'] for j in stations]
+        complete = _distance_coverage(coverage,length,maximum,branch_stations) and not fatal
         if not complete:
             errors.add('COORDINATION_COVERAGE_UNRESOLVED')
         if note:
             errors.add(note)
         routes.append(dict(keys=ordered,length_ft=length,maximum_ft=maximum,stations=stations,
                            existing=old_rows,branch_stations=branch_stations,
+                           existing_branch_conflicts=existing_conflicts,
                            reasons=sorted(errors),coordination_coverage_complete=complete,
                            apply_ready=False))
     for key in sorted(ambiguous):

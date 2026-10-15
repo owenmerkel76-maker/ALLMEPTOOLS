@@ -131,3 +131,28 @@ this is a syntax screen, not an IronPython execution test. Live pyRevit menu,
 connector normals, candidate offsets/XYZ, actual existing hanger Origins and
 Revit no-edit/Undo behavior remain unverified. No rods, structural attachment or
 hardware clearance is certified. See `HANGER_ROUTE_PREVIEW.md` for the field gate.
+
+## Existing-first distance coverage correction
+
+A later field report contained 17 readable parts, 13 existing hangers, six partial
+routes and four candidates. A synthetic 4.7-ft route with a branch and two
+existing stations reproduced a false unresolved result: the from-scratch branch
+candidate pass failed and the preview assigned maximum_ft=None. Two new tests
+failed before correction. Spacing resolution and existing distance coverage are
+now evaluated before requesting new candidates; existing near-branch clearance
+warnings remain independent. Actual private-model branch coordinates were not
+available offline, so the synthetic case establishes the code defect, not a
+complete reproduction of the model.
+
+`bash CODEX_SETUP.sh`: **429 tests passed, zero skips**, 44.165 seconds,
+CPython 3.12 / PowerShell 7.4.13. Both validators pass (54 Python files, 16 XAML,
+17 commands / 10 panels). Four additional regressions cover the reproduced
+withholding defect, retained existing-branch warnings, unsupported rules/unknown
+inventory and genuine end shortfalls retaining candidate branch checks. A manual
+API-double launcher smoke verified branch positions, nearest existing IDs and
+axial-separation warning rows in the actual report function. Source-preservation
+checks pass; normal-click script, planner and settings are unchanged.
+
+Live Revit retest, structural support/clearance/attachment and the remaining
+incomplete existing-aware branch candidate solver are not verified or resolved by
+this focused reporting/planning-order correction. All routes remain non-apply-ready.

@@ -118,7 +118,7 @@ def show_route_preview(doc, snapshot, output):
             [i+1, ', '.join(labels[k] for k in r['keys']), '{:.6f}'.format(r['length_ft']),
              '{:.3f}'.format(r['maximum_ft']) if r['maximum_ft'] is not None else 'Unresolved',
              len(r['existing']), len(r['stations']),
-             'Covered geometrically only' if r['coordination_coverage_complete'] else 'UNRESOLVED']
+             'Distances covered; clearance unverified' if r['coordination_coverage_complete'] else 'DISTANCES UNRESOLVED']
             for i,r in enumerate(result['routes'])],
             columns=['Route','Ordered source IDs','Axis length (ft)','Max spacing (ft)',
                      'Existing (unverified)','Proposed candidates','Coordination coverage'])
@@ -136,6 +136,24 @@ def show_route_preview(doc, snapshot, output):
         if old:
             output.print_table(table_data=old,
                 columns=['Route','Existing hanger ID','Host ID','Route station (ft)','Evidence'])
+        branch_rows = []
+        for i,r in enumerate(result['routes']):
+            for branch in sorted(set(r['branch_stations'])):
+                nearest = min(r['existing'],key=lambda row:abs(row['station_ft']-branch)) if r['existing'] else None
+                branch_rows.append([i+1,'{:.6f}'.format(branch),
+                    nearest['element_id'] if nearest is not None else 'None',
+                    '{:.6f}'.format(abs(nearest['station_ft']-branch)) if nearest is not None else 'Unresolved'])
+        if branch_rows:
+            output.print_table(table_data=branch_rows,
+                columns=['Route','Branch station (ft)','Nearest existing hanger ID',
+                         'Nearest existing axial distance (ft; clearance unverified)'])
+        conflicts = [[i+1,row['element_id'],'{:.6f}'.format(row['station_ft']),
+                      '{:.6f}'.format(row['branch_station_ft']),'{:.6f}'.format(row['separation_ft'])]
+                     for i,r in enumerate(result['routes']) for row in r['existing_branch_conflicts']]
+        if conflicts:
+            output.print_table(table_data=conflicts,
+                columns=['Route','Existing hanger ID','Hanger station (ft)','Branch station (ft)',
+                         'Axial separation below 0.75 ft (ft)'])
         output.print_table(table_data=[[i+1,'; '.join(r['reasons'])] for i,r in enumerate(result['routes'])],
                            columns=['Route','Planning notes / unresolved reasons'])
     unresolved = [[', '.join(labels.get(k,k) for k in row['keys']),row['reason']] for row in result['issues']]

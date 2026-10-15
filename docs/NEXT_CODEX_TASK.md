@@ -25,3 +25,5 @@ Current next gate: field-verify the new Auto Hanger Shift-click connector diagno
 Read `research/HANGER_TOOL_COMPARISON_2026-10-15.md` for the latest benchmark and pivot priorities. UI disclosure and identity-preserving station batches are implemented. Retest their WPF/placement equivalence before broader changes; do not repeat completed research or replace per-rod safeguards with guessed geometry.
 
 Read-only route station preview is now implemented; see `HANGER_ROUTE_PREVIEW.md`. Next gate: field-check the 24-part transition selection, candidate source IDs/axis offsets, existing-hanger coordination, scope and unsupported fitting reasons. Normal-click remains the original placement path; do not migrate it before reviewed profiles, structure and clearance gates.
+
+Latest field feedback exposed existing-coverage evaluation after a failed hypothetical branch layout. Existing-first distance evaluation is corrected; see `HANGER_ROUTE_PREVIEW.md`. Retest the previously withheld routes. Distance-covered existing hangers can still have clearance warnings; do not treat the correction as structural certification or a general existing-aware candidate solver.

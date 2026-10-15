@@ -174,9 +174,48 @@ class SnapshotTests(unittest.TestCase):
     def test_physical_origin_gap_is_reported_without_snapping_geometry(self):
         doc,parts=chain(2);parts[1].ConnectorManager.Connectors[0].Origin.X+=.01
         result=capture(doc,parts)
-        self.assertEqual([],result['parts'])
-        self.assertEqual({'CONNECTED_ORIGIN_GAP'},{d['reason'] for d in result['diagnostics']})
+        self.assertEqual(2,len(result['parts']))
+        self.assertEqual([],result['diagnostics'])
+        self.assertEqual(1,len(result['connection_gaps']))
+        gap=result['connection_gaps'][0]
+        self.assertEqual([0,1],gap['element_ids'])
+        self.assertEqual([1,0],gap['connector_ids'])
+        self.assertAlmostEqual(.01,gap['gap_ft'])
+        self.assertEqual('RECIPROCAL_PHYSICAL_API',gap['topology_proof'])
         self.assertEqual(3.01,parts[1].ConnectorManager.Connectors[0].Origin.X)
+
+    def test_transition_retains_connected_network_but_splits_uniform_spans(self):
+        doc,parts=chain(3);parts[1].straight=False
+        for c in parts[2].ConnectorManager.Connectors:c.Width=4.
+        parts[1].ConnectorManager.Connectors[1].Origin.X+=.02
+        result=capture(doc,parts)
+        analysis=build_runs(result['parts'],result['connections'],excluded_parts=result['excluded_parts'])
+        self.assertEqual(3,len(result['parts']))
+        self.assertEqual(1,len(analysis['connected_components']))
+        self.assertEqual(2,len(analysis['runs']))
+        self.assertEqual(1,len(result['connection_gaps']))
+        self.assertEqual([],analysis['unresolved'])
+
+    def test_rejected_selected_part_is_not_labeled_outside_scope(self):
+        doc,parts=chain(3);parts[1].ConnectorManager.Connectors[0].Width=0
+        result=capture(doc,parts)
+        analysis=build_runs(result['parts'],result['connections'],excluded_parts=result['excluded_parts'])
+        self.assertEqual({'SELECTED_PART_REJECTED'},{r[0] for r in analysis['unresolved']})
+        self.assertEqual({0,1,2},set(result['element_ids'].values()))
+        self.assertTrue(all(not c['scope_complete'] for c in analysis['connected_components']))
+
+    def test_origin_gap_never_overrides_missing_reciprocal_proof(self):
+        doc,parts=chain(2);port=parts[1].ConnectorManager.Connectors[0]
+        port.Origin.X+=.01;port.proof=False
+        result=capture(doc,parts)
+        self.assertEqual([],result['parts']);self.assertEqual([],result['connection_gaps'])
+        self.assertEqual({'UNVERIFIED_CONNECTION'},{r['reason'] for r in result['diagnostics']})
+
+    def test_gap_is_deduplicated_and_stable_under_input_order(self):
+        doc,parts=chain(2);parts[1].ConnectorManager.Connectors[0].Origin.X+=.01
+        expected=capture(doc,parts)
+        self.assertEqual(expected,capture(doc,list(reversed(parts))))
+        self.assertEqual(1,len(expected['connection_gaps']))
 
     def test_two_part_double_connection_is_not_collapsed_into_a_linear_run(self):
         doc=Document();a,b=Part(doc,1,0),Part(doc,2,0)
@@ -262,9 +301,16 @@ class DiagnosticLauncherTests(unittest.TestCase):
     def test_launcher_renders_topology_without_placement(self):
         doc,parts=chain();ns,out=self.namespace(doc,[p.Id for p in parts]);ns['main']()
         self.assertFalse(ns['forms'].alert.called)
-        table=out.print_table.call_args_list[0].kwargs['table_data']
+        table=out.print_table.call_args_list[1].kwargs['table_data']
         self.assertEqual([['0, 1, 2, 3, 4','15.000000']],table)
         self.assertTrue(any('no hangers placed' in c.args[0] for c in out.print_md.call_args_list))
+
+    def test_report_uses_numeric_ids_and_measured_gap_units(self):
+        doc,parts=chain(2);parts[1].ConnectorManager.Connectors[0].Origin.X+=.01
+        ns,out=self.namespace(doc,[p.Id for p in parts]);ns['main']()
+        gap=next(c.kwargs for c in out.print_table.call_args_list if 'Origin gap (mm)' in c.kwargs['columns'])
+        self.assertEqual([['0','1','1','0','0.010000','0.120000','3.048000']],gap['table_data'])
+        self.assertTrue(any('geometry continuity is unverified' in c.args[0] for c in out.print_md.call_args_list))
 
     def test_no_document_or_selection_does_not_capture(self):
         for doc in (None,Document()):

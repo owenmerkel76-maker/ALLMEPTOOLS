@@ -35,3 +35,10 @@
 - Added a host-model FabricationPart snapshot adapter with reciprocal physical connection proof, scope/error diagnostics, stable axes and 64-bit source IDs.
 - Added Auto Hanger Shift-click topology output without changing the normal-click placement script or adding ribbon commands.
 - Added 24 API-double/launcher tests and a detailed Revit 2025 field gate. Live Revit/IronPython and linked geometry remain unverified.
+
+## 2026-10-15 — Connector diagnostic field feedback
+
+- Retain reciprocal physical API connectivity when connector origins differ; show deduplicated measured gap warnings with numeric element/connector IDs and units. No geometry is moved or declared continuous.
+- Distinguish selected-but-rejected and unsupported selected parts from genuinely unselected OUTSIDE_SCOPE references. All incomplete data still blocks uniform-span planning across that boundary.
+- Report connected selected networks through transitions/fittings separately from uniform straight spans. Display summed part lengths as such, excluding fitting/connection offsets.
+- Add eight regression tests for gap proof, units/identity display, selection state, and transition network continuity. Normal-click placement and original tool files remain unchanged.

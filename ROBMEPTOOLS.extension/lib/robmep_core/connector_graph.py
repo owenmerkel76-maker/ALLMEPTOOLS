@@ -45,23 +45,33 @@ def _straight(part):
             tuple(v / magnitude for v in direction))
 
 
-def build_runs(parts, connections, parallel_dot=0.996):
+def build_runs(parts, connections, parallel_dot=0.996, excluded_parts=None):
     """Return deterministic linear runs, boundary reasons and unresolved inputs.
 
     Connections are unordered pairs of part keys derived from physical connectors.
     Duplicate/reversed edges count once; self-edges and unknown keys are diagnosed.
     Invalid records fail explicitly, never falling back to guessed geometry. A
     scope cut blocks joining at that part until its topology is fully known.
-    Run segments expose cumulative start/end feet, not connector orientation.
+    Run segments expose cumulative part lengths, excluding connection offsets.
+    connected_components retain fitting/size-change connectivity independently
+    of uniform straight spans. excluded_parts distinguishes rejected selections
+    from genuinely unselected owners; both block planning across incomplete data.
     """
     threshold = float(parallel_dot)
     if not 0 < threshold <= 1:
         raise ValueError('parallel_dot must be in (0, 1]')
+    excluded = dict(excluded_parts or {})
+    if any(not isinstance(k, string_types) or not k or
+           v not in ('SELECTED_PART_REJECTED', 'UNSUPPORTED_SELECTED_PART')
+           for k, v in excluded.items()):
+        raise ValueError('Invalid excluded-part identity/reason')
     records, straight = {}, {}
     for part in parts:
         key = part.get('key')
         if not isinstance(key, string_types) or not key:
             raise ValueError('Part key must be a nonempty source-qualified string')
+        if key in excluded:
+            raise ValueError('Part cannot be both readable and excluded: ' + key)
         if key in records:
             raise ValueError('Duplicate part key: ' + key)
         if not isinstance(part.get('source'), string_types) or not part['source']:
@@ -73,7 +83,7 @@ def build_runs(parts, connections, parallel_dot=0.996):
             straight[key] = _straight(part)
     neighbors = dict((key, set()) for key in records)
     boundaries = dict((key, set()) for key in records)
-    unresolved = set()
+    unresolved, blocked = set(), set()
     for edge in connections:
         if len(edge) != 2:
             raise ValueError('Each connection must have two part keys')
@@ -86,13 +96,28 @@ def build_runs(parts, connections, parallel_dot=0.996):
                 boundaries[a].add('SELF_CONNECTION')
             continue
         if a not in records or b not in records:
-            unresolved.add(('OUTSIDE_SCOPE', min(a, b), max(a, b)))
+            codes = set(excluded.get(k, 'OUTSIDE_SCOPE') for k in (a, b) if k not in records)
+            for code in codes:
+                unresolved.add((code, min(a, b), max(a, b)))
             for key in (a, b):
                 if key in records:
-                    boundaries[key].add('OUTSIDE_SCOPE')
+                    boundaries[key].update(codes)
+                    blocked.add(key)
             continue
         neighbors[a].add(b)
         neighbors[b].add(a)
+    components, pending_keys = [], set(records)
+    while pending_keys:
+        component, pending = set(), [min(pending_keys)]
+        while pending:
+            key = pending.pop()
+            if key in component:
+                continue
+            component.add(key)
+            pending.extend(neighbors[key] - component)
+        pending_keys.difference_update(component)
+        components.append({'keys': sorted(component),
+                           'scope_complete': not bool(component & blocked)})
     eligible = dict((key, set()) for key in straight)
     for key in sorted(straight):
         if len(neighbors[key]) > 2:
@@ -116,8 +141,7 @@ def build_runs(parts, connections, parallel_dot=0.996):
                 continue
             # Do not infer topology across an incomplete or branching record.
             if (len(neighbors[key]) > 2 or len(neighbors[other]) > 2 or
-                    'OUTSIDE_SCOPE' in boundaries[key] or
-                    'OUTSIDE_SCOPE' in boundaries[other] or
+                    key in blocked or other in blocked or
                     'SELF_CONNECTION' in boundaries[key] or
                     'SELF_CONNECTION' in boundaries[other]):
                 continue
@@ -148,6 +172,6 @@ def build_runs(parts, connections, parallel_dot=0.996):
             segments.append({'key': key, 'start_ft': offset, 'end_ft': end})
             offset = end
         runs.append({'keys': ordered, 'length_ft': offset, 'segments': segments})
-    return {'runs': runs,
+    return {'runs': runs, 'connected_components': components,
             'boundaries': dict((k, sorted(v)) for k, v in sorted(boundaries.items()) if v),
             'unresolved': sorted(unresolved)}

@@ -115,7 +115,9 @@ def capture_selection(document, elements, api=None, connection_tolerance_ft=1e-4
     """Snapshot only the selected host fabrication duct/pipe and their edges.
 
     Unselected connected owners are preserved as OUTSIDE_SCOPE edges. Invalid
-    records are omitted and reported; edges to them remain explicit scope cuts.
+    records are omitted and reported separately from unselected owners. Origin
+    differences are measured warnings, not a replacement for reciprocal API proof.
+    The tolerance is a warning threshold, not permission to infer connections.
     IsAStraight is a topology label, NOT approval for supporting an inline device.
     Structural attachment, hanger eligibility and spacing rules are separate.
     """
@@ -134,6 +136,8 @@ def capture_selection(document, elements, api=None, connection_tolerance_ft=1e-4
                      (api.BuiltInCategory.OST_FabricationDuctwork,
                       api.BuiltInCategory.OST_FabricationPipework))
     records, ports, invalid, reasons = {}, {}, set(), set()
+    element_ids, selected_keys, unsupported = {}, set(), set()
+    gaps = {}
     selected = list(elements)
 
     def report(element, code):
@@ -147,10 +151,13 @@ def capture_selection(document, elements, api=None, connection_tolerance_ft=1e-4
         key = None
         try:
             key = _key(element, source, document)
+            selected_keys.add(key)
+            element_ids[key] = _number(element.Id)
             if key in records or key in invalid:
                 continue
             if (not isinstance(element, api.FabricationPart) or
                     _number(element.Category.Id) not in categories or element.IsAHanger()):
+                unsupported.add(key)
                 report(element, 'UNSUPPORTED_SELECTION')
                 continue
             records[key], ports[key] = _record(element, source, document, api)
@@ -179,10 +186,16 @@ def capture_selection(document, elements, api=None, connection_tolerance_ft=1e-4
                         raise SnapshotError('UNVERIFIED_CONNECTION')
                     if port.Domain != other.Domain:
                         raise SnapshotError('CONNECTION_DOMAIN_MISMATCH')
-                    if _distance(_point(port), _point(other)) > tolerance:
-                        raise SnapshotError('CONNECTED_ORIGIN_GAP')
+                    element_ids[target] = _number(other.Owner.Id)
+                    gap_ft = _distance(_point(port), _point(other))
                     edge = tuple(sorted((key, target)))
                     tokens = tuple(sorted(((key, int(port.Id)), (target, int(other.Id)))))
+                    if gap_ft > tolerance:
+                        gaps[tokens] = {'element_ids': [element_ids[k] for k, cid in tokens],
+                                        'connector_ids': [cid for k, cid in tokens],
+                                        'gap_ft': gap_ft, 'threshold_ft': tolerance,
+                                        'reason': 'CONNECTED_ORIGIN_GAP',
+                                        'topology_proof': 'RECIPROCAL_PHYSICAL_API'}
                     connector_pairs.setdefault(edge, set()).add(tokens)
                     edges.add(edge)
                     count += 1
@@ -202,5 +215,10 @@ def capture_selection(document, elements, api=None, connection_tolerance_ft=1e-4
     return {'source': source, 'selected_count': len(selected),
             'parts': [records[k] for k in sorted(records) if k not in invalid],
             'connections': sorted(edges),
+            'element_ids': element_ids,
+            'excluded_parts': dict((key, 'UNSUPPORTED_SELECTED_PART' if key in unsupported
+                                    else 'SELECTED_PART_REJECTED')
+                                   for key in sorted(selected_keys) if key not in records or key in invalid),
+            'connection_gaps': [gaps[key] for key in sorted(gaps)],
             'diagnostics': [{'element_id': eid, 'reason': reason}
                             for eid, reason in sorted(reasons, key=lambda r: (r[0] is None, r[0] or 0, r[1]))]}

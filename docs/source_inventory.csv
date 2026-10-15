@@ -3,7 +3,7 @@ path,bytes,lines,imports
 .github/workflows/validate.yml,932,27,
 .gitignore,25,3,
 AGENTS.md,5663,45,
-CHANGELOG.md,3278,37,
+CHANGELOG.md,4104,44,
 CODEX_SETUP.sh,420,10,
 CODEX_START_HERE.md,4328,27,
 INSTALL_WINDOWS.ps1,3277,56,
@@ -100,7 +100,7 @@ ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/Reconstruct Steel.pushb
 ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hanger Steel.panel/bundle.yaml,104,6,
 ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/bundle.yaml,491,9,
 ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/collision_guard.py,1291,34,
-ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/config.py,2766,53,pyrevit;robmep_core.connector_graph;robmep_core.revit_connector_snapshot
+ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/config.py,4401,75,pyrevit;robmep_core.connector_graph;robmep_core.revit_connector_snapshot
 ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/icon.png,2636,18,
 ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/linked_obstacles.py,27868,632,Autodesk.Revit.DB;math;re;rod_geometry
 ROBMEPTOOLS.extension/ROBMEPTOOLS.tab/Hangers.panel/Auto Hanger.pushbutton/planner.py,24361,569,math
@@ -157,8 +157,8 @@ ROBMEPTOOLS.extension/ROBMEPTOOLS_RELEASE_20261006.md,15713,248,
 ROBMEPTOOLS.extension/ROBMEPTOOLS_RELEASE_20261007_v24.md,667,11,
 ROBMEPTOOLS.extension/WASC_HUMAN_DRAFTING_AUDIT_20261006.md,4425,100,
 ROBMEPTOOLS.extension/lib/robmep_core/__init__.py,107,2,
-ROBMEPTOOLS.extension/lib/robmep_core/connector_graph.py,7066,153,math
-ROBMEPTOOLS.extension/lib/robmep_core/revit_connector_snapshot.py,8711,206,Autodesk.Revit;math
+ROBMEPTOOLS.extension/lib/robmep_core/connector_graph.py,8368,177,math
+ROBMEPTOOLS.extension/lib/robmep_core/revit_connector_snapshot.py,9905,224,Autodesk.Revit;math
 ROBMEPTOOLS.extension/lib/robmep_updater.py,16189,378,Autodesk.Revit.UI.Events;System;System.Diagnostics;System.IO;__future__;distutils.spawn;glob;hashlib;json;os;shutil;subprocess;tempfile;time
 ROBMEPTOOLS.extension/startup.py,306,7,
 ROBMEPTOOLS.extension/updater/Git-Location.psm1,3294,73,
@@ -167,10 +167,10 @@ ROBMEPTOOLS.extension/updater/Update-Core.psm1,8248,150,
 docs/NEXT_CODEX_TASK.md,1821,23,
 docs/PHASE1_CONNECTOR_GRAPH.md,2395,37,
 docs/REPOSITORY_AUDIT.md,7372,89,
-docs/REVIT_CONNECTOR_DIAGNOSTIC.md,5207,78,
+docs/REVIT_CONNECTOR_DIAGNOSTIC.md,6947,104,
 docs/REVIT_VALIDATION.md,3560,48,
 docs/ROADMAP.md,2918,16,
-docs/VALIDATION_RESULTS.md,4992,76,
+docs/VALIDATION_RESULTS.md,6400,98,
 docs/duplicate_sources.json,2663,58,
 docs/import_provenance.json,68136,1337,
 docs/merge_sources.json,1910,51,
@@ -218,7 +218,7 @@ tests/test_autodim_layout.py,5617,126,ast;math;pathlib;types;unittest
 tests/test_autodim_model_references.py,20796,347,ast;math;pathlib;test_autodim_accounting;types;unittest
 tests/test_autodim_reused_helpers.py,4271,84,ast;pathlib;test_autodim_accounting;types;unittest
 tests/test_autodim_text_pockets.py,6851,131,test_autodim_layout;types;unittest
-tests/test_connector_graph.py,5653,110,copy;pathlib;robmep_core.connector_graph;sys;unittest
+tests/test_connector_graph.py,6869,128,copy;pathlib;robmep_core.connector_graph;sys;unittest
 tests/test_duct_autotag_review.py,38169,763,ast;json;math;os;pathlib;time;types;unittest
 tests/test_duct_human_plan.py,18360,356,ast;collections;math;test_duct_autotag_review;types;unittest
 tests/test_installer.py,9734,158,hashlib;json;os;pathlib;shutil;subprocess;tempfile;unittest
@@ -231,7 +231,7 @@ tests/test_pipe_autotag.py,22057,406,ast;json;math;os;pathlib;time;types;unittes
 tests/test_pipe_autotag_datums.py,2325,44,test_pipe_autotag;types;unittest
 tests/test_pipe_components.py,17993,418,ast;pathlib;time;types;unittest
 tests/test_reload_updater.py,19816,374,hashlib;importlib.util;json;os;pathlib;shutil;subprocess;sys;tempfile;types;unittest;unittest.mock
-tests/test_revit_connector_snapshot.py,14012,278,ast;json;pathlib;robmep_core.connector_graph;robmep_core.revit_connector_snapshot;sys;types;unittest;unittest.mock
+tests/test_revit_connector_snapshot.py,16797,324,ast;json;pathlib;robmep_core.connector_graph;robmep_core.revit_connector_snapshot;sys;types;unittest;unittest.mock
 tests/test_source_preservation.py,1092,26,hashlib;json;pathlib;unittest
 tests/test_unified_ribbon.py,654,13,pathlib;sys;unittest;validate_unified
 tests/test_updater_check.py,2875,45,os;pathlib;shutil;subprocess;tempfile;unittest

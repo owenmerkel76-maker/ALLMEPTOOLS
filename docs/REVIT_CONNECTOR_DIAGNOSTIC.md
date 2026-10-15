@@ -9,12 +9,16 @@ reason codes in the pyRevit output pane. Normal-click Auto Hanger remains unchan
 No new ribbon button, transaction, hanger placement, parameter edit, preference
 save, persistent event handler or automatic file export is introduced.
 
-The adapter verifies physical connector type/domain, owner identity, reciprocal
-`IsConnectedTo` proof and connector-origin agreement (default tolerance 0.0001 feet).
+The adapter verifies physical connector type/domain, owner identity and reciprocal
+`IsConnectedTo` proof. Origin differences above 0.0001 feet are measured warnings,
+not grounds for erasing API-confirmed topology. This threshold does not authorize
+joining nearby unconnected parts. Gap tables show both numeric element/connector
+IDs and feet/inches/mm; geometry continuity remains unverified.
 Logical references are excluded. Merely coincident endpoints do not establish an
-edge. Unselected connected owners remain explicit scope cuts. Unreadable selected
-records are omitted with source IDs and reasons; existing verified edges to an
-omitted record remain scope cuts. Multiple physical connections between the same
+edge. Unselected connected owners remain OUTSIDE_SCOPE cuts. Unreadable selected
+records are omitted with source IDs and SELECTED_PART_REJECTED boundaries;
+unsupported selected owners use UNSUPPORTED_SELECTED_PART. All referenced
+identities retain actual numeric element IDs rather than exposing raw project UIDs. Multiple physical connections between the same
 two parts are reported rather than collapsed into a false linear run.
 
 Straight metadata comes from the API's `IsAStraight()` / `IsATap()` classification,
@@ -24,6 +28,12 @@ changes. Lengths and coordinates are host-world feet. Sloped/vertical axes can b
 reported, but this does NOT authorize the existing hanger placement engine to
 support those routes. A topology-straight classification is not approval to place
 hangers on an inline accessory. Hanger eligibility and company rules remain separate.
+
+Connected selected networks include fittings and transitions. Uniform straight
+spans intentionally split at fittings and size changes. A single selected network
+may therefore contain several uniform spans; those counts do not imply a broken
+physical connection. Reported span lengths sum part axes and exclude fitting
+lengths and connector-origin offsets; they are not support-station distances.
 
 ## Current limits
 
@@ -76,3 +86,19 @@ with regression tests before changing apply behavior. Per-rod hit/host validatio
 and linked geometry adapters remain separate milestones. See the EVOLVE research
 findings for version-specific public behavior and the original master plan for the
 remaining Phase 1 requirements.
+
+## First field feedback and retest
+
+The first user report (Revit 2025.4) contained eight selected parts, five readable
+parts and three origin-gap rejections, with transitions along the route. The old
+origin-coincidence rule fragmented the diagnostic and mislabeled rejected selected
+parts as outside scope. The revised build retains reciprocal API connectivity and
+reports measured origin differences separately. It does not establish why a
+particular model has those differences or certify its geometric continuity.
+
+Retest the same eight-part selection. Check the connected-network table, uniform
+span table, and gap measurements. Transitions should remain network nodes while
+splitting uniform spans. Truly unselected branches may still report OUTSIDE_SCOPE;
+rejected selected records must use SELECTED_PART_REJECTED instead. No model edit,
+snap, hanger placement or rod adjustment occurs. The revised build needs this
+Revit retest; synthetic regression fixtures are not a model reproduction.

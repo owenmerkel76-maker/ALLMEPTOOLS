@@ -74,3 +74,25 @@ CODEX_SETUP.sh` also passes. All original runtime source-preservation checks pas
 - Live Revit 2025/IronPython loading, actual connector semantics, pyRevit Shift-click
   dispatch and document-modified/Undo checks are NOT RUN. Revit 2027 is unverified.
   Follow `REVIT_CONNECTOR_DIAGNOSTIC.md` before any placement-path integration.
+
+## First Revit field feedback: transitions and origin gaps
+
+The user ran the initial diagnostic in Revit 2025.4 and reported eight selected
+parts, five readable parts and three CONNECTED_ORIGIN_GAP rejections on a route
+containing transitions. The original 0.0001-foot coincidence requirement was an
+extra geometric assumption, not the reciprocal physical-connection API proof.
+It also caused selected rejected owners to be mislabeled OUTSIDE_SCOPE.
+
+The revised diagnostic preserves reciprocal API topology, reports measured origin
+gaps without moving/repairing geometry, and separates connected selected networks
+from uniform straight spans through fittings and transitions. Actual owner IDs
+are retained for both selected and referenced parts; rejected selections have
+explicit rejection boundaries. Incomplete records still block uniform spans.
+
+Eight added regressions cover reciprocal-proof preservation, warning measurements
+and units, stable deduplication, selected-rejection labeling, and transition
+network connectivity. `bash CODEX_SETUP.sh`: **394 tests passed, zero skips**,
+43.840 seconds; both validators pass (51 Python files, 16 XAML files, 17 commands).
+Original tool source-preservation checks pass. The revised code requires a retest
+on the same selection; synthetic gap fixtures are not a reproduction of the
+actual model's offsets, and no geometry/spacing/rod claim has been verified.

@@ -36,7 +36,7 @@ those five original archives were not separately provided or independently verif
 
 AutoSleeve is absent from BOTH archives. No fake working button or empty panel was
 added: integrate the real implementation later into its own AutoSleeve panel.
-There is one production extension, one tab, 17 buttons, 47 Python files and 16 XAML files.
+The import has one production extension, one tab, 17 buttons, 47 Python files and 16 XAML files. The subsequent isolated connector foundation adds two Python files (49 total), without changing existing tool code.
 
 ## Findings and priorities
 
@@ -47,7 +47,7 @@ There is one production extension, one tab, 17 buttons, 47 Python files and 16 X
 | P1 | `Auto Hanger/planner.py:contiguous` joins by geometry, service and size; `group_runs` unions endpoint neighbors. This is not a connector graph, despite branch-stop wording. | Add connector fixtures and explicit topology stops before claiming graph correctness. |
 | P1 | `planner.py:rule_spacing` embeds preliminary size-based caps; this is not a validated company rule profile or engineering certification. | Introduce reviewed profiles in a later focused change. |
 | P1 | `Auto Hanger/script.py` reports `ifc_attached` / `roof_attached` counters. Geometry contact and native attachment semantics need API/field verification. | Audit actual host state before interpreting counts as physical structural attachment. |
-| P1 | AutoSleeve and common `robmep_core` infrastructure are missing. | Future features, not failed extraction. |
+| P1 | AutoSleeve and shared geometry/rule infrastructure were absent in the import. A later isolated connector-graph foundation now starts `robmep_core`. | Future features, not failed extraction. |
 | P1 | Enabling PowerShell exposed legacy tests that depended on a deliberately removed production update manifest and old Annotation paths. | Corrected disposable fixtures only; no production manifest or updater activation. |
 | P2 | FabHover launcher swallows broad exceptions in fallback paths. | Preserve hot-toggle behavior; later add bounded diagnostics without heavier event scanning. |
 | P2 | Eight exact duplicate Python/XAML groups exist (`duplicate_sources.json`). Rod geometry, structural priority, roof geometry/surface helpers and WPF icons/themes are repeated. | Retain bundled copies until import isolation, WPF loading and persistent engines are tested. |

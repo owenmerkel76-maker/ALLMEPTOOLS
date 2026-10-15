@@ -16,3 +16,9 @@
 - Updated test paths; isolated legacy manifest fixtures without enabling remote updates.
 - Added runtime preservation checks, manual installer integration tests, CI and checksum-verified optional PowerShell bootstrap.
 - Added complete source/archive inventory, duplicate report, audit, roadmap and Revit acceptance checklist. No AutoSleeve code was supplied; no model-tool rewrites were made.
+
+## 2026-10-15 — Phase 1 connector foundation
+
+- Added a pure connector-snapshot graph analyzer with cumulative run lengths and explicit topology boundaries.
+- Added 14 tests for connected runs, branches, source/service/profile boundaries, invalid input, scope, cycles and deterministic reruns.
+- Existing ribbon logic remains byte-identical to the import. Live Revit connector collection and AutoHanger integration are pending separate validation.

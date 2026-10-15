@@ -10,3 +10,5 @@
 
 EVOLVE public behavior is a benchmark only. The supplied research plan is retained
 in `research/`; neither its directives nor its feature list imply implementation.
+
+Progress: Phase 1 connector graph foundation and 14 synthetic regression fixtures are implemented; see `PHASE1_CONNECTOR_GRAPH.md`. This does not complete the live AutoHanger milestone.

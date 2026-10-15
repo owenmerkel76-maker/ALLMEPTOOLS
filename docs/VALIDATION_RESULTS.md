@@ -24,3 +24,11 @@ Not run: Windows PowerShell 5.1, Revit API, IronPython 2.7, WPF loading, actual
 Windows task enumeration, live model mutations, fabrication services/ITM content,
 IFC/native structural attachment, Revit 2027, GitHub-hosted CI. See
 `REVIT_VALIDATION.md`. This is cloud development readiness, not field certification.
+
+## Subsequent Phase 1 connector foundation
+
+`bash CODEX_SETUP.sh`: PASS, **362 tests, zero skips**, 54.916 seconds.
+Extension validator now checks 49 Python files, 16 XAML files and the same 17
+buttons. Fourteen new connector-graph tests pass. All 124 original non-metadata
+extension files still match their imported hashes. See `PHASE1_CONNECTOR_GRAPH.md`;
+the analyzer has no live Revit adapter or model-mutation integration yet.

@@ -1,4 +1,6 @@
-# Next Codex task: audit and improve the complete ROBMEPTOOLS ribbon
+# Continuing development: audit and improve the complete ROBMEPTOOLS ribbon
+
+Work continues in the existing conversation at the user's request; no separate task was launched. The connector-graph foundation is implemented; read `PHASE1_CONNECTOR_GRAPH.md` before choosing the next increment.
 
 Use repository `owenmerkel76-maker/ALLMEPTOOLS`, branch `main`.
 Read AGENTS.md, README.md, docs/REPOSITORY_AUDIT.md, docs/VALIDATION_RESULTS.md,

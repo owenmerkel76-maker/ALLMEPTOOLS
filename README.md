@@ -65,3 +65,5 @@ See [repository audit](docs/REPOSITORY_AUDIT.md), [validation results](docs/VALI
 Cloud development uses Python 3.12 with no pip dependencies. For PowerShell-backed tests on Linux x86_64, run `python3 tools/install_powershell.py` before `bash CODEX_SETUP.sh`; the pinned toolchain stays outside the repository. This does not install Revit. Use only `INSTALL_WINDOWS.ps1` for manual Windows deployment; the legacy installer directory is historical compatibility code.
 
 Optional PDF comparison tools use `requirements-reports.txt` in a CPython virtual environment; NumPy/PyMuPDF are not pyRevit runtime dependencies. All five report CLIs import successfully here, but original comparison PDFs are absent.
+
+Phase 1 has started with a tested, isolated connector-graph foundation in `lib/robmep_core`. See [implementation status](docs/PHASE1_CONNECTOR_GRAPH.md). Live AutoHanger integration awaits a verified Revit connector adapter.

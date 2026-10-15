@@ -32,3 +32,31 @@ Extension validator now checks 49 Python files, 16 XAML files and the same 17
 buttons. Fourteen new connector-graph tests pass. All 124 original non-metadata
 extension files still match their imported hashes. See `PHASE1_CONNECTOR_GRAPH.md`;
 the analyzer has no live Revit adapter or model-mutation integration yet.
+
+## Clean Python 3.12 CI investigation
+
+The original Actions run at commit `d4c3380` failed with one error among 362 tests.
+A diagnostic run, https://github.com/owenmerkel76-maker/ALLMEPTOOLS/actions/runs/38792013872,
+exposed the complete traceback: `test_reload_updater.py` attempted to patch
+`distutils.spawn.find_executable`, which requires importing a module removed from
+CPython 3.12. The cloud Python had setuptools' distutils shim installed, masking
+this undeclared test dependency. This was not a missing extension path, a Revit
+runtime failure, a PowerShell-version failure or a failed ribbon validator.
+
+`robmep_updater.find_git` is legacy IronPython 2.7 host code, where distutils is
+available. The test already mocked its executable lookup; the corrected fixture
+explicitly supplies the mocked host modules via `types.ModuleType` and
+`unittest.mock.patch.dict`. The real rediscovery/deployment code still runs and
+all prior assertions remain, with an additional assertion for both Git lookups.
+No setuptools dependency or production runtime modification is necessary.
+
+Reproduced before the fix in a fresh `python3 -m venv` (no system packages or
+setuptools): the single targeted test failed with the exact ModuleNotFoundError.
+The same targeted test passes after correction. The workflow still uses Python
+3.12 and the same `bash CODEX_SETUP.sh` entrypoint. Its logging uses pipefail and
+annotates failures; an intentional exit-7 probe verified failure propagation.
+
+Complete corrected setup in that clean Python 3.12 environment with PowerShell
+7.6.6: **362 tests passed, zero skips**, 49.887 seconds. Both validators pass:
+49 Python files, 16 XAML files, 17 commands across 10 panels. `bash -n
+CODEX_SETUP.sh` also passes. All original runtime source-preservation checks pass.

@@ -1,9 +1,9 @@
 path,bytes,lines,imports
 .gitattributes,87,2,
-.github/workflows/validate.yml,295,13,
+.github/workflows/validate.yml,932,27,
 .gitignore,25,3,
 AGENTS.md,5663,45,
-CHANGELOG.md,2055,24,
+CHANGELOG.md,2651,30,
 CODEX_SETUP.sh,420,10,
 CODEX_START_HERE.md,4328,27,
 INSTALL_WINDOWS.ps1,3277,56,
@@ -167,7 +167,7 @@ docs/PHASE1_CONNECTOR_GRAPH.md,2097,33,
 docs/REPOSITORY_AUDIT.md,7372,89,
 docs/REVIT_VALIDATION.md,3315,46,
 docs/ROADMAP.md,2566,14,
-docs/VALIDATION_RESULTS.md,2272,34,
+docs/VALIDATION_RESULTS.md,4064,62,
 docs/duplicate_sources.json,2663,58,
 docs/import_provenance.json,68136,1337,
 docs/merge_sources.json,1910,51,
@@ -225,7 +225,7 @@ tests/test_pipe_autodim_layout.py,5621,126,ast;math;pathlib;types;unittest
 tests/test_pipe_autotag.py,22057,406,ast;json;math;os;pathlib;time;types;unittest
 tests/test_pipe_autotag_datums.py,2325,44,test_pipe_autotag;types;unittest
 tests/test_pipe_components.py,17993,418,ast;pathlib;time;types;unittest
-tests/test_reload_updater.py,19283,366,hashlib;importlib.util;json;os;pathlib;shutil;subprocess;sys;tempfile;types;unittest;unittest.mock
+tests/test_reload_updater.py,19816,374,hashlib;importlib.util;json;os;pathlib;shutil;subprocess;sys;tempfile;types;unittest;unittest.mock
 tests/test_source_preservation.py,1092,26,hashlib;json;pathlib;unittest
 tests/test_unified_ribbon.py,654,13,pathlib;sys;unittest;validate_unified
 tests/test_updater_check.py,2875,45,os;pathlib;shutil;subprocess;tempfile;unittest

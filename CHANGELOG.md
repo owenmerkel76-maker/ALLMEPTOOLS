@@ -22,3 +22,9 @@
 - Added a pure connector-snapshot graph analyzer with cumulative run lengths and explicit topology boundaries.
 - Added 14 tests for connected runs, branches, source/service/profile boundaries, invalid input, scope, cycles and deterministic reruns.
 - Existing ribbon logic remains byte-identical to the import. Live Revit connector collection and AutoHanger integration are pending separate validation.
+
+## 2026-10-15 — Clean Python 3.12 CI fixture correction
+
+- Fixed the legacy Git-rediscovery test's implicit dependency on a setuptools-provided distutils shim. The test now supplies its mocked IronPython dependency through standard-library module fixtures and verifies both PATH lookups before checking actual rediscovery/deployment.
+- Kept every offline check and all 362 tests enabled; no production extension files, settings or ribbon layouts changed.
+- Added Actions failure annotations while preserving pipeline exit status, so failing tracebacks remain available through the Checks API.

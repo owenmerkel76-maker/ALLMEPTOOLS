@@ -9,7 +9,7 @@ import sys
 import tempfile
 import types
 import unittest
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 MODULE = Path(__file__).resolve().parents[1] / 'ROBMEPTOOLS.extension/lib/robmep_updater.py'
 spec = importlib.util.spec_from_file_location('reload_updater', MODULE)
@@ -189,12 +189,20 @@ class DeploymentTests(unittest.TestCase):
         bundled.parent.mkdir(parents=True)
         bundled.write_bytes(b'Git fixture')
         self.payload({'engine.py': b'updated'})
-        with patch.dict(os.environ, {'LOCALAPPDATA': str(self.root / 'localappdata'),
+        # IronPython 2.7 supplies distutils; clean CPython 3.12 does not.
+        # Model the PATH lookup dependency explicitly instead of relying on
+        # setuptools to install a distutils shim on the test machine.
+        distutils = types.ModuleType('distutils')
+        spawn = types.ModuleType('distutils.spawn')
+        spawn.find_executable = Mock(return_value=None)
+        distutils.spawn = spawn
+        with patch.dict(sys.modules, {'distutils': distutils, 'distutils.spawn': spawn}), \
+             patch.dict(os.environ, {'LOCALAPPDATA': str(self.root / 'localappdata'),
                                      'ProgramFiles': '', 'ProgramFiles(x86)': ''}), \
-             patch('distutils.spawn.find_executable', return_value=None), \
              patch.object(updater, 'work_directory', return_value=str(self.work)), \
              patch.object(updater, 'sync_source', return_value=str(self.source)) as sync:
             updater.update_installed(str(self.installed), force=True)
+        self.assertEqual([(('git.exe',), {}), (('git',), {})], spawn.find_executable.call_args_list)
         self.assertEqual(sync.call_args.args[1], str(bundled))
         self.assertEqual((self.installed / 'engine.py').read_bytes(), b'updated')
 

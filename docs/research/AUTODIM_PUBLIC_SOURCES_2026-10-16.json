@@ -1,0 +1,60 @@
+{
+  "retrieved_date": "2026-10-16",
+  "scope": "Public documentation; no vendor/runtime speed benchmark or paired drawing results yet.",
+  "sources": [
+    {
+      "url": "https://help-mechanical.evolvemep.com/quick-tools/quick-dimensions",
+      "publisher": "EVOLVE",
+      "title": "Quick Dimensions - EVOLVE Mechanical Help",
+      "sha256_html": "d693b8296210789413c3f5d9ba5289503b2206866fe44c3cfdaf1bf98e5f9f94"
+    },
+    {
+      "url": "https://www.naviate.com/naviate-for-revit/naviate-accelerate/features/",
+      "publisher": "Naviate / Symetri",
+      "title": "Features in Naviate Accelerate",
+      "sha256_html": "5e9429f9fcce6595f27eb7a57511dad702075a02387fe5dd15e8d2fc13bdcb16"
+    },
+    {
+      "url": "https://help-mechanical.evolvemep.com/annotations-annotation/auto-arrange-tags",
+      "publisher": "EVOLVE",
+      "title": "Arrange Tags - EVOLVE Mechanical Help",
+      "sha256_html": "ad80a0ffa00a0a28ec600ff38cbd204229d4630f3bda54b14ab7d785f1d1e540"
+    },
+    {
+      "url": "https://help-mechanical.evolvemep.com/settings/annotation-settings",
+      "publisher": "EVOLVE",
+      "title": "Annotation Settings - EVOLVE Mechanical Help",
+      "sha256_html": "baafced8c3fc26a8929e1d9a84ef71ac60781fda4578dc3d6e73077a4dbf684f"
+    },
+    {
+      "url": "https://www.revitapidocs.com/2025/22468e2c-9772-8478-0816-c9759aa43428.htm",
+      "publisher": "Revit API reference mirror",
+      "title": "Regenerate Method",
+      "sha256_html": "08ac323cc680131d7f1b66cde19f7406e783553a7a07c1552bd79deb790212a3"
+    },
+    {
+      "url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-D1DAC441-1CB0-4FC1-9BC5-645B620A9F8D.htm",
+      "publisher": "Autodesk Revit 2025 Help",
+      "title": "Add Ordinate Dimensions",
+      "sha256_html": "d0203da3af7c9f2ce896adf2c3d1dd1faa1eed1536a9f5f96305e74776761624"
+    },
+    {
+      "url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-37564A00-E6B1-4100-B222-1F674EB27895.htm",
+      "publisher": "Autodesk Revit 2025 Help",
+      "title": "Add Baseline Dimensions",
+      "sha256_html": "4449dab27ca896ec6d75380ed5dcdc44a88149d4a0b68aa023530447bebc41e0"
+    },
+    {
+      "url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-E0FB313E-CE57-4741-9EF5-6747BBA3BDDB.htm",
+      "publisher": "Autodesk Revit 2025 Help",
+      "title": "Add an Aligned Dimension",
+      "sha256_html": "398b9b425b4c0637e86bf2497507b90136ce50685a6104d6f24aad07f17c5755"
+    },
+    {
+      "url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-DocumentPresent/files/GUID-C26D95E4-F272-4C67-8C1D-BC26C0493B75.htm",
+      "publisher": "Autodesk Revit 2025 Help",
+      "title": "Add Aligned Dimensions to Walls Automatically",
+      "sha256_html": "685659af1636de0d1857df52d57a6c700c704a8a70e335d0bf7fd2d1f7ef3182"
+    }
+  ]
+}

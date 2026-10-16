@@ -1,3 +1,21 @@
+# Active focus — AutoDim comparison and development (2026-10-16)
+
+The user paused Auto Hanger and shifted to AutoDim. Preserve the hanger snapshot
+at `f98a2f8` / visual preview 6; do not continue hanger changes while this focus
+is active. Work in the existing checkout on `feat/autodim-comparison-audit`.
+
+The user will supply human dimensions and AutoDim output for the same area.
+Compare those drawings and the matching AutoDim audit JSON, research documented
+working dimensioning tools, then identify omissions, errors, layout improvements
+and measured optimization opportunities. Initial evidence and the comparison
+protocol are in `research/AUTODIM_COMPARISON_2026-10-16.md`. Actual paired-drawing
+findings are pending; do not invent a benchmark or attribute source risks to an
+unseen model. Preserve true source/grid references, manual annotations, Duct/Pipe
+behavior, saved settings and all 17 ribbon commands. No AutoDim production code
+has been changed in the initial research/audit increment.
+
+---
+
 # Continuing development: audit and improve the complete ROBMEPTOOLS ribbon
 
 Work continues in the existing conversation at the user's request; no separate task was launched. The connector-graph foundation is implemented; read `PHASE1_CONNECTOR_GRAPH.md` before choosing the next increment.

@@ -1,3 +1,8 @@
+> Active priority (2026-10-16): AutoDim human/automatic drawing comparison, public
+> workflow research and focused correctness/layout/performance improvements.
+> Auto Hanger is paused at visual preview 6. The historical roadmap below is
+> retained; it does not override the user's current focus.
+
 # Recommended development roadmap
 
 1. **Baseline acceptance (next):** deploy this exact commit to a detached Revit 2025 model; verify all 17 commands, settings and reload behavior using `REVIT_VALIDATION.md`. Capture defects with model-independent diagnostics. Preserve a known-good installation. Gate: no unexplained installation/import/UI regressions.

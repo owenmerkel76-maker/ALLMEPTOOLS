@@ -4,11 +4,11 @@ Active focus: AutoDim. Auto Hanger is paused at `f98a2f8` / visual preview 6;
 no hanger code changes are part of this audit. Research branch:
 `feat/autodim-comparison-audit`, based on that preserved ribbon snapshot.
 
-**Paired drawing comparison is pending.** The user will provide human dimensions
-and AutoDim output for the same area. No new drawings or AutoDim audit JSON have
-been supplied for this phase. Findings below come from current source, existing
-regressions, host-double reproductions and retrieved public documentation. They
-are not conclusions about the missing drawings or hands-on vendor benchmarks.
+**The paired review is now complete:** see
+[the supplied-drawing findings](AUTODIM_PAIRED_REVIEW_2026-10-16.md).
+This document preserves the initial source/public-documentation audit, which
+preceded the supplied PDFs and JSON. Its source risks must not be attributed to
+particular plotted defects without the evidence recorded in the paired review.
 
 ## Current source baseline
 
@@ -132,8 +132,8 @@ claim a complete fix from a single exception-type check.
   settings. Preserve strict selected-grid semantics and saved settings during any
   migration. Use the paired benchmark to choose useful defaults.
 
-No runtime speed improvement is claimed; no profiling data for the new area has
-been provided. Do not make the tool faster by skipping source certification,
+No runtime speed improvement is claimed. The subsequent paired review records
+the supplied run's engine interval; it is not a comparative benchmark. Do not make the tool faster by skipping source certification,
 reducing the target denominator or deleting existing human annotations.
 
 ## Paired drawing review protocol
@@ -173,11 +173,11 @@ outside Git and use anonymized fixtures in public code/tests.
 
 ## What is ready and what remains pending
 
-Research and initial code audit are complete enough to begin the paired review.
-The three source findings above are candidates for focused regression/fixes, not
-an instruction to change production behavior before checking benchmark relevance.
-The actual paired drawings, their audit linkage, visual defect matrix, measured
-optimization and prioritized implementation remain pending those inputs.
+Research, initial code audit and the subsequent paired review are complete.
+The paired review prioritizes font bounds/retained readability, missing branch
+intent, native connector identity, UI clarity and measured optimization. The
+three source findings above remain separate candidates for focused regressions.
+Production fixes and native Revit acceptance remain outstanding.
 
 ## Sources
 

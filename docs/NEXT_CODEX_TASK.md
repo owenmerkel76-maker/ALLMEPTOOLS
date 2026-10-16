@@ -4,15 +4,17 @@ The user paused Auto Hanger and shifted to AutoDim. Preserve the hanger snapshot
 at `f98a2f8` / visual preview 6; do not continue hanger changes while this focus
 is active. Work in the existing checkout on `feat/autodim-comparison-audit`.
 
-The user will supply human dimensions and AutoDim output for the same area.
-Compare those drawings and the matching AutoDim audit JSON, research documented
-working dimensioning tools, then identify omissions, errors, layout improvements
-and measured optimization opportunities. Initial evidence and the comparison
-protocol are in `research/AUTODIM_COMPARISON_2026-10-16.md`. Actual paired-drawing
-findings are pending; do not invent a benchmark or attribute source risks to an
-unseen model. Preserve true source/grid references, manual annotations, Duct/Pipe
-behavior, saved settings and all 17 ribbon commands. No AutoDim production code
-has been changed in the initial research/audit increment.
+The user supplied paired human/AutoDim PDFs and the matching Duct 6.8 audit.
+Read `research/AUTODIM_PAIRED_REVIEW_2026-10-16.md`: 85/80 labels, 107/122
+required rows covered, three AutoDim text-box intersections, underestimated
+SimSun metrics and one repeated projected branch key. Private originals/reports
+are outside Git. The first runtime increment should establish actual Revit text
+geometry/format and correct retained readability before expanding branch coverage.
+Do not apply a universal font multiplier or merge connectors by XY/key alone.
+The initial source audit/public comparisons remain in
+`research/AUTODIM_COMPARISON_2026-10-16.md`. Preserve true source/grid references,
+manual annotations, Duct/Pipe behavior, saved settings and all 17 ribbon commands.
+No production code has changed in the research/comparison increments.
 
 ---
 

@@ -1,5 +1,16 @@
 # Unified ROBMEPTOOLS changelog
 
+## 2026-10-16 — AutoDim paired evidence review
+
+- Compared the supplied human/AutoDim exports and audit; documented uncovered
+  branch/run targets, intersecting text boxes, underestimated SimSun bounds and
+  a repeated projected branch key without inventing physical connector identity.
+- Added a CPython-only report/comparison tool and nine anonymous regressions for
+  registration, coverage accounting, metric comparison and evidence boundaries.
+  Project PDFs, source-ID registers and generated reports remain outside Git.
+- Preserved all ribbon code and settings. Auto Hanger remains paused; this
+  research/evidence increment does not require an extension reinstall.
+
 ## 2026-10-15 — Integration baseline
 
 - Consolidated the five provided tool groups into a single `ROBMEPTOOLS.extension/ROBMEPTOOLS.tab`: 17 pushbuttons, 7 panels.

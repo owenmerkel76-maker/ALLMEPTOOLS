@@ -3,7 +3,7 @@ path,bytes,lines,imports
 .github/workflows/validate.yml,932,27,
 .gitignore,25,3,
 AGENTS.md,5813,45,
-CHANGELOG.md,7894,73,
+CHANGELOG.md,8569,84,
 CODEX_SETUP.sh,420,10,
 CODEX_START_HERE.md,4328,27,
 INSTALL_WINDOWS.ps1,3277,56,
@@ -171,13 +171,13 @@ ROBMEPTOOLS.extension/updater/Git-Location.psm1,3294,73,
 ROBMEPTOOLS.extension/updater/Update-Background.ps1,7038,129,
 ROBMEPTOOLS.extension/updater/Update-Core.psm1,8248,150,
 docs/HANGER_ROUTE_PREVIEW.md,8615,119,
-docs/NEXT_CODEX_TASK.md,3305,31,
+docs/NEXT_CODEX_TASK.md,4458,51,
 docs/PHASE1_CONNECTOR_GRAPH.md,2395,37,
 docs/REPOSITORY_AUDIT.md,7372,89,
 docs/REVIT_CONNECTOR_DIAGNOSTIC.md,6947,104,
 docs/REVIT_VALIDATION.md,3560,48,
-docs/ROADMAP.md,2918,16,
-docs/VALIDATION_RESULTS.md,11497,179,
+docs/ROADMAP.md,3628,28,
+docs/VALIDATION_RESULTS.md,14209,222,
 docs/VISUAL_STATION_TEST.md,7410,113,
 docs/duplicate_sources.json,2663,58,
 docs/import_provenance.json,68136,1337,
@@ -191,6 +191,9 @@ docs/original_tool_notes/hanger/RELEASE_NOTES.md,19330,310,
 docs/original_tool_notes/roof_deck/INSTALL_README.txt,6239,118,
 docs/original_tool_notes/steel/README-INSTALL-FIRST.txt,3285,56,
 docs/original_tool_notes/steel/VERSION.txt,115,2,
+docs/research/AUTODIM_COMPARISON_2026-10-16.md,15121,200,
+docs/research/AUTODIM_PAIRED_REVIEW_2026-10-16.md,10660,166,
+docs/research/AUTODIM_PUBLIC_SOURCES_2026-10-16.json,2864,60,
 docs/research/EVOLVE_PUBLIC_SOURCES_2026-10-15.json,6734,125,
 docs/research/EVOLVE_WORKFLOW_FINDINGS_2026-10-15.md,7724,79,
 docs/research/HANGER_COMPARISON_SOURCES_2026-10-15.json,1298,27,
@@ -225,6 +228,7 @@ tests/test_autodim_attempt_diagnostics.py,5069,88,ast;pathlib;types;unittest
 tests/test_autodim_audit.py,3865,86,ast;json;math;pathlib;tempfile;types;unittest;uuid
 tests/test_autodim_branch_measurement_reuse.py,2831,58,ast;pathlib;test_autodim_accounting;types;unittest
 tests/test_autodim_element_id_64.py,3309,68,ast;pathlib;test_autodim_accounting;unittest
+tests/test_autodim_evidence_comparison.py,4429,78,importlib.util;pathlib;unittest
 tests/test_autodim_grid_axes.py,4927,101,ast;math;pathlib;types;unittest
 tests/test_autodim_layout.py,5617,126,ast;math;pathlib;types;unittest
 tests/test_autodim_model_references.py,20796,347,ast;math;pathlib;test_autodim_accounting;types;unittest
@@ -258,6 +262,7 @@ tools/build_autotag_review4_rerun.py,11599,178,argparse;build_autotag_human_oct1
 tools/build_duct_direct_review.py,15152,135,argparse;build_duct_run_review;collections;csv;fitz;hashlib;json;numpy;pathlib
 tools/build_duct_run_review.py,17457,169,argparse;collections;csv;fitz;hashlib;json;numpy;pathlib;re
 tools/build_human_run3_comparison.py,14783,110,argparse;build_duct_run_review;collections;csv;fitz;hashlib;json;numpy;pathlib;re
+tools/compare_autodim_evidence.py,17234,308,argparse;build_duct_run_review;collections;csv;fitz;fractions;hashlib;json;math;pathlib;re;statistics
 tools/install_powershell.py,1735,43,hashlib;os;pathlib;platform;shutil;tarfile;tempfile;urllib.request
 tools/package_autoupdate.py,3709,69,hashlib;json;pathlib;zipfile
 tools/validate_extension.py,1791,45,ast;pathlib;sys;xml.etree.ElementTree

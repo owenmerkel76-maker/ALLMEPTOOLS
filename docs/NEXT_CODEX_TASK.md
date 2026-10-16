@@ -1,3 +1,23 @@
+# Active focus — AutoDim comparison and development (2026-10-16)
+
+The user paused Auto Hanger and shifted to AutoDim. Preserve the hanger snapshot
+at `f98a2f8` / visual preview 6; do not continue hanger changes while this focus
+is active. Work in the existing checkout on `feat/autodim-comparison-audit`.
+
+The user supplied paired human/AutoDim PDFs and the matching Duct 6.8 audit.
+Read `research/AUTODIM_PAIRED_REVIEW_2026-10-16.md`: 85/80 labels, 107/122
+required rows covered, three AutoDim text-box intersections, underestimated
+SimSun metrics and one repeated projected branch key. Private originals/reports
+are outside Git. The first runtime increment should establish actual Revit text
+geometry/format and correct retained readability before expanding branch coverage.
+Do not apply a universal font multiplier or merge connectors by XY/key alone.
+The initial source audit/public comparisons remain in
+`research/AUTODIM_COMPARISON_2026-10-16.md`. Preserve true source/grid references,
+manual annotations, Duct/Pipe behavior, saved settings and all 17 ribbon commands.
+No production code has changed in the research/comparison increments.
+
+---
+
 # Continuing development: audit and improve the complete ROBMEPTOOLS ribbon
 
 Work continues in the existing conversation at the user's request; no separate task was launched. The connector-graph foundation is implemented; read `PHASE1_CONNECTOR_GRAPH.md` before choosing the next increment.

@@ -177,3 +177,46 @@ and original manual single-test path are exercised offline; an actual IronPython
 script load, native control rendering, WPF settings, ITM creation and per-rod Revit
 geometry still require field verification. See `VISUAL_STATION_TEST.md`.
 
+## AutoDim research/comparison baseline — 2026-10-16
+
+The user paused Auto Hanger at `f98a2f8` / visual preview 6 and shifted focus to
+AutoDim paired human/automatic drawing review and documented-tool research.
+Initial findings: `research/AUTODIM_COMPARISON_2026-10-16.md`. This baseline
+preceded the supplied PDFs/audit; the completed paired review is recorded below.
+No runtime code or settings changed.
+
+AutoDim-only discovery: **150 tests passed**, 9.393 seconds. Full
+`bash CODEX_SETUP.sh`: **455 tests passed, zero skips**, 46.810 seconds. Both
+validators pass (57 runtime Python files, 16 XAML files, 17 commands / 10 panels).
+Source-preservation checks pass. Existing PDF-analysis tooling imports successfully.
+
+Separate host-double experiments executed actual Duct traversal/AllRefs reader
+and Pipe survival functions, reproducing acceptance of unproved neighbors/logical
+owners and silent missing-dimension results after a simulated numeric-constructor
+error. These are documented unresolved audit findings, not fixes, new passing
+feature claims or a reproduction of an unseen drawing/model. No validation was
+disabled. Regeneration-error continuation was identified by source inspection and
+the Revit API contract; no live corruption test was attempted.
+
+## AutoDim paired evidence comparison — 2026-10-16
+
+Reviewed both supplied vector PDFs and the matching Duct 6.8 JSON; generated a
+ten-page private comparison PDF, complete 15-row unresolved-target CSV and JSON
+evidence. Verified page/text-anchor registration, grid-fit residuals, per-axis
+scale, 80/80 ordered value/direction agreement and coverage summary reconciliation.
+Nine new anonymous tests run without PDF dependencies. The report, source data,
+configuration, model/source identifiers and coordinates remain outside Git.
+
+`bash CODEX_SETUP.sh`: **464 tests passed**, 53.555 seconds; both validators pass
+(57 runtime Python, 16 XAML, 17 commands / 10 panels). Full source preservation
+passes. The production extension is byte-identical to the paused `f98a2f8` snapshot.
+PDF generation succeeded; rendered cover, central comparison, enlarged clash
+detail and priority pages were visually inspected. Page text bounds and the
+report ZIP CRC check pass.
+
+Findings/limits: `research/AUTODIM_PAIRED_REVIEW_2026-10-16.md`. Text-box overlap
+does not equal an exact glyph-intersection measurement; repeated projected branch
+keys do not prove duplicate native connectors. No font scaling workaround,
+placement rewrite, speed improvement, new installation or native Revit acceptance
+is claimed. First runtime gate: establish actual text geometry and retained layout
+before expanding missing branch/terminal coverage. Auto Hanger remains paused.
